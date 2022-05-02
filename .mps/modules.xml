@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.tsdl.mps.json/org.tsdl.mps.json.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.tsdl.mps.scripting/org.tsdl.mps.scripting.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.tsdl.mps/org.tsdl.mps.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.tsdl.mps/sandbox/org.tsdl.mps.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.tsdl.mps.build/org.tsdl.mps.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.tsdl.mps.runtime/org.tsdl.mps.runtime.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
