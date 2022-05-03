@@ -2,6 +2,8 @@
 <model ref="r:8f6948b6-25a4-495c-b5a8-dfd62e7657dd(org.tsdl.mps.generator.templates@generator)">
   <persistence version="9" />
   <languages>
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="4" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
