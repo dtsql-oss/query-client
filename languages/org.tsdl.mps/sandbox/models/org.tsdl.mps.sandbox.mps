@@ -8,8 +8,8 @@
   <registry>
     <language id="46aa8ee8-407e-4248-9dfb-28e58581faab" name="org.tsdl.mps">
       <concept id="3289320894642931274" name="org.tsdl.mps.structure.TsdlClient" flags="ng" index="SO4mB">
-        <child id="3289320894642934529" name="storage" index="SO53G" />
-        <child id="3289320894642936323" name="query" index="SO5BI" />
+        <property id="8721459316144776736" name="endpoint" index="1kR7WE" />
+        <child id="8721459316145179553" name="payload" index="1kOxaF" />
       </concept>
       <concept id="3289320894642934533" name="org.tsdl.mps.structure.StorageProperty" flags="ng" index="SO53C">
         <property id="3289320894642934596" name="type" index="SO52D" />
@@ -28,6 +28,10 @@
       <concept id="850316069446302861" name="org.tsdl.mps.structure.StoragePropertyContainer" flags="ng" index="39UX5S">
         <child id="850316069446302862" name="properties" index="39UX5V" />
       </concept>
+      <concept id="8721459316145179394" name="org.tsdl.mps.structure.PayloadSpecification" flags="ng" index="1kOx88">
+        <child id="8721459316145179436" name="storage" index="1kOx8A" />
+        <child id="8721459316145179437" name="query" index="1kOx8B" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -42,64 +46,67 @@
     <property role="TrG5h" value="TestQuery1" />
     <property role="SOAYp" value="2QA0YOlt7A6/lt" />
     <property role="SOAUC" value="23.3" />
-    <property role="3GE5qa" value="query_standalone" />
+    <property role="3GE5qa" value="query" />
   </node>
   <node concept="SPjgm" id="2QA0YOlt7GG">
     <property role="TrG5h" value="TestQuery2" />
     <property role="SOAYp" value="2QA0YOlt7A6/LT" />
     <property role="SOAUC" value="-2455.23" />
-    <property role="3GE5qa" value="query_standalone" />
+    <property role="3GE5qa" value="query" />
   </node>
-  <node concept="SO4mB" id="2QA0YOlt_BZ">
-    <property role="TrG5h" value="TestClient1" />
-    <property role="3GE5qa" value="query_withClient" />
-    <node concept="SO54j" id="2QA0YOlt_C0" role="SO53G">
-      <property role="SO53I" value="influxdb" />
-      <node concept="39UX5S" id="JcVvn2a8Do" role="SO53v">
-        <node concept="SO53C" id="JcVvn2a8Dt" role="39UX5V">
-          <property role="TrG5h" value="bucket" />
-          <property role="SO536" value="bucket0" />
-          <property role="SO52D" value="2QA0YOlt_cX/str" />
+  <node concept="SO4mB" id="690qmNI4fUY">
+    <property role="3GE5qa" value="client" />
+    <property role="TrG5h" value="InfluxDB Client" />
+    <property role="1kR7WE" value="http://localhost:8080/query" />
+    <node concept="1kOx88" id="690qmNI4fUZ" role="1kOxaF">
+      <node concept="SO54j" id="690qmNI4fV0" role="1kOx8A">
+        <property role="SO53I" value="influxdb" />
+        <node concept="39UX5S" id="690qmNI4fV1" role="SO53t">
+          <node concept="SO53C" id="690qmNI4fWm" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="url" />
+            <property role="SO536" value="http://localhost:8086" />
+          </node>
+          <node concept="SO53C" id="690qmNI4fWo" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="token" />
+            <property role="SO536" value="Bawfa5LFDhUM5yjlmErFbZPtAT4jeOxtTvgdXbCxCjy5rPG-SR5IRdR_aTYKqr3xvoN49VroZn9YfuwVQCp34A==" />
+          </node>
+          <node concept="SO53C" id="690qmNI4fWr" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="organization" />
+            <property role="SO536" value="tuwien-corec" />
+          </node>
         </node>
-        <node concept="SO53C" id="JcVvn2a8Dv" role="39UX5V">
-          <property role="TrG5h" value="loadFrom" />
-          <property role="SO536" value="2016-01-01-T00:00:00Z" />
-          <property role="SO52D" value="2QA0YOlt_cX/str" />
+        <node concept="39UX5S" id="690qmNI4fV2" role="SO53v">
+          <node concept="SO53C" id="690qmNI4fWv" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="bucket" />
+            <property role="SO536" value="bucket0" />
+          </node>
+          <node concept="SO53C" id="690qmNI4fWx" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="loadFrom" />
+            <property role="SO536" value="2016-01-01T00:00:00Z" />
+          </node>
+          <node concept="SO53C" id="690qmNI4fW$" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="loadUntil" />
+            <property role="SO536" value="2019-12-31T23:59:59Z" />
+          </node>
         </node>
-        <node concept="SO53C" id="JcVvn2a8Dy" role="39UX5V">
-          <property role="TrG5h" value="loadUntil" />
-          <property role="SO536" value="2019-12-31T23:59:59Z" />
-          <property role="SO52D" value="2QA0YOlt_cX/str" />
+        <node concept="39UX5S" id="690qmNI4fV3" role="SO53o">
+          <node concept="SO53C" id="690qmNI4fWC" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="tableIndex" />
+            <property role="SO536" value="4" />
+          </node>
         </node>
       </node>
-      <node concept="39UX5S" id="JcVvn29UHK" role="SO53t">
-        <node concept="SO53C" id="JcVvn29UHP" role="39UX5V">
-          <property role="TrG5h" value="url" />
-          <property role="SO536" value="http://localhost:8086" />
-          <property role="SO52D" value="2QA0YOlt_cX/str" />
-        </node>
-        <node concept="SO53C" id="JcVvn29UHR" role="39UX5V">
-          <property role="TrG5h" value="token" />
-          <property role="SO536" value="Bawfa5LFDhUM5yjlmErFbZPtAT4jeOxtTvgdXbCxCjy5rPG-SR5IRdR_aTYKqr3xvoN49VroZn9YfuwVQCp34A==" />
-          <property role="SO52D" value="2QA0YOlt_cX/str" />
-        </node>
-        <node concept="SO53C" id="JcVvn29UI3" role="39UX5V">
-          <property role="TrG5h" value="organization" />
-          <property role="SO536" value="tuwien-corec" />
-          <property role="SO52D" value="2QA0YOlt_cX/str" />
-        </node>
+      <node concept="SPjgm" id="690qmNI4fV4" role="1kOx8B">
+        <property role="SOAYp" value="2QA0YOlt7A5/gt" />
+        <property role="SOAUC" value="85000.24" />
       </node>
-      <node concept="39UX5S" id="JcVvn2a8DP" role="SO53o">
-        <node concept="SO53C" id="JcVvn2a8DY" role="39UX5V">
-          <property role="TrG5h" value="tableIndex" />
-          <property role="SO536" value="4" />
-          <property role="SO52D" value="2QA0YOlt_cW/num" />
-        </node>
-      </node>
-    </node>
-    <node concept="SPjgm" id="2QA0YOltA38" role="SO5BI">
-      <property role="SOAYp" value="2QA0YOlt7A5/gt" />
-      <property role="SOAUC" value="23.25" />
     </node>
   </node>
 </model>

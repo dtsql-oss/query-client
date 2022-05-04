@@ -103,19 +103,17 @@
     <node concept="PrWs8" id="JcVvn2bdsZ" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
-    <node concept="1TJgyj" id="2QA0YOlt_c1" role="1TKVEi">
-      <property role="IQ2ns" value="3289320894642934529" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="storage" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2QA0YOlt_bY" resolve="StorageSpecification" />
+    <node concept="1TJgyi" id="7$8QgCHPaow" role="1TKVEl">
+      <property role="IQ2nx" value="8721459316144776736" />
+      <property role="TrG5h" value="endpoint" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyj" id="2QA0YOlt_C3" role="1TKVEi">
-      <property role="IQ2ns" value="3289320894642936323" />
+    <node concept="1TJgyj" id="7$8QgCHQGIx" role="1TKVEi">
+      <property role="IQ2ns" value="8721459316145179553" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="query" />
+      <property role="20kJfa" value="payload" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2QA0YOlsNvV" resolve="TsdlQuery" />
+      <ref role="20lvS9" node="7$8QgCHQGG2" resolve="PayloadSpecification" />
     </node>
   </node>
   <node concept="1TIwiD" id="2QA0YOlt_bY">
@@ -132,21 +130,21 @@
       <property role="IQ2ns" value="3289320894642934576" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="serviceConfiguration" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="JcVvn29NMd" resolve="StoragePropertyContainer" />
     </node>
     <node concept="1TJgyj" id="2QA0YOlt_cM" role="1TKVEi">
       <property role="IQ2ns" value="3289320894642934578" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="lookupConfiguration" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="JcVvn29NMd" resolve="StoragePropertyContainer" />
     </node>
     <node concept="1TJgyj" id="2QA0YOlt_cP" role="1TKVEi">
       <property role="IQ2ns" value="3289320894642934581" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="transformationConfiguration" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="JcVvn29NMd" resolve="StoragePropertyContainer" />
     </node>
   </node>
@@ -200,6 +198,26 @@
       <property role="20kJfa" value="properties" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2QA0YOlt_c5" resolve="StorageProperty" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7$8QgCHQGG2">
+    <property role="EcuMT" value="8721459316145179394" />
+    <property role="3GE5qa" value="client" />
+    <property role="TrG5h" value="PayloadSpecification" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="7$8QgCHQGGG" role="1TKVEi">
+      <property role="IQ2ns" value="8721459316145179436" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="storage" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2QA0YOlt_bY" resolve="StorageSpecification" />
+    </node>
+    <node concept="1TJgyj" id="7$8QgCHQGGH" role="1TKVEi">
+      <property role="IQ2ns" value="8721459316145179437" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="query" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2QA0YOlsNvV" resolve="TsdlQuery" />
     </node>
   </node>
 </model>
