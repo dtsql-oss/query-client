@@ -129,21 +129,21 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="serviceConfiguration" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2QA0YOlt_c5" resolve="StorageProperty" />
+      <ref role="20lvS9" node="JcVvn29NMd" resolve="StoragePropertyContainer" />
     </node>
     <node concept="1TJgyj" id="2QA0YOlt_cM" role="1TKVEi">
       <property role="IQ2ns" value="3289320894642934578" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="lookupConfiguration" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2QA0YOlt_c5" resolve="StorageProperty" />
+      <ref role="20lvS9" node="JcVvn29NMd" resolve="StoragePropertyContainer" />
     </node>
     <node concept="1TJgyj" id="2QA0YOlt_cP" role="1TKVEi">
       <property role="IQ2ns" value="3289320894642934581" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="transformationConfiguration" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2QA0YOlt_c5" resolve="StorageProperty" />
+      <ref role="20lvS9" node="JcVvn29NMd" resolve="StoragePropertyContainer" />
     </node>
   </node>
   <node concept="1TIwiD" id="2QA0YOlt_c5">
@@ -177,12 +177,25 @@
     <node concept="25R33" id="2QA0YOlt_cX" role="25R1y">
       <property role="3tVfz5" value="3289320894642934589" />
       <property role="TrG5h" value="str" />
-      <property role="1L1pqM" value="string" />
+      <property role="1L1pqM" value="text" />
     </node>
     <node concept="25R33" id="2QA0YOlt_d0" role="25R1y">
       <property role="3tVfz5" value="3289320894642934592" />
       <property role="TrG5h" value="bool" />
       <property role="1L1pqM" value="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="JcVvn29NMd">
+    <property role="EcuMT" value="850316069446302861" />
+    <property role="3GE5qa" value="client" />
+    <property role="TrG5h" value="StoragePropertyContainer" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="JcVvn29NMe" role="1TKVEi">
+      <property role="IQ2ns" value="850316069446302862" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="properties" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2QA0YOlt_c5" resolve="StorageProperty" />
     </node>
   </node>
 </model>
