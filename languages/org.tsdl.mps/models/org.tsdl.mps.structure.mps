@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -60,7 +61,7 @@
     <property role="TrG5h" value="TsdlQuery" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="query" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2QA0YOlt6LM" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -95,9 +96,12 @@
     <property role="TrG5h" value="TsdlClient" />
     <property role="3GE5qa" value="client" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2QA0YOlt$pb" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="JcVvn2bdsZ" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
     <node concept="1TJgyj" id="2QA0YOlt_c1" role="1TKVEi">
       <property role="IQ2ns" value="3289320894642934529" />
@@ -118,7 +122,7 @@
     <property role="EcuMT" value="3289320894642934526" />
     <property role="3GE5qa" value="client" />
     <property role="TrG5h" value="StorageSpecification" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2QA0YOlt_c3" role="1TKVEl">
       <property role="IQ2nx" value="3289320894642934531" />
       <property role="TrG5h" value="name" />
@@ -150,7 +154,7 @@
     <property role="EcuMT" value="3289320894642934533" />
     <property role="3GE5qa" value="client" />
     <property role="TrG5h" value="StorageProperty" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2QA0YOlt_c6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -189,7 +193,7 @@
     <property role="EcuMT" value="850316069446302861" />
     <property role="3GE5qa" value="client" />
     <property role="TrG5h" value="StoragePropertyContainer" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="JcVvn29NMe" role="1TKVEi">
       <property role="IQ2ns" value="850316069446302862" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
