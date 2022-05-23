@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="46aa8ee8-407e-4248-9dfb-28e58581faab" name="org.tsdl.mps" version="0" />
+    <use id="b0f068cb-6560-4849-b0f3-0b78a60641de" name="org.tsdl.mps.json" version="0" />
   </languages>
   <imports />
   <registry>
@@ -31,6 +32,30 @@
       <concept id="8721459316145179394" name="org.tsdl.mps.structure.PayloadSpecification" flags="ng" index="1kOx88">
         <child id="8721459316145179436" name="storage" index="1kOx8A" />
         <child id="8721459316145179437" name="query" index="1kOx8B" />
+      </concept>
+    </language>
+    <language id="b0f068cb-6560-4849-b0f3-0b78a60641de" name="org.tsdl.mps.json">
+      <concept id="4445988724944283705" name="org.tsdl.mps.json.structure.JsonBoolean" flags="ng" index="2W0nG9">
+        <property id="4445988724944283709" name="value" index="2W0nGd" />
+      </concept>
+      <concept id="4445988724943966484" name="org.tsdl.mps.json.structure.JsonInteger" flags="ng" index="2W7w8$">
+        <property id="4445988724943966581" name="value" index="2W7w95" />
+      </concept>
+      <concept id="4445988724943966485" name="org.tsdl.mps.json.structure.JsonString" flags="ng" index="2W7w8_">
+        <property id="4445988724943966566" name="value" index="2W7w9m" />
+      </concept>
+      <concept id="4445988724943966486" name="org.tsdl.mps.json.structure.JsonNull" flags="ng" index="2W7w8A" />
+      <concept id="4445988724943966472" name="org.tsdl.mps.json.structure.JsonObject" flags="ng" index="2W7w8S">
+        <child id="4445988724943966923" name="pairs" index="2W7w7V" />
+      </concept>
+      <concept id="4445988724943966476" name="org.tsdl.mps.json.structure.JsonArray" flags="ng" index="2W7w8W">
+        <child id="4445988724943966589" name="items" index="2W7w9d" />
+      </concept>
+      <concept id="4445988724943966479" name="org.tsdl.mps.json.structure.JsonFile" flags="ng" index="2W7w8Z">
+        <child id="4445988724943966480" name="contents" index="2W7w8w" />
+      </concept>
+      <concept id="4445988724943966591" name="org.tsdl.mps.json.structure.JsonPair" flags="ng" index="2W7w9f">
+        <child id="4445988724943966594" name="value" index="2W7waM" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -155,6 +180,128 @@
       <node concept="SPjgm" id="2Y5KY_HQQWi" role="1kOx8B">
         <property role="SOAYp" value="2QA0YOlt7A6/lt" />
         <property role="SOAUC" value="50000.0" />
+      </node>
+    </node>
+  </node>
+  <node concept="2W7w8Z" id="5o9QwbMB1EI">
+    <property role="TrG5h" value="SimpleJsonExample" />
+    <property role="3GE5qa" value="json" />
+    <node concept="2W7w8S" id="5o9QwbMB1Fs" role="2W7w8w">
+      <node concept="2W7w9f" id="5o9QwbMB1FJ" role="2W7w7V">
+        <property role="TrG5h" value="property1" />
+        <node concept="2W7w8_" id="5o9QwbMB1FZ" role="2W7waM">
+          <property role="2W7w9m" value="value1" />
+        </node>
+      </node>
+      <node concept="2W7w9f" id="5o9QwbMB1Ge" role="2W7w7V">
+        <property role="TrG5h" value="property2" />
+        <node concept="2W7w8$" id="5o9QwbMB1G$" role="2W7waM">
+          <property role="2W7w95" value="23" />
+        </node>
+      </node>
+      <node concept="2W7w9f" id="5o9QwbMB1GF" role="2W7w7V">
+        <property role="TrG5h" value="property3" />
+        <node concept="2W0nG9" id="5o9QwbMB1Hb" role="2W7waM">
+          <property role="2W0nGd" value="true" />
+        </node>
+      </node>
+      <node concept="2W7w9f" id="5o9QwbMB1HE" role="2W7w7V">
+        <property role="TrG5h" value="property4" />
+        <node concept="2W7w8A" id="5o9QwbMB1HW" role="2W7waM" />
+      </node>
+    </node>
+  </node>
+  <node concept="2W7w8Z" id="5o9QwbMB1P$">
+    <property role="3GE5qa" value="json" />
+    <property role="TrG5h" value="SimpleArray" />
+    <node concept="2W7w8W" id="5o9QwbMB1PU" role="2W7w8w">
+      <node concept="2W7w8_" id="5o9QwbMB1Q5" role="2W7w9d">
+        <property role="2W7w9m" value="str1" />
+      </node>
+      <node concept="2W7w8$" id="5o9QwbMB1QE" role="2W7w9d">
+        <property role="2W7w95" value="2345" />
+      </node>
+      <node concept="2W0nG9" id="5o9QwbMB1Ri" role="2W7w9d" />
+      <node concept="2W7w8A" id="5o9QwbMB1SE" role="2W7w9d" />
+    </node>
+  </node>
+  <node concept="2W7w8Z" id="5o9QwbMB1Zy">
+    <property role="3GE5qa" value="json" />
+    <property role="TrG5h" value="ComplexObject" />
+    <node concept="2W7w8S" id="5o9QwbMB1ZS" role="2W7w8w">
+      <node concept="2W7w9f" id="5o9QwbMB207" role="2W7w7V">
+        <property role="TrG5h" value="list" />
+        <node concept="2W7w8W" id="5o9QwbMB20n" role="2W7waM">
+          <node concept="2W7w8S" id="5o9QwbMB20y" role="2W7w9d">
+            <node concept="2W7w9f" id="5o9QwbMB20C" role="2W7w7V">
+              <property role="TrG5h" value="nestedListInNestedObject" />
+              <node concept="2W7w8W" id="5o9QwbMB21k" role="2W7waM">
+                <node concept="2W7w8_" id="5o9QwbMB21r" role="2W7w9d">
+                  <property role="2W7w9m" value="value1" />
+                </node>
+                <node concept="2W0nG9" id="5o9QwbMB21K" role="2W7w9d" />
+                <node concept="2W7w8A" id="5o9QwbMB224" role="2W7w9d" />
+                <node concept="2W0nG9" id="5o9QwbMB22i" role="2W7w9d">
+                  <property role="2W0nGd" value="true" />
+                </node>
+                <node concept="2W7w8S" id="5o9QwbMB22Q" role="2W7w9d">
+                  <node concept="2W7w9f" id="5o9QwbMB235" role="2W7w7V">
+                    <property role="TrG5h" value="key1" />
+                    <node concept="2W0nG9" id="5o9QwbMB23p" role="2W7waM" />
+                  </node>
+                  <node concept="2W7w9f" id="5o9QwbMB23$" role="2W7w7V">
+                    <property role="TrG5h" value="key2" />
+                    <node concept="2W7w8_" id="5o9QwbMB23Y" role="2W7waM">
+                      <property role="2W7w9m" value="test" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2W7w9f" id="5o9QwbMB24d" role="2W7w7V">
+              <property role="TrG5h" value="secondObjectProperty" />
+              <node concept="2W7w8_" id="5o9QwbMB24W" role="2W7waM">
+                <property role="2W7w9m" value="value" />
+              </node>
+            </node>
+            <node concept="2W7w9f" id="5o9QwbMB257" role="2W7w7V">
+              <property role="TrG5h" value="nullableProperty" />
+              <node concept="2W7w8A" id="5o9QwbMB25G" role="2W7waM" />
+            </node>
+            <node concept="2W7w9f" id="5o9QwbMB25N" role="2W7w7V">
+              <property role="TrG5h" value="integer" />
+              <node concept="2W7w8$" id="5o9QwbMB26y" role="2W7waM">
+                <property role="2W7w95" value="2383292729" />
+              </node>
+            </node>
+          </node>
+          <node concept="2W7w8S" id="5o9QwbMB27h" role="2W7w9d">
+            <node concept="2W7w9f" id="5o9QwbMB27E" role="2W7w7V">
+              <property role="TrG5h" value="simplerObject" />
+              <node concept="2W0nG9" id="5o9QwbMB27U" role="2W7waM">
+                <property role="2W0nGd" value="true" />
+              </node>
+            </node>
+            <node concept="2W7w9f" id="5o9QwbMB289" role="2W7w7V">
+              <property role="TrG5h" value="password" />
+              <node concept="2W7w8_" id="5o9QwbMB28F" role="2W7waM">
+                <property role="2W7w9m" value="secret" />
+              </node>
+            </node>
+            <node concept="2W7w9f" id="5o9QwbMB28M" role="2W7w7V">
+              <property role="TrG5h" value="fakeMultiLineCorrectlyEscaped" />
+              <node concept="2W7w8_" id="5o9QwbMB29i" role="2W7waM">
+                <property role="2W7w9m" value="test1\ntest2" />
+              </node>
+            </node>
+            <node concept="2W7w9f" id="5o9QwbMB29L" role="2W7w7V">
+              <property role="TrG5h" value="moreSpecialCharacters" />
+              <node concept="2W7w8_" id="5o9QwbMB2ar" role="2W7waM">
+                <property role="2W7w9m" value="test\\test\d`#*`2&lt;||" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
