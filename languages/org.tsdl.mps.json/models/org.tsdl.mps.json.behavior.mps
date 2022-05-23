@@ -15,6 +15,7 @@
     <import index="7k8f" ref="6c7fca95-8dd3-46cb-81a8-e44bb79e732b/java:com.fasterxml.jackson.databind(org.tsdl.mps.runtime/)" />
     <import index="lhlt" ref="6c7fca95-8dd3-46cb-81a8-e44bb79e732b/java:com.fasterxml.jackson.databind.node(org.tsdl.mps.runtime/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="i4mf" ref="6c7fca95-8dd3-46cb-81a8-e44bb79e732b/java:com.fasterxml.jackson.core(org.tsdl.mps.runtime/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -648,100 +649,8 @@
       </node>
     </node>
     <node concept="2tJIrI" id="4CcqqpgEECd" role="jymVt" />
-    <node concept="2YIFZL" id="4CcqqpgCR$B" role="jymVt">
-      <property role="TrG5h" value="toString" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="4CcqqpgCR$E" role="3clF47">
-        <node concept="3J1_TO" id="4CcqqpgCWjP" role="3cqZAp">
-          <node concept="3clFbS" id="4CcqqpgCWjR" role="1zxBo7">
-            <node concept="3cpWs8" id="4CcqqpgGpNM" role="3cqZAp">
-              <node concept="3cpWsn" id="4CcqqpgGpNN" role="3cpWs9">
-                <property role="TrG5h" value="stringWriter" />
-                <node concept="3uibUv" id="4CcqqpgGpNO" role="1tU5fm">
-                  <ref role="3uigEE" to="guwi:~StringWriter" resolve="StringWriter" />
-                </node>
-                <node concept="2ShNRf" id="4CcqqpgGqpI" role="33vP2m">
-                  <node concept="1pGfFk" id="4CcqqpgGqD1" role="2ShVmc">
-                    <ref role="37wK5l" to="guwi:~StringWriter.&lt;init&gt;()" resolve="StringWriter" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="4CcqqpgH4j1" role="3cqZAp">
-              <node concept="2OqwBi" id="4CcqqpgH51e" role="3clFbG">
-                <node concept="liA8E" id="4CcqqpgH5Je" role="2OqNvi">
-                  <ref role="37wK5l" to="7k8f:~ObjectMapper.writeValue(java.io.Writer,java.lang.Object)" resolve="writeValue" />
-                  <node concept="37vLTw" id="4CcqqpgH5QC" role="37wK5m">
-                    <ref role="3cqZAo" node="4CcqqpgGpNN" resolve="stringWriter" />
-                  </node>
-                  <node concept="1rXfSq" id="4CcqqpgH68h" role="37wK5m">
-                    <ref role="37wK5l" node="4CcqqpgE$Pq" resolve="asJsonNode" />
-                    <node concept="2OqwBi" id="4CcqqpgH6Ah" role="37wK5m">
-                      <node concept="37vLTw" id="4CcqqpgH6ln" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4CcqqpgCR_4" resolve="jsonFile" />
-                      </node>
-                      <node concept="3TrEf2" id="4CcqqpgH73s" role="2OqNvi">
-                        <ref role="3Tt5mk" to="gk59:3QNkN21Fl4g" resolve="contents" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="10M0yZ" id="5o9QwbMABi$" role="2Oq$k0">
-                  <ref role="1PxDUh" node="4CcqqpgCNAP" resolve="JsonMapper" />
-                  <ref role="3cqZAo" node="4CcqqpgEEHf" resolve="objectMapper" />
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="4CcqqpgCXuN" role="3cqZAp">
-              <node concept="2OqwBi" id="4CcqqpgGtpY" role="3cqZAk">
-                <node concept="37vLTw" id="4CcqqpgGsAj" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4CcqqpgGpNN" resolve="stringWriter" />
-                </node>
-                <node concept="liA8E" id="4CcqqpgGurA" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~StringWriter.toString()" resolve="toString" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3uVAMA" id="4CcqqpgCWjS" role="1zxBo5">
-            <node concept="XOnhg" id="4CcqqpgCWjU" role="1zc67B">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="5eWk6a8CcYM" role="1tU5fm">
-                <node concept="3uibUv" id="4CcqqpgGqTN" role="nSUat">
-                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="4CcqqpgCWjY" role="1zc67A">
-              <node concept="YS8fn" id="4CcqqpgCX4u" role="3cqZAp">
-                <node concept="2ShNRf" id="4CcqqpgCX5h" role="YScLw">
-                  <node concept="1pGfFk" id="4CcqqpgCXeF" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
-                    <node concept="37vLTw" id="4CcqqpgCXgZ" role="37wK5m">
-                      <ref role="3cqZAo" node="4CcqqpgCWjU" resolve="e" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="4CcqqpgCQ4_" role="1B3o_S" />
-      <node concept="17QB3L" id="4CcqqpgCTyz" role="3clF45" />
-      <node concept="37vLTG" id="4CcqqpgCR_4" role="3clF46">
-        <property role="TrG5h" value="jsonFile" />
-        <node concept="3Tqbb2" id="4CcqqpgCR_3" role="1tU5fm">
-          <ref role="ehGHo" to="gk59:3QNkN21Fl4f" resolve="JsonFile" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5o9QwbMySRh" role="jymVt" />
     <node concept="2YIFZL" id="5o9QwbMyV1Z" role="jymVt">
-      <property role="TrG5h" value="objectToString" />
+      <property role="TrG5h" value="toString" />
       <node concept="3clFbS" id="5o9QwbMyV22" role="3clF47">
         <node concept="3J1_TO" id="5o9QwbMyW64" role="3cqZAp">
           <node concept="3uVAMA" id="5o9QwbMz3gc" role="1zxBo5">
@@ -996,7 +905,7 @@
                   <ref role="1Pybhc" to="wyt6:~Long" resolve="Long" />
                   <node concept="2OqwBi" id="5o9QwbMBglC" role="37wK5m">
                     <node concept="Jnkvi" id="5o9QwbMBfLg" role="2Oq$k0">
-                      <ref role="1M0zk5" node="4CcqqpgFzk1" resolve="jsonNumber" />
+                      <ref role="1M0zk5" node="4CcqqpgFzk1" resolve="jsonInteger" />
                     </node>
                     <node concept="3TrcHB" id="5o9QwbMBhsL" role="2OqNvi">
                       <ref role="3TsBF5" to="gk59:3QNkN21Fl5P" resolve="value" />

@@ -204,7 +204,7 @@
     <property role="EcuMT" value="8721459316145179394" />
     <property role="3GE5qa" value="client" />
     <property role="TrG5h" value="PayloadSpecification" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7$8QgCHQGGG" role="1TKVEi">
       <property role="IQ2ns" value="8721459316145179436" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

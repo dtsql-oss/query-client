@@ -11,6 +11,10 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -47,6 +51,11 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+    </language>
   </registry>
   <node concept="WtQ9Q" id="5o9QwbMAPVx">
     <ref role="WuzLi" to="gk59:3QNkN21Fl4f" resolve="JsonFile" />
@@ -64,9 +73,14 @@
         <node concept="lc7rE" id="5o9QwbMAQ2N" role="3cqZAp">
           <node concept="l9hG8" id="5o9QwbMAQ3d" role="lcghm">
             <node concept="2YIFZM" id="5o9QwbMAQ6K" role="lb14g">
-              <ref role="37wK5l" to="k67y:4CcqqpgCR$B" resolve="toString" />
               <ref role="1Pybhc" to="k67y:4CcqqpgCNAP" resolve="JsonMapper" />
-              <node concept="117lpO" id="5o9QwbMAQ7$" role="37wK5m" />
+              <ref role="37wK5l" to="k67y:5o9QwbMyV1Z" resolve="toString" />
+              <node concept="2OqwBi" id="5o9QwbMPWn8" role="37wK5m">
+                <node concept="117lpO" id="5o9QwbMAQ7$" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5o9QwbMPWJn" role="2OqNvi">
+                  <ref role="3Tt5mk" to="gk59:3QNkN21Fl4g" resolve="contents" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -80,7 +94,7 @@
         <node concept="lc7rE" id="5o9QwbMAQb6" role="3cqZAp">
           <node concept="l9hG8" id="5o9QwbMAQbt" role="lcghm">
             <node concept="2YIFZM" id="5o9QwbMAQdi" role="lb14g">
-              <ref role="37wK5l" to="k67y:5o9QwbMyV1Z" resolve="objectToString" />
+              <ref role="37wK5l" to="k67y:5o9QwbMyV1Z" resolve="toString" />
               <ref role="1Pybhc" to="k67y:4CcqqpgCNAP" resolve="JsonMapper" />
               <node concept="117lpO" id="5o9QwbMAQe6" role="37wK5m" />
             </node>

@@ -67,6 +67,7 @@
         <module reference="46aa8ee8-407e-4248-9dfb-28e58581faab(org.tsdl.mps)" version="0" />
         <module reference="940e74c2-8b3c-45b5-8a4b-923d3b4fb58d(org.tsdl.mps.generator)" version="0" />
         <module reference="b0f068cb-6560-4849-b0f3-0b78a60641de(org.tsdl.mps.json)" version="0" />
+        <module reference="6c7fca95-8dd3-46cb-81a8-e44bb79e732b(org.tsdl.mps.runtime)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
@@ -133,6 +134,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="46aa8ee8-407e-4248-9dfb-28e58581faab(org.tsdl.mps)" version="0" />
     <module reference="b0f068cb-6560-4849-b0f3-0b78a60641de(org.tsdl.mps.json)" version="0" />
+    <module reference="6c7fca95-8dd3-46cb-81a8-e44bb79e732b(org.tsdl.mps.runtime)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</extendedLanguage>

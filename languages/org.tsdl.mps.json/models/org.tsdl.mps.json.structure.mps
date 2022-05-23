@@ -117,7 +117,7 @@
     <node concept="1TJgyi" id="3QNkN21Fl5P" role="1TKVEl">
       <property role="IQ2nx" value="4445988724943966581" />
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" node="3QNkN21Fl5R" />
+      <ref role="AX2Wp" node="3QNkN21Fl5R" resolve="JsonIntegerFormat" />
     </node>
   </node>
   <node concept="Az7Fb" id="3QNkN21Fl5R">
@@ -147,7 +147,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="pairs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3QNkN21Fl5Z" />
+      <ref role="20lvS9" node="3QNkN21Fl5Z" resolve="JsonPair" />
     </node>
   </node>
   <node concept="1TIwiD" id="3QNkN21Fl5Z">
