@@ -21,6 +21,7 @@
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="rl4a" ref="r:9d1f690b-bd3e-4cf9-bbea-769a003de8c2(org.tsdl.mps.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -369,62 +370,14 @@
                 <property role="34cw8o" value="JSON Request Body" />
                 <node concept="3zFVjK" id="690qmNI3DMh" role="3zH0cK">
                   <node concept="3clFbS" id="690qmNI3DMi" role="2VODD2">
-                    <node concept="3cpWs8" id="690qmNI3DMj" role="3cqZAp">
-                      <node concept="3cpWsn" id="690qmNI3DMk" role="3cpWs9">
-                        <property role="TrG5h" value="rtu" />
-                        <node concept="3uibUv" id="690qmNI3DMl" role="1tU5fm">
-                          <ref role="3uigEE" to="kpbf:~RegularTextUnit" resolve="RegularTextUnit" />
-                        </node>
-                        <node concept="2ShNRf" id="690qmNI3DMm" role="33vP2m">
-                          <node concept="1pGfFk" id="690qmNI3DMn" role="2ShVmc">
-                            <property role="373rjd" value="true" />
-                            <ref role="37wK5l" to="kpbf:~RegularTextUnit.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="RegularTextUnit" />
-                            <node concept="2OqwBi" id="690qmNI3DMo" role="37wK5m">
-                              <node concept="30H73N" id="690qmNI3DMp" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="690qmNI3DMq" role="2OqNvi">
-                                <ref role="3Tt5mk" to="3k3a:7$8QgCHQGIx" resolve="payload" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="690qmNI3DMr" role="37wK5m">
-                              <property role="Xl_RC" value="dummy" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbF" id="690qmNI3DMs" role="3cqZAp">
-                      <node concept="2OqwBi" id="690qmNI3DMt" role="3clFbG">
-                        <node concept="37vLTw" id="690qmNI3DMu" role="2Oq$k0">
-                          <ref role="3cqZAo" node="690qmNI3DMk" resolve="rtu" />
-                        </node>
-                        <node concept="liA8E" id="690qmNI3DMv" role="2OqNvi">
-                          <ref role="37wK5l" to="kpbf:~RegularTextUnit.generate()" resolve="generate" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs8" id="690qmNI3DMw" role="3cqZAp">
-                      <node concept="3cpWsn" id="690qmNI3DMx" role="3cpWs9">
-                        <property role="TrG5h" value="bytes" />
-                        <node concept="10Q1$e" id="690qmNI3DMy" role="1tU5fm">
-                          <node concept="10PrrI" id="690qmNI3DMz" role="10Q1$1" />
-                        </node>
-                        <node concept="2OqwBi" id="690qmNI3DM$" role="33vP2m">
-                          <node concept="37vLTw" id="690qmNI3DM_" role="2Oq$k0">
-                            <ref role="3cqZAo" node="690qmNI3DMk" resolve="rtu" />
-                          </node>
-                          <node concept="liA8E" id="690qmNI3DMA" role="2OqNvi">
-                            <ref role="37wK5l" to="kpbf:~RegularTextUnit.getBytes()" resolve="getBytes" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3cpWs6" id="690qmNI3DMB" role="3cqZAp">
-                      <node concept="2ShNRf" id="690qmNI3DMC" role="3cqZAk">
-                        <node concept="1pGfFk" id="690qmNI3DMD" role="2ShVmc">
-                          <property role="373rjd" value="true" />
-                          <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
-                          <node concept="37vLTw" id="690qmNI3DME" role="37wK5m">
-                            <ref role="3cqZAo" node="690qmNI3DMx" resolve="bytes" />
+                    <node concept="3cpWs6" id="5o9QwbMCBB_" role="3cqZAp">
+                      <node concept="2YIFZM" id="5o9QwbMCEET" role="3cqZAk">
+                        <ref role="37wK5l" to="rl4a:5o9QwbMCuPU" resolve="nodeTextGen" />
+                        <ref role="1Pybhc" to="rl4a:5o9QwbMCuO9" resolve="GenerationUtil" />
+                        <node concept="2OqwBi" id="5o9QwbMCGaB" role="37wK5m">
+                          <node concept="30H73N" id="5o9QwbMCFuT" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="5o9QwbMCGVc" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3k3a:7$8QgCHQGIx" resolve="payload" />
                           </node>
                         </node>
                       </node>

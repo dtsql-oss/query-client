@@ -631,10 +631,6 @@
             </node>
             <node concept="3clFbF" id="4CcqqpgH4j1" role="3cqZAp">
               <node concept="2OqwBi" id="4CcqqpgH51e" role="3clFbG">
-                <node concept="10M0yZ" id="5o9QwbMABi$" role="2Oq$k0">
-                  <ref role="1PxDUh" node="4CcqqpgCNAP" resolve="JsonMapper" />
-                  <ref role="3cqZAo" node="4CcqqpgEEHf" resolve="objectMapper" />
-                </node>
                 <node concept="liA8E" id="4CcqqpgH5Je" role="2OqNvi">
                   <ref role="37wK5l" to="7k8f:~ObjectMapper.writeValue(java.io.Writer,java.lang.Object)" resolve="writeValue" />
                   <node concept="37vLTw" id="4CcqqpgH5QC" role="37wK5m">
@@ -651,6 +647,10 @@
                       </node>
                     </node>
                   </node>
+                </node>
+                <node concept="10M0yZ" id="5o9QwbMABi$" role="2Oq$k0">
+                  <ref role="1PxDUh" node="4CcqqpgCNAP" resolve="JsonMapper" />
+                  <ref role="3cqZAo" node="4CcqqpgEEHf" resolve="objectMapper" />
                 </node>
               </node>
             </node>
@@ -744,10 +744,6 @@
             </node>
             <node concept="3clFbF" id="5o9QwbMyZai" role="3cqZAp">
               <node concept="2OqwBi" id="5o9QwbMyZrN" role="3clFbG">
-                <node concept="10M0yZ" id="5o9QwbMABi_" role="2Oq$k0">
-                  <ref role="1PxDUh" node="4CcqqpgCNAP" resolve="JsonMapper" />
-                  <ref role="3cqZAo" node="4CcqqpgEEHf" resolve="objectMapper" />
-                </node>
                 <node concept="liA8E" id="5o9QwbMz0e8" role="2OqNvi">
                   <ref role="37wK5l" to="7k8f:~ObjectMapper.writeValue(java.io.Writer,java.lang.Object)" resolve="writeValue" />
                   <node concept="37vLTw" id="5o9QwbMz0lw" role="37wK5m">
@@ -759,6 +755,10 @@
                       <ref role="3cqZAo" node="5o9QwbMyVP6" resolve="jsonObject" />
                     </node>
                   </node>
+                </node>
+                <node concept="10M0yZ" id="5o9QwbMABi_" role="2Oq$k0">
+                  <ref role="1PxDUh" node="4CcqqpgCNAP" resolve="JsonMapper" />
+                  <ref role="3cqZAo" node="4CcqqpgEEHf" resolve="objectMapper" />
                 </node>
               </node>
             </node>
