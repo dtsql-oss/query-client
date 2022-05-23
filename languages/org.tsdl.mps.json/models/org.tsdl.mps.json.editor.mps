@@ -201,5 +201,11 @@
       <node concept="2iRfu4" id="3QNkN21Fl5s" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5o9QwbMOgCE">
+    <ref role="1XX52x" to="gk59:5o9QwbMOgA4" resolve="JsonDouble" />
+    <node concept="3F0A7n" id="5o9QwbMOgD8" role="2wV5jI">
+      <ref role="1NtTu8" to="gk59:5o9QwbMOgA6" resolve="value" />
+    </node>
+  </node>
 </model>
 

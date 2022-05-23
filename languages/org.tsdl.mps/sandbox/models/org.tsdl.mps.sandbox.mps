@@ -146,7 +146,7 @@
           <node concept="SO53C" id="2Y5KY_HQQWF" role="39UX5V">
             <property role="SO52D" value="2QA0YOlt_cX/str" />
             <property role="TrG5h" value="filePath" />
-            <property role="SO536" value="D:\\\\Universitaet\\\\Diplomarbeit\\\\data\\\\clean\\\\annotated\\\\Analysis 1\\\\ABS_1_KEEA.csv" />
+            <property role="SO536" value="D:\Universitaet\Diplomarbeit\data\clean\annotated\Analysis 1\ABS_1_KEEA.csv" />
           </node>
           <node concept="SO53C" id="2Y5KY_HQQWN" role="39UX5V">
             <property role="SO52D" value="2QA0YOlt_cX/str" />
@@ -302,6 +302,81 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="SO4mB" id="5o9QwbMMJKS">
+    <property role="3GE5qa" value="client" />
+    <property role="TrG5h" value="Test Client" />
+    <property role="1kR7WE" value="http://localhost:8081/tsdl" />
+    <node concept="1kOx88" id="5o9QwbMMJKT" role="1kOxaF">
+      <node concept="SO54j" id="5o9QwbMMJKU" role="1kOx8A">
+        <property role="SO53I" value="test-storage-definition" />
+        <node concept="39UX5S" id="5o9QwbMMJKV" role="SO53t">
+          <node concept="SO53C" id="5o9QwbMMJUo" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_d0/bool" />
+            <property role="TrG5h" value="boolTrue" />
+            <property role="SO536" value="true" />
+          </node>
+          <node concept="SO53C" id="5o9QwbMMJUQ" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_d0/bool" />
+            <property role="TrG5h" value="boolFalse" />
+            <property role="SO536" value="false" />
+          </node>
+          <node concept="SO53C" id="5o9QwbMMJVx" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="int" />
+            <property role="SO536" value="234" />
+          </node>
+          <node concept="SO53C" id="5o9QwbMP63I" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="negativeInt" />
+            <property role="SO536" value="-234" />
+          </node>
+        </node>
+        <node concept="39UX5S" id="5o9QwbMMJKW" role="SO53v">
+          <node concept="SO53C" id="5o9QwbMP64j" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="zeroInt" />
+            <property role="SO536" value="0" />
+          </node>
+          <node concept="SO53C" id="5o9QwbMP64E" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="zeroDouble" />
+            <property role="SO536" value="0.0" />
+          </node>
+          <node concept="SO53C" id="5o9QwbMP6jc" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="special zero" />
+            <property role="SO536" value="-0.0" />
+          </node>
+          <node concept="SO53C" id="5o9QwbMP652" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="positiveDouble" />
+            <property role="SO536" value="23.72" />
+          </node>
+          <node concept="SO53C" id="5o9QwbMMJW1" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="negativeDouble" />
+            <property role="SO536" value="-1934.423" />
+          </node>
+        </node>
+        <node concept="39UX5S" id="5o9QwbMMJKX" role="SO53o">
+          <node concept="SO53C" id="5o9QwbMMJWv" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="regularText" />
+            <property role="SO536" value="text text text" />
+          </node>
+          <node concept="SO53C" id="5o9QwbMMJWx" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="another text" />
+            <property role="SO536" value="more text" />
+          </node>
+        </node>
+      </node>
+      <node concept="SPjgm" id="5o9QwbMMJKY" role="1kOx8B">
+        <property role="SOAYp" value="2QA0YOlt7A5/gt" />
+        <property role="SOAUC" value="23.5" />
       </node>
     </node>
   </node>

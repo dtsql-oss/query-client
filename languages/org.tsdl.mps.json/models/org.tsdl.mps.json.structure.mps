@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -179,6 +180,20 @@
       <property role="IQ2nx" value="4445988724943966566" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5o9QwbMOgA4">
+    <property role="EcuMT" value="6199726068250773892" />
+    <property role="TrG5h" value="JsonDouble" />
+    <property role="34LRSv" value="0.0" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5o9QwbMOgA5" role="PzmwI">
+      <ref role="PrY4T" node="3QNkN21Fl49" resolve="IJsonValue" />
+    </node>
+    <node concept="1TJgyi" id="5o9QwbMOgA6" role="1TKVEl">
+      <property role="IQ2nx" value="6199726068250773894" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
     </node>
   </node>
 </model>
