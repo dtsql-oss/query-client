@@ -109,5 +109,54 @@
       </node>
     </node>
   </node>
+  <node concept="SO4mB" id="2Y5KY_HQQWc">
+    <property role="3GE5qa" value="client" />
+    <property role="TrG5h" value="CSV Client" />
+    <property role="1kR7WE" value="http://localhost:8080/query" />
+    <node concept="1kOx88" id="2Y5KY_HQQWd" role="1kOxaF">
+      <node concept="SO54j" id="2Y5KY_HQQWe" role="1kOx8A">
+        <property role="SO53I" value="csv" />
+        <node concept="39UX5S" id="2Y5KY_HQQWf" role="SO53t" />
+        <node concept="39UX5S" id="2Y5KY_HQQWg" role="SO53v">
+          <node concept="SO53C" id="2Y5KY_HQQWF" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="filePath" />
+            <property role="SO536" value="D:\\\\Universitaet\\\\Diplomarbeit\\\\data\\\\clean\\\\annotated\\\\Analysis 1\\\\ABS_1_KEEA.csv" />
+          </node>
+          <node concept="SO53C" id="2Y5KY_HQQWN" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="fieldSeparator" />
+            <property role="SO536" value="," />
+          </node>
+        </node>
+        <node concept="39UX5S" id="2Y5KY_HQQWh" role="SO53o">
+          <node concept="SO53C" id="2Y5KY_HQQWQ" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="valueColumn" />
+            <property role="SO536" value="1" />
+          </node>
+          <node concept="SO53C" id="2Y5KY_HQQWS" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="skipHeaders" />
+            <property role="SO536" value="4" />
+          </node>
+          <node concept="SO53C" id="2Y5KY_HQQX1" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cW/num" />
+            <property role="TrG5h" value="timeColumn" />
+            <property role="SO536" value="0" />
+          </node>
+          <node concept="SO53C" id="2Y5KY_HQQX5" role="39UX5V">
+            <property role="SO52D" value="2QA0YOlt_cX/str" />
+            <property role="TrG5h" value="timeFormat" />
+            <property role="SO536" value="MM/dd/yyyy HH:mm:ss" />
+          </node>
+        </node>
+      </node>
+      <node concept="SPjgm" id="2Y5KY_HQQWi" role="1kOx8B">
+        <property role="SOAYp" value="2QA0YOlt7A6/lt" />
+        <property role="SOAUC" value="50000.0" />
+      </node>
+    </node>
+  </node>
 </model>
 
