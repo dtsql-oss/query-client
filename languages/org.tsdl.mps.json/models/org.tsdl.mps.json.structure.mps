@@ -105,6 +105,9 @@
     <node concept="PrWs8" id="3QNkN21Fl4i" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="t5JxF" id="2RqNf8iBdhE" role="lGtFl">
+      <property role="t5JxN" value="The JSON language definition was taken, adapted and extended from https://github.com/dslmeinte/mps-open-source." />
+    </node>
   </node>
   <node concept="1TIwiD" id="3QNkN21Fl4k">
     <property role="EcuMT" value="4445988724943966484" />
