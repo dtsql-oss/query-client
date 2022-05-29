@@ -508,7 +508,7 @@
         <node concept="3clFbH" id="7CQR1P0HVql" role="3cqZAp" />
         <node concept="lc7rE" id="7CQR1P0HxAj" role="3cqZAp">
           <node concept="la8eA" id="7CQR1P0HxFL" role="lcghm">
-            <property role="lacIc" value="CHOICE: " />
+            <property role="lacIc" value="CHOOSE: " />
           </node>
         </node>
         <node concept="3clFbH" id="7CQR1P0HxzN" role="3cqZAp" />
@@ -626,8 +626,13 @@
     <node concept="11bSqf" id="7CQR1P0GnpU" role="11c4hB">
       <node concept="3clFbS" id="7CQR1P0GnpV" role="2VODD2">
         <node concept="lc7rE" id="7CQR1P0GnzH" role="3cqZAp">
-          <node concept="la8eA" id="7CQR1P0Gn$9" role="lcghm">
-            <property role="lacIc" value="..." />
+          <node concept="l9hG8" id="6TO5KpDVrJU" role="lcghm">
+            <node concept="2OqwBi" id="6TO5KpDVrZb" role="lb14g">
+              <node concept="117lpO" id="6TO5KpDVrPq" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6TO5KpDVs72" role="2OqNvi">
+                <ref role="3Tt5mk" to="3k3a:6TO5KpDUHTA" resolve="filter" />
+              </node>
+            </node>
           </node>
           <node concept="la8eA" id="7CQR1P0Gn_e" role="lcghm">
             <property role="lacIc" value=" AS " />
