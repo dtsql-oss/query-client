@@ -289,22 +289,11 @@
     <property role="3GE5qa" value="query.choice" />
     <property role="TrG5h" value="ChoiceDeclaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyi" id="5OLkeRmrfSI" role="1TKVEl">
-      <property role="IQ2nx" value="6715237501821058606" />
-      <property role="TrG5h" value="operator" />
-      <ref role="AX2Wp" node="5OLkeRmrfRl" resolve="TemporalOperator" />
-    </node>
-    <node concept="1TJgyj" id="5OLkeRms0CF" role="1TKVEi">
-      <property role="IQ2ns" value="6715237501821258283" />
-      <property role="20kJfa" value="event1" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5OLkeRmrp8m" resolve="Event" />
-    </node>
-    <node concept="1TJgyj" id="5OLkeRms0Dy" role="1TKVEi">
-      <property role="IQ2ns" value="6715237501821258338" />
-      <property role="20kJfa" value="event2" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5OLkeRmrp8m" resolve="Event" />
+    <node concept="1TJgyj" id="7CQR1P0HPN6" role="1TKVEi">
+      <property role="IQ2ns" value="8806468139567504582" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="choice" />
+      <ref role="20lvS9" node="7CQR1P0HPzM" resolve="TemporalChoice" />
     </node>
   </node>
   <node concept="1TIwiD" id="5OLkeRmrfPN">
@@ -411,6 +400,29 @@
       <property role="3tVfz5" value="2920078576487335320" />
       <property role="TrG5h" value="avg" />
       <property role="1L1pqM" value="average" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7CQR1P0HPzM">
+    <property role="EcuMT" value="8806468139567503602" />
+    <property role="3GE5qa" value="query.choice" />
+    <property role="TrG5h" value="TemporalChoice" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="7CQR1P0HP$b" role="1TKVEl">
+      <property role="IQ2nx" value="8806468139567503627" />
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" node="5OLkeRmrfRl" resolve="TemporalOperator" />
+    </node>
+    <node concept="1TJgyj" id="7CQR1P0HPLT" role="1TKVEi">
+      <property role="IQ2ns" value="8806468139567504505" />
+      <property role="20kJfa" value="event1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5OLkeRmrp8m" resolve="Event" />
+    </node>
+    <node concept="1TJgyj" id="7CQR1P0HPMf" role="1TKVEi">
+      <property role="IQ2ns" value="8806468139567504527" />
+      <property role="20kJfa" value="event2" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5OLkeRmrp8m" resolve="Event" />
     </node>
   </node>
 </model>

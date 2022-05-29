@@ -417,24 +417,8 @@
         <property role="3F0ifm" value="choice:" />
         <ref role="1k5W1q" node="7$8QgCHQ3NW" resolve="subsubtitle" />
       </node>
-      <node concept="1iCGBv" id="5OLkeRmrg1G" role="3EZMnx">
-        <ref role="1NtTu8" to="3k3a:5OLkeRms0CF" resolve="event1" />
-        <node concept="1sVBvm" id="5OLkeRmrg1I" role="1sWHZn">
-          <node concept="3F1sOY" id="5OLkeRmrg1W" role="2wV5jI">
-            <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0A7n" id="5OLkeRmrfYr" role="3EZMnx">
-        <ref role="1NtTu8" to="3k3a:5OLkeRmrfSI" resolve="operator" />
-      </node>
-      <node concept="1iCGBv" id="5OLkeRmrg2z" role="3EZMnx">
-        <ref role="1NtTu8" to="3k3a:5OLkeRms0Dy" resolve="event2" />
-        <node concept="1sVBvm" id="5OLkeRmrg2_" role="1sWHZn">
-          <node concept="3F1sOY" id="5OLkeRmrg2T" role="2wV5jI">
-            <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
-          </node>
-        </node>
+      <node concept="3F1sOY" id="7CQR1P0HSEr" role="3EZMnx">
+        <ref role="1NtTu8" to="3k3a:7CQR1P0HPN6" resolve="choice" />
       </node>
       <node concept="l2Vlx" id="5OLkeRmrfUK" role="2iSdaV" />
     </node>
@@ -517,6 +501,32 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7CQR1P0E1b7" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7CQR1P0HPP7">
+    <property role="3GE5qa" value="query.choice" />
+    <ref role="1XX52x" to="3k3a:7CQR1P0HPzM" resolve="TemporalChoice" />
+    <node concept="3EZMnI" id="7CQR1P0HPPh" role="2wV5jI">
+      <node concept="l2Vlx" id="7CQR1P0HPPk" role="2iSdaV" />
+      <node concept="1iCGBv" id="7CQR1P0HU21" role="3EZMnx">
+        <ref role="1NtTu8" to="3k3a:7CQR1P0HPLT" resolve="event1" />
+        <node concept="1sVBvm" id="7CQR1P0HU22" role="1sWHZn">
+          <node concept="3F1sOY" id="7CQR1P0HU2b" role="2wV5jI">
+            <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="7CQR1P0HU2z" role="3EZMnx">
+        <ref role="1NtTu8" to="3k3a:7CQR1P0HP$b" resolve="operator" />
+      </node>
+      <node concept="1iCGBv" id="7CQR1P0HU2V" role="3EZMnx">
+        <ref role="1NtTu8" to="3k3a:7CQR1P0HPMf" resolve="event2" />
+        <node concept="1sVBvm" id="7CQR1P0HU2X" role="1sWHZn">
+          <node concept="3F1sOY" id="7CQR1P0HU3c" role="2wV5jI">
+            <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
