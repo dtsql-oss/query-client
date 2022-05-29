@@ -42,11 +42,30 @@
         <child id="6715237501821059540" name="events" index="2bn54T" />
         <child id="6715237501821058372" name="choice" index="2bnqQD" />
         <child id="8806468139566733062" name="samples" index="UBkGr" />
+        <child id="8731840535000000323" name="filter" index="1P9pRR" />
       </concept>
       <concept id="8806468139567503602" name="org.tsdl.mps.structure.TemporalChoice" flags="ng" index="UwojJ">
         <property id="8806468139567503627" name="operator" index="Uwokm" />
         <reference id="8806468139567504505" name="event1" index="Uwo1$" />
         <reference id="8806468139567504527" name="event2" index="Uwo2i" />
+      </concept>
+      <concept id="8806468139567776821" name="org.tsdl.mps.structure.FilterDeclaration" flags="ng" index="UzlwC">
+        <child id="8806468139567780988" name="filter" index="Uzkxx" />
+      </concept>
+      <concept id="8806468139567776842" name="org.tsdl.mps.structure.Filter" flags="ng" index="Uzlxn">
+        <property id="8806468139567780876" name="connective" index="Uzkwh" />
+        <child id="8806468139567780908" name="arguments" index="UzkwL" />
+      </concept>
+      <concept id="8806468139567776881" name="org.tsdl.mps.structure.FilterOperator" flags="ng" index="UzlxG">
+        <property id="8806468139567842340" name="type" index="Uy_wT" />
+        <property id="8806468139567780946" name="negated" index="Uzkxf" />
+        <child id="8806468139568447974" name="argument" index="UWLRV" />
+      </concept>
+      <concept id="8806468139567776912" name="org.tsdl.mps.structure.SampleFilterArgument" flags="ng" index="Uzlyd">
+        <reference id="8806468139567776961" name="identifier" index="Uzlzs" />
+      </concept>
+      <concept id="8806468139567776987" name="org.tsdl.mps.structure.LiteralFilterArgument" flags="ng" index="Uzlz6">
+        <property id="8806468139567777024" name="value" index="Uzl$t" />
       </concept>
       <concept id="850316069446302861" name="org.tsdl.mps.structure.StoragePropertyContainer" flags="ng" index="39UX5S">
         <child id="850316069446302862" name="properties" index="39UX5V" />
@@ -259,6 +278,7 @@
     <node concept="2bm369" id="7CQR1P0IunV" role="2bm2wW">
       <property role="2bm2s3" value="5OLkeRmqnu_/shortestPeriod" />
     </node>
+    <node concept="UzlwC" id="7$HIFgc2iA3" role="1P9pRR" />
   </node>
   <node concept="SPjgm" id="7CQR1P0Iut9">
     <property role="3GE5qa" value="query" />
@@ -271,6 +291,7 @@
     <node concept="2bm369" id="7CQR1P0Iutd" role="2bm2wW">
       <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
     </node>
+    <node concept="UzlwC" id="7$HIFgc2iAh" role="1P9pRR" />
   </node>
   <node concept="SO4mB" id="7CQR1P0Ivz0">
     <property role="3GE5qa" value="client" />
@@ -330,6 +351,7 @@
         <node concept="2bm369" id="7CQR1P0Ivza" role="2bm2wW">
           <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
         </node>
+        <node concept="UzlwC" id="7$HIFgc2i$f" role="1P9pRR" />
       </node>
     </node>
   </node>
@@ -397,6 +419,7 @@
         <node concept="2bm369" id="7CQR1P0Iytv" role="2bm2wW">
           <property role="2bm2s3" value="5OLkeRmqnv5/dataPoints" />
         </node>
+        <node concept="UzlwC" id="7$HIFgc2i_r" role="1P9pRR" />
       </node>
     </node>
   </node>
@@ -500,6 +523,24 @@
         <node concept="2bm369" id="7CQR1P0Ize8" role="2bm2wW">
           <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
         </node>
+        <node concept="UzlwC" id="7$HIFgc2i__" role="1P9pRR">
+          <node concept="Uzlxn" id="7$HIFgc2iDa" role="Uzkxx">
+            <property role="Uzkwh" value="7CQR1P0IUZm/or" />
+            <node concept="UzlxG" id="7$HIFgc2iDb" role="UzkwL">
+              <property role="Uy_wT" value="7CQR1P0ITfc/gt" />
+              <node concept="Uzlz6" id="7$HIFgc2iDK" role="UWLRV">
+                <property role="Uzl$t" value="27.3" />
+              </node>
+            </node>
+            <node concept="UzlxG" id="7$HIFgc2iDV" role="UzkwL">
+              <property role="Uy_wT" value="7CQR1P0ITfH/lt" />
+              <property role="Uzkxf" value="true" />
+              <node concept="Uzlyd" id="7$HIFgc2iED" role="UWLRV">
+                <ref role="Uzlzs" node="7CQR1P0Ize_" resolve="s4" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -587,6 +628,7 @@
         <node concept="2bm369" id="7CQR1P0Izg8" role="2bm2wW">
           <property role="2bm2s3" value="5OLkeRmqnua/longestPeriod" />
         </node>
+        <node concept="UzlwC" id="7$HIFgc2i_J" role="1P9pRR" />
       </node>
     </node>
   </node>
@@ -642,6 +684,30 @@
     </node>
     <node concept="2bm369" id="7CQR1P0IzGq" role="2bm2wW">
       <property role="2bm2s3" value="5OLkeRmqnv5/dataPoints" />
+    </node>
+    <node concept="UzlwC" id="7$HIFgc2i_T" role="1P9pRR">
+      <node concept="Uzlxn" id="7$HIFgc2iAr" role="Uzkxx">
+        <property role="Uzkwh" value="7CQR1P0IUYT/and" />
+        <node concept="UzlxG" id="7$HIFgc2iAs" role="UzkwL">
+          <property role="Uy_wT" value="7CQR1P0ITfc/gt" />
+          <property role="Uzkxf" value="true" />
+          <node concept="Uzlz6" id="7$HIFgc2iAT" role="UWLRV">
+            <property role="Uzl$t" value="2.3" />
+          </node>
+        </node>
+        <node concept="UzlxG" id="7$HIFgc3dAH" role="UzkwL">
+          <property role="Uy_wT" value="7CQR1P0ITfH/lt" />
+          <node concept="Uzlyd" id="7$HIFgc3dBb" role="UWLRV">
+            <ref role="Uzlzs" node="7CQR1P0IzGA" resolve="s3" />
+          </node>
+        </node>
+        <node concept="UzlxG" id="7$HIFgc3dBm" role="UzkwL">
+          <property role="Uy_wT" value="7CQR1P0ITfc/gt" />
+          <node concept="Uzlz6" id="7$HIFgc3dBQ" role="UWLRV">
+            <property role="Uzl$t" value="3.0" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
