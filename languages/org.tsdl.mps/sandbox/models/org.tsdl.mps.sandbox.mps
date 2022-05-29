@@ -797,5 +797,58 @@
       </node>
     </node>
   </node>
+  <node concept="SPjgm" id="thsJxaeZMy">
+    <property role="3GE5qa" value="query" />
+    <property role="TrG5h" value="SampleQuery3" />
+    <node concept="1jhBKc" id="thsJxaeZMz" role="UBkGr">
+      <node concept="1jhVtN" id="thsJxaflPW" role="1jhVtw">
+        <property role="UBGTe" value="2y6cZTVKomo/avg" />
+        <node concept="2bnqW8" id="thsJxaflQ4" role="1jhVsE">
+          <property role="TrG5h" value="mean" />
+        </node>
+      </node>
+    </node>
+    <node concept="UzlwC" id="thsJxaeZM$" role="1P9pRR" />
+    <node concept="2bnqQu" id="thsJxaeZM_" role="2bn54T">
+      <node concept="2bncbV" id="thsJxaeZNc" role="2bn53N">
+        <node concept="2bnqW8" id="thsJxaeZNd" role="2bnca8">
+          <property role="TrG5h" value="low" />
+        </node>
+        <node concept="Uzlxn" id="thsJxaeZNe" role="7BG_w">
+          <property role="Uzkwh" value="7CQR1P0IUYT/and" />
+          <node concept="UzlxG" id="thsJxaeZNf" role="UzkwL">
+            <property role="Uy_wT" value="7CQR1P0ITfH/lt" />
+            <node concept="Uzlyd" id="thsJxaflQF" role="UWLRV">
+              <ref role="Uzlzs" node="thsJxaflQ4" resolve="mean" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2bncbV" id="thsJxaeZOt" role="2bn53N">
+        <node concept="2bnqW8" id="thsJxaeZOu" role="2bnca8">
+          <property role="TrG5h" value="high" />
+        </node>
+        <node concept="Uzlxn" id="thsJxaeZOv" role="7BG_w">
+          <property role="Uzkwh" value="7CQR1P0IUZm/or" />
+          <node concept="UzlxG" id="thsJxaeZOw" role="UzkwL">
+            <property role="Uy_wT" value="7CQR1P0ITfc/gt" />
+            <node concept="Uzlyd" id="thsJxaflQY" role="UWLRV">
+              <ref role="Uzlzs" node="thsJxaflQ4" resolve="mean" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2bnqRe" id="thsJxaeZMA" role="2bnqQD">
+      <node concept="UwojJ" id="thsJxaeZPz" role="Uwo3r">
+        <property role="Uwokm" value="5OLkeRmrfRm/precedes" />
+        <ref role="Uwo1$" node="thsJxaeZNc" />
+        <ref role="Uwo2i" node="thsJxaeZOt" />
+      </node>
+    </node>
+    <node concept="2bm369" id="thsJxaeZMB" role="2bm2wW">
+      <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
+    </node>
+  </node>
 </model>
 
