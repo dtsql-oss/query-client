@@ -36,8 +36,6 @@
         <child id="3289320894642934578" name="lookupConfiguration" index="SO53v" />
       </concept>
       <concept id="3289320894642731003" name="org.tsdl.mps.structure.TsdlQuery" flags="ng" index="SPjgm">
-        <property id="3289320894642810181" name="threshold" index="SOAUC" />
-        <property id="3289320894642809972" name="operator" index="SOAYp" />
         <child id="6715237501820827857" name="result" index="2bm2wW" />
         <child id="6715237501821059540" name="events" index="2bn54T" />
         <child id="6715237501821058372" name="choice" index="2bnqQD" />
@@ -239,8 +237,6 @@
   </node>
   <node concept="SPjgm" id="7CQR1P0IunR">
     <property role="3GE5qa" value="query" />
-    <property role="SOAYp" value="2QA0YOlt7A6/lt" />
-    <property role="SOAUC" value="23.3" />
     <property role="TrG5h" value="SampleQuery1" />
     <node concept="1jhBKc" id="7CQR1P0IunS" role="UBkGr">
       <node concept="1jhVtN" id="7CQR1P0Iuog" role="1jhVtw">
@@ -283,8 +279,6 @@
   <node concept="SPjgm" id="7CQR1P0Iut9">
     <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="SampleQuery2" />
-    <property role="SOAYp" value="2QA0YOlt7A6/lt" />
-    <property role="SOAUC" value="-2455.55" />
     <node concept="1jhBKc" id="7CQR1P0Iuta" role="UBkGr" />
     <node concept="2bnqQu" id="7CQR1P0Iutb" role="2bn54T" />
     <node concept="2bnqRe" id="7CQR1P0Iutc" role="2bnqQD" />
@@ -337,8 +331,6 @@
         </node>
       </node>
       <node concept="SPjgm" id="7CQR1P0Ivz6" role="1kOx8B">
-        <property role="SOAYp" value="2QA0YOlt7A5/gt" />
-        <property role="SOAUC" value="5000.0" />
         <node concept="1jhBKc" id="7CQR1P0Ivz7" role="UBkGr" />
         <node concept="2bnqQu" id="7CQR1P0Ivz8" role="2bn54T">
           <node concept="2bncbV" id="7CQR1P0Iv$F" role="2bn53N">
@@ -405,8 +397,6 @@
         </node>
       </node>
       <node concept="SPjgm" id="7CQR1P0Iytr" role="1kOx8B">
-        <property role="SOAYp" value="2QA0YOlt7A5/gt" />
-        <property role="SOAUC" value="2333.4" />
         <node concept="1jhBKc" id="7CQR1P0Iyts" role="UBkGr" />
         <node concept="2bnqQu" id="7CQR1P0Iytt" role="2bn54T">
           <node concept="2bncbV" id="7CQR1P0Iytw" role="2bn53N">
@@ -473,8 +463,6 @@
         </node>
       </node>
       <node concept="SPjgm" id="7CQR1P0Ize4" role="1kOx8B">
-        <property role="SOAYp" value="2QA0YOlt7A5/gt" />
-        <property role="SOAUC" value="8500.24" />
         <node concept="1jhBKc" id="7CQR1P0Ize5" role="UBkGr">
           <node concept="1jhVtN" id="7CQR1P0Ize9" role="1jhVtw">
             <property role="UBGTe" value="2y6cZTVKomo/avg" />
@@ -614,8 +602,6 @@
         </node>
       </node>
       <node concept="SPjgm" id="7CQR1P0Izg4" role="1kOx8B">
-        <property role="SOAYp" value="2QA0YOlt7A5/gt" />
-        <property role="SOAUC" value="23.5" />
         <node concept="1jhBKc" id="7CQR1P0Izg5" role="UBkGr" />
         <node concept="2bnqQu" id="7CQR1P0Izg6" role="2bn54T">
           <node concept="2bncbV" id="7CQR1P0Izg9" role="2bn53N">
@@ -635,8 +621,6 @@
   <node concept="SPjgm" id="7CQR1P0IzGm">
     <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="Max Query" />
-    <property role="SOAYp" value="2QA0YOlt7A5/gt" />
-    <property role="SOAUC" value="23." />
     <node concept="1jhBKc" id="7CQR1P0IzGn" role="UBkGr">
       <node concept="1jhVtN" id="7CQR1P0IzGr" role="1jhVtw">
         <property role="UBGTe" value="2y6cZTVKomo/avg" />
