@@ -571,6 +571,9 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
       </node>
+      <node concept="3F0ifn" id="AbtmyXuMpp" role="3EZMnx">
+        <property role="3F0ifm" value=":=" />
+      </node>
       <node concept="3F0A7n" id="7CQR1P0E1jx" role="3EZMnx">
         <ref role="1NtTu8" to="3k3a:7CQR1P0E19j" resolve="aggregator" />
         <ref role="1k5W1q" node="7CQR1P0F2xN" resolve="keyword" />
@@ -630,9 +633,8 @@
     <ref role="1XX52x" to="3k3a:7CQR1P0ISig" resolve="SampleFilterArgument" />
     <node concept="3EZMnI" id="7CQR1P0JjL4" role="2wV5jI">
       <node concept="l2Vlx" id="7CQR1P0JjL7" role="2iSdaV" />
-      <node concept="3F0A7n" id="AbtmyXsDPw" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
+      <node concept="3F1sOY" id="AbtmyXvdY0" role="3EZMnx">
+        <ref role="1NtTu8" to="3k3a:AbtmyXvdWk" resolve="sample" />
       </node>
     </node>
   </node>
@@ -760,6 +762,20 @@
       <ref role="1NtTu8" to="3k3a:2z3DZjVa0jo" resolve="event" />
       <node concept="1sVBvm" id="AbtmyXt1mX" role="1sWHZn">
         <node concept="3F0A7n" id="AbtmyXt1nc" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="AbtmyXvdMJ">
+    <property role="3GE5qa" value="query.sample" />
+    <ref role="1XX52x" to="3k3a:AbtmyXvdLe" resolve="SampleReference" />
+    <node concept="1iCGBv" id="AbtmyXvdN1" role="2wV5jI">
+      <ref role="1NtTu8" to="3k3a:AbtmyXvdLZ" resolve="sample" />
+      <node concept="1sVBvm" id="AbtmyXvdN3" role="1sWHZn">
+        <node concept="3F0A7n" id="AbtmyXvdNi" role="2wV5jI">
           <property role="1Intyy" value="true" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />

@@ -151,6 +151,9 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -668,11 +671,21 @@
             <node concept="2YIFZM" id="AbtmyXsPIU" role="3clFbG">
               <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
               <ref role="37wK5l" node="AbtmyXsJcX" resolve="checkIdentifier" />
-              <node concept="2OqwBi" id="AbtmyXsPIV" role="37wK5m">
-                <node concept="1YBJjd" id="AbtmyXsPIW" role="2Oq$k0">
-                  <ref role="1YBMHb" node="AbtmyXsPIx" resolve="sampleFilterArgument" />
+              <node concept="2OqwBi" id="AbtmyXvrrs" role="37wK5m">
+                <node concept="2OqwBi" id="AbtmyXvqXD" role="2Oq$k0">
+                  <node concept="2OqwBi" id="AbtmyXsPIV" role="2Oq$k0">
+                    <node concept="1YBJjd" id="AbtmyXsPIW" role="2Oq$k0">
+                      <ref role="1YBMHb" node="AbtmyXsPIx" resolve="sampleFilterArgument" />
+                    </node>
+                    <node concept="3TrEf2" id="AbtmyXvqPJ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="3k3a:AbtmyXvdWk" resolve="sample" />
+                    </node>
+                  </node>
+                  <node concept="3TrEf2" id="AbtmyXvrcV" role="2OqNvi">
+                    <ref role="3Tt5mk" to="3k3a:AbtmyXvdLZ" resolve="sample" />
+                  </node>
                 </node>
-                <node concept="3TrcHB" id="AbtmyXsPIX" role="2OqNvi">
+                <node concept="3TrcHB" id="AbtmyXvrCf" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>

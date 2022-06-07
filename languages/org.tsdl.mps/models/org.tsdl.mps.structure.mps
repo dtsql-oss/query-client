@@ -24,6 +24,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -428,6 +429,7 @@
     <property role="EcuMT" value="8806468139567776842" />
     <property role="3GE5qa" value="query.filter" />
     <property role="TrG5h" value="Filter" />
+    <property role="34LRSv" value="single point filter" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7CQR1P0ITgc" role="1TKVEl">
       <property role="IQ2nx" value="8806468139567780876" />
@@ -469,17 +471,23 @@
     <property role="EcuMT" value="8806468139567776912" />
     <property role="TrG5h" value="SampleFilterArgument" />
     <property role="3GE5qa" value="query.filter.argument" />
+    <property role="34LRSv" value="sample" />
     <node concept="PrWs8" id="7CQR1P0Ls6U" role="PzmwI">
       <ref role="PrY4T" node="7CQR1P0Ls5z" resolve="FilterArgument" />
     </node>
-    <node concept="PrWs8" id="AbtmyXsDOR" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    <node concept="1TJgyj" id="AbtmyXvdWk" role="1TKVEi">
+      <property role="IQ2ns" value="687772460820258580" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sample" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="AbtmyXvdLe" resolve="SampleReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="7CQR1P0ISjr">
     <property role="EcuMT" value="8806468139567776987" />
     <property role="TrG5h" value="LiteralFilterArgument" />
     <property role="3GE5qa" value="query.filter.argument" />
+    <property role="34LRSv" value="literal value" />
     <node concept="1TJgyi" id="7CQR1P0ISk0" role="1TKVEl">
       <property role="IQ2nx" value="8806468139567777024" />
       <property role="TrG5h" value="value" />
@@ -534,6 +542,18 @@
       <property role="20kJfa" value="event" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5OLkeRmrp8m" resolve="Event" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="AbtmyXvdLe">
+    <property role="EcuMT" value="687772460820257870" />
+    <property role="3GE5qa" value="query.sample" />
+    <property role="TrG5h" value="SampleReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="AbtmyXvdLZ" role="1TKVEi">
+      <property role="IQ2ns" value="687772460820257919" />
+      <property role="20kJfa" value="sample" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2y6cZTVKoid" resolve="Sample" />
     </node>
   </node>
 </model>
