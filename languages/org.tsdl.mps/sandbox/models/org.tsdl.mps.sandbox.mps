@@ -47,6 +47,8 @@
         <property id="8806468139567503627" name="operator" index="Uwokm" />
         <reference id="8806468139567504505" name="event1" index="Uwo1$" />
         <reference id="8806468139567504527" name="event2" index="Uwo2i" />
+        <child id="2937376052603258258" name="event2" index="3jUU9A" />
+        <child id="2937376052603258226" name="event1" index="3jUUa6" />
       </concept>
       <concept id="8806468139567776821" name="org.tsdl.mps.structure.FilterDeclaration" flags="ng" index="UzlwC">
         <child id="8806468139567780988" name="filter" index="Uzkxx" />
@@ -75,6 +77,9 @@
       <concept id="2920078576487335053" name="org.tsdl.mps.structure.Sample" flags="ng" index="1jhVtN">
         <property id="8806468139566502483" name="aggregator" index="UBGTe" />
         <child id="2920078576487335124" name="identifier" index="1jhVsE" />
+      </concept>
+      <concept id="2937376052603258047" name="org.tsdl.mps.structure.EventReference" flags="ng" index="3jUUdb">
+        <reference id="2937376052603258072" name="event" index="3jUUcG" />
       </concept>
       <concept id="8721459316145179394" name="org.tsdl.mps.structure.PayloadSpecification" flags="ng" index="1kOx88">
         <child id="8721459316145179436" name="storage" index="1kOx8A" />
@@ -728,7 +733,7 @@
     <node concept="2bnqQu" id="7CQR1P0IzGo" role="2bn54T">
       <node concept="2bncbV" id="7CQR1P0IzGR" role="2bn53N">
         <node concept="2bnqW8" id="7CQR1P0IzGS" role="2bnca8">
-          <property role="TrG5h" value="event1" />
+          <property role="TrG5h" value="e" />
         </node>
         <node concept="Uzlxn" id="6TO5KpDVrn$" role="7BG_w">
           <property role="Uzkwh" value="7CQR1P0IUYT/and" />
@@ -749,7 +754,7 @@
       </node>
       <node concept="2bncbV" id="7CQR1P0IzGV" role="2bn53N">
         <node concept="2bnqW8" id="7CQR1P0IzGW" role="2bnca8">
-          <property role="TrG5h" value="event2" />
+          <property role="TrG5h" value="e" />
         </node>
         <node concept="Uzlxn" id="6TO5KpDVroT" role="7BG_w">
           <property role="Uzkwh" value="7CQR1P0IUZm/or" />
@@ -849,6 +854,36 @@
     <node concept="2bm369" id="thsJxaeZMB" role="2bm2wW">
       <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
     </node>
+  </node>
+  <node concept="SPjgm" id="AbtmyXiS55">
+    <property role="3GE5qa" value="query" />
+    <node concept="1jhBKc" id="AbtmyXiS56" role="UBkGr" />
+    <node concept="UzlwC" id="AbtmyXiS57" role="1P9pRR" />
+    <node concept="2bnqQu" id="AbtmyXiS58" role="2bn54T">
+      <node concept="2bncbV" id="AbtmyXiS5j" role="2bn53N">
+        <node concept="2bnqW8" id="AbtmyXiS5k" role="2bnca8">
+          <property role="TrG5h" value="e34" />
+        </node>
+        <node concept="Uzlxn" id="AbtmyXiS5l" role="7BG_w">
+          <property role="Uzkwh" value="7CQR1P0IUYT/and" />
+          <node concept="UzlxG" id="AbtmyXiS5m" role="UzkwL">
+            <property role="Uy_wT" value="7CQR1P0ITfc/gt" />
+            <node concept="Uzlz6" id="AbtmyXiS5P" role="UWLRV">
+              <property role="Uzl$t" value="2.3" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2bnqRe" id="AbtmyXiS59" role="2bnqQD">
+      <node concept="UwojJ" id="AbtmyXiS60" role="Uwo3r">
+        <node concept="3jUUdb" id="AbtmyXiS61" role="3jUUa6">
+          <ref role="3jUUcG" node="AbtmyXiS5j" />
+        </node>
+        <node concept="3jUUdb" id="AbtmyXiS62" role="3jUU9A" />
+      </node>
+    </node>
+    <node concept="2bm369" id="AbtmyXiS5a" role="2bm2wW" />
   </node>
 </model>
 

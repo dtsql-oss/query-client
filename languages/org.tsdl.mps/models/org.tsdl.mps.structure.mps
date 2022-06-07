@@ -66,6 +66,9 @@
     <node concept="PrWs8" id="2QA0YOlt6LM" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="2z3DZjVe9rp" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="7CQR1P0ETs6" role="1TKVEi">
       <property role="IQ2ns" value="8806468139566733062" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -402,17 +405,19 @@
       <property role="TrG5h" value="operator" />
       <ref role="AX2Wp" node="5OLkeRmrfRl" resolve="TemporalOperator" />
     </node>
-    <node concept="1TJgyj" id="7CQR1P0HPLT" role="1TKVEi">
-      <property role="IQ2ns" value="8806468139567504505" />
+    <node concept="1TJgyj" id="2z3DZjVa0lM" role="1TKVEi">
+      <property role="IQ2ns" value="2937376052603258226" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="event1" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5OLkeRmrp8m" resolve="Event" />
+      <ref role="20lvS9" node="2z3DZjVa0iZ" resolve="EventReference" />
     </node>
-    <node concept="1TJgyj" id="7CQR1P0HPMf" role="1TKVEi">
-      <property role="IQ2ns" value="8806468139567504527" />
+    <node concept="1TJgyj" id="2z3DZjVa0mi" role="1TKVEi">
+      <property role="IQ2ns" value="2937376052603258258" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="event2" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5OLkeRmrp8m" resolve="Event" />
+      <ref role="20lvS9" node="2z3DZjVa0iZ" resolve="EventReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="7CQR1P0ISgP">
@@ -529,6 +534,18 @@
     <property role="EcuMT" value="8806468139568447843" />
     <property role="3GE5qa" value="query.filter.argument" />
     <property role="TrG5h" value="FilterArgument" />
+  </node>
+  <node concept="1TIwiD" id="2z3DZjVa0iZ">
+    <property role="EcuMT" value="2937376052603258047" />
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="EventReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2z3DZjVa0jo" role="1TKVEi">
+      <property role="IQ2ns" value="2937376052603258072" />
+      <property role="20kJfa" value="event" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5OLkeRmrp8m" resolve="Event" />
+    </node>
   </node>
 </model>
 

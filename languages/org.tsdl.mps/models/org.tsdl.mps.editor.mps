@@ -600,25 +600,15 @@
     <ref role="1XX52x" to="3k3a:7CQR1P0HPzM" resolve="TemporalChoice" />
     <node concept="3EZMnI" id="7CQR1P0HPPh" role="2wV5jI">
       <node concept="l2Vlx" id="7CQR1P0HPPk" role="2iSdaV" />
-      <node concept="1iCGBv" id="7CQR1P0HU21" role="3EZMnx">
-        <ref role="1NtTu8" to="3k3a:7CQR1P0HPLT" resolve="event1" />
-        <node concept="1sVBvm" id="7CQR1P0HU22" role="1sWHZn">
-          <node concept="3F1sOY" id="7CQR1P0HU2b" role="2wV5jI">
-            <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
-          </node>
-        </node>
+      <node concept="3F1sOY" id="2z3DZjVa0nz" role="3EZMnx">
+        <ref role="1NtTu8" to="3k3a:2z3DZjVa0lM" resolve="event1" />
       </node>
       <node concept="3F0A7n" id="7CQR1P0HU2z" role="3EZMnx">
         <ref role="1NtTu8" to="3k3a:7CQR1P0HP$b" resolve="operator" />
         <ref role="1k5W1q" node="7CQR1P0F2xN" resolve="keyword" />
       </node>
-      <node concept="1iCGBv" id="7CQR1P0HU2V" role="3EZMnx">
-        <ref role="1NtTu8" to="3k3a:7CQR1P0HPMf" resolve="event2" />
-        <node concept="1sVBvm" id="7CQR1P0HU2X" role="1sWHZn">
-          <node concept="3F1sOY" id="7CQR1P0HU3c" role="2wV5jI">
-            <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
-          </node>
-        </node>
+      <node concept="3F1sOY" id="2z3DZjVa0o4" role="3EZMnx">
+        <ref role="1NtTu8" to="3k3a:2z3DZjVa0mi" resolve="event2" />
       </node>
     </node>
   </node>
@@ -765,6 +755,18 @@
         </node>
       </node>
       <node concept="l2Vlx" id="7$HIFgbYVTe" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2z3DZjVa0kk">
+    <property role="3GE5qa" value="query.event" />
+    <ref role="1XX52x" to="3k3a:2z3DZjVa0iZ" resolve="EventReference" />
+    <node concept="1iCGBv" id="2z3DZjVa0ku" role="2wV5jI">
+      <ref role="1NtTu8" to="3k3a:2z3DZjVa0jo" resolve="event" />
+      <node concept="1sVBvm" id="2z3DZjVa0kw" role="1sWHZn">
+        <node concept="3F1sOY" id="2z3DZjVa0kN" role="2wV5jI">
+          <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
