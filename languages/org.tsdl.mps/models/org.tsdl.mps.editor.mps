@@ -9,6 +9,9 @@
   <imports>
     <import index="rl4a" ref="r:9d1f690b-bd3e-4cf9-bbea-769a003de8c2(org.tsdl.mps.behavior)" />
     <import index="a1ev" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.color(JDK/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="3k3a" ref="r:5bd7f921-9d96-43f0-811e-1ca03308f407(org.tsdl.mps.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -49,6 +52,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
@@ -760,11 +764,19 @@
   <node concept="24kQdi" id="2z3DZjVa0kk">
     <property role="3GE5qa" value="query.event" />
     <ref role="1XX52x" to="3k3a:2z3DZjVa0iZ" resolve="EventReference" />
-    <node concept="1iCGBv" id="2z3DZjVa0ku" role="2wV5jI">
+    <node concept="1iCGBv" id="AbtmyXmdf_" role="2wV5jI">
       <ref role="1NtTu8" to="3k3a:2z3DZjVa0jo" resolve="event" />
-      <node concept="1sVBvm" id="2z3DZjVa0kw" role="1sWHZn">
-        <node concept="3F1sOY" id="2z3DZjVa0kN" role="2wV5jI">
+      <node concept="1sVBvm" id="AbtmyXmdfB" role="1sWHZn">
+        <node concept="1iCGBv" id="AbtmyXmdgc" role="2wV5jI">
           <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
+          <node concept="1sVBvm" id="AbtmyXmdge" role="1sWHZn">
+            <node concept="3F0A7n" id="AbtmyXmdgp" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
+              <node concept="VPxyj" id="AbtmyXnuqv" role="3F10Kt" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
