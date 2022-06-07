@@ -52,7 +52,6 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
-      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
@@ -548,8 +547,9 @@
     <property role="3GE5qa" value="query.event" />
     <ref role="1XX52x" to="3k3a:5OLkeRmrp8m" resolve="Event" />
     <node concept="3EZMnI" id="5OLkeRmrpcJ" role="2wV5jI">
-      <node concept="3F1sOY" id="5OLkeRmrpdf" role="3EZMnx">
-        <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
+      <node concept="3F0A7n" id="AbtmyXsDSQ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
       </node>
       <node concept="3F0ifn" id="7CQR1P0E1ke" role="3EZMnx">
         <property role="3F0ifm" value=":=" />
@@ -567,11 +567,9 @@
     <property role="3GE5qa" value="query.sample" />
     <ref role="1XX52x" to="3k3a:2y6cZTVKoid" resolve="Sample" />
     <node concept="3EZMnI" id="7CQR1P0E1if" role="2wV5jI">
-      <node concept="3F1sOY" id="7CQR1P0E1iA" role="3EZMnx">
-        <ref role="1NtTu8" to="3k3a:2y6cZTVKojk" resolve="identifier" />
-      </node>
-      <node concept="3F0ifn" id="7CQR1P0E1jg" role="3EZMnx">
-        <property role="3F0ifm" value=":=" />
+      <node concept="3F0A7n" id="AbtmyXsDRf" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
       </node>
       <node concept="3F0A7n" id="7CQR1P0E1jx" role="3EZMnx">
         <ref role="1NtTu8" to="3k3a:7CQR1P0E19j" resolve="aggregator" />
@@ -631,17 +629,11 @@
     <property role="3GE5qa" value="query.filter.argument" />
     <ref role="1XX52x" to="3k3a:7CQR1P0ISig" resolve="SampleFilterArgument" />
     <node concept="3EZMnI" id="7CQR1P0JjL4" role="2wV5jI">
-      <node concept="1iCGBv" id="7CQR1P0K9Yr" role="3EZMnx">
-        <ref role="1NtTu8" to="3k3a:7CQR1P0ISj1" resolve="identifier" />
-        <node concept="1sVBvm" id="7CQR1P0K9Yt" role="1sWHZn">
-          <node concept="3F0A7n" id="7CQR1P0Ka3N" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
-          </node>
-        </node>
-      </node>
       <node concept="l2Vlx" id="7CQR1P0JjL7" role="2iSdaV" />
+      <node concept="3F0A7n" id="AbtmyXsDPw" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="7CQR1P0KvoY">
@@ -764,19 +756,13 @@
   <node concept="24kQdi" id="2z3DZjVa0kk">
     <property role="3GE5qa" value="query.event" />
     <ref role="1XX52x" to="3k3a:2z3DZjVa0iZ" resolve="EventReference" />
-    <node concept="1iCGBv" id="AbtmyXmdf_" role="2wV5jI">
+    <node concept="1iCGBv" id="AbtmyXt1mV" role="2wV5jI">
       <ref role="1NtTu8" to="3k3a:2z3DZjVa0jo" resolve="event" />
-      <node concept="1sVBvm" id="AbtmyXmdfB" role="1sWHZn">
-        <node concept="1iCGBv" id="AbtmyXmdgc" role="2wV5jI">
-          <ref role="1NtTu8" to="3k3a:5OLkeRmrp9_" resolve="identifier" />
-          <node concept="1sVBvm" id="AbtmyXmdge" role="1sWHZn">
-            <node concept="3F0A7n" id="AbtmyXmdgp" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
-              <node concept="VPxyj" id="AbtmyXnuqv" role="3F10Kt" />
-            </node>
-          </node>
+      <node concept="1sVBvm" id="AbtmyXt1mX" role="1sWHZn">
+        <node concept="3F0A7n" id="AbtmyXt1nc" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <ref role="1k5W1q" node="5OLkeRmrg4R" resolve="identifier" />
         </node>
       </node>
     </node>
