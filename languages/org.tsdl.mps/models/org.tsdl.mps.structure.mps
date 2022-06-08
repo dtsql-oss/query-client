@@ -126,12 +126,19 @@
       <property role="TrG5h" value="endpoint" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyj" id="7$8QgCHQGIx" role="1TKVEi">
-      <property role="IQ2ns" value="8721459316145179553" />
+    <node concept="1TJgyj" id="6EdjbK86O66" role="1TKVEi">
+      <property role="IQ2ns" value="7677877310210130310" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="payload" />
+      <property role="20kJfa" value="storage" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7$8QgCHQGG2" resolve="PayloadSpecification" />
+      <ref role="20lvS9" node="2QA0YOlt_bY" resolve="StorageSpecification" />
+    </node>
+    <node concept="1TJgyj" id="6EdjbK86O67" role="1TKVEi">
+      <property role="IQ2ns" value="7677877310210130311" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="query" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2QA0YOlsNvV" resolve="TsdlQuery" />
     </node>
   </node>
   <node concept="1TIwiD" id="2QA0YOlt_bY">
@@ -216,26 +223,6 @@
       <property role="20kJfa" value="properties" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2QA0YOlt_c5" resolve="StorageProperty" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7$8QgCHQGG2">
-    <property role="EcuMT" value="8721459316145179394" />
-    <property role="3GE5qa" value="client" />
-    <property role="TrG5h" value="PayloadSpecification" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7$8QgCHQGGG" role="1TKVEi">
-      <property role="IQ2ns" value="8721459316145179436" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="storage" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2QA0YOlt_bY" resolve="StorageSpecification" />
-    </node>
-    <node concept="1TJgyj" id="7$8QgCHQGGH" role="1TKVEi">
-      <property role="IQ2ns" value="8721459316145179437" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="query" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2QA0YOlsNvV" resolve="TsdlQuery" />
     </node>
   </node>
   <node concept="1TIwiD" id="5OLkeRmqm5$">
