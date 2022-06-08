@@ -126,6 +126,16 @@
       <property role="TrG5h" value="endpoint" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="6EdjbK88c6m" role="1TKVEl">
+      <property role="IQ2nx" value="7677877310210490774" />
+      <property role="TrG5h" value="showStorageSpecification" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6EdjbK8eAB2" role="1TKVEl">
+      <property role="IQ2nx" value="7677877310212172226" />
+      <property role="TrG5h" value="showSettings" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6EdjbK86O66" role="1TKVEi">
       <property role="IQ2ns" value="7677877310210130310" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
