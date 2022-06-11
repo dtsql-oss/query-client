@@ -356,6 +356,13 @@
     <property role="TrG5h" value="Sample" />
     <property role="34LRSv" value="sample" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4hHWxo7Yskr" role="1TKVEi">
+      <property role="IQ2ns" value="4930863343477572891" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="echo" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4hHWxo7WCmc" resolve="EchoDeclaration" />
+    </node>
     <node concept="1TJgyi" id="7CQR1P0E19j" role="1TKVEl">
       <property role="IQ2nx" value="8806468139566502483" />
       <property role="TrG5h" value="aggregator" />
@@ -388,6 +395,11 @@
       <property role="3tVfz5" value="2920078576487335320" />
       <property role="TrG5h" value="avg" />
       <property role="1L1pqM" value="average" />
+    </node>
+    <node concept="25R33" id="4hHWxo80wiM" role="25R1y">
+      <property role="3tVfz5" value="4930863343478113458" />
+      <property role="TrG5h" value="count" />
+      <property role="1L1pqM" value="count" />
     </node>
   </node>
   <node concept="1TIwiD" id="7CQR1P0HPzM">
@@ -564,6 +576,35 @@
     <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="Number" />
     <property role="FLfZY" value="-?[0-9]+(\\.[0-9]+)?" />
+  </node>
+  <node concept="1TIwiD" id="4hHWxo7WCmc">
+    <property role="EcuMT" value="4930863343477097868" />
+    <property role="3GE5qa" value="query" />
+    <property role="TrG5h" value="EchoDeclaration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="4hHWxo7WCmL" role="1TKVEi">
+      <property role="IQ2ns" value="4930863343477097905" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4hHWxo7WCmf" resolve="EchoArgument" />
+    </node>
+    <node concept="1TJgyi" id="4hHWxo7WCmd" role="1TKVEl">
+      <property role="IQ2nx" value="4930863343477097869" />
+      <property role="TrG5h" value="shouldEcho" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4hHWxo7WCmf">
+    <property role="EcuMT" value="4930863343477097871" />
+    <property role="3GE5qa" value="query" />
+    <property role="TrG5h" value="EchoArgument" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="4hHWxo7WCmg" role="1TKVEl">
+      <property role="IQ2nx" value="4930863343477097872" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

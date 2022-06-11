@@ -39,7 +39,9 @@
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="2468431357014947084" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Text" flags="ig" index="293xgL" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
         <child id="928328222691832421" name="separatorTextQuery" index="2gpyvW" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
@@ -117,6 +119,9 @@
         <child id="5692353713941631155" name="textFunction" index="1hCDOS" />
         <child id="4056398722183895554" name="items" index="1vlqcB" />
       </concept>
+      <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
+        <reference id="9122903797312247166" name="style" index="1wgcnl" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -159,6 +164,9 @@
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
       </concept>
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
+      <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
+        <child id="1950447826683828796" name="target" index="3XvnJa" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -392,11 +400,19 @@
         <property role="Vbekb" value="g1_kEg4/ITALIC" />
       </node>
     </node>
+    <node concept="14StLt" id="4hHWxo7Y0wz" role="V601i">
+      <property role="TrG5h" value="disabled" />
+      <node concept="VechU" id="4hHWxo7Ya5J" role="3F10Kt">
+        <property role="Vb096" value="fLJRk5B/darkGray" />
+      </node>
+      <node concept="Vb9p2" id="4hHWxo7Ya64" role="3F10Kt" />
+    </node>
     <node concept="14StLt" id="6EdjbK8otuD" role="V601i">
       <property role="TrG5h" value="settingsItem" />
-      <node concept="Vb9p2" id="6EdjbK8otv4" role="3F10Kt" />
-      <node concept="VechU" id="6EdjbK8otva" role="3F10Kt">
-        <property role="Vb096" value="fLJRk5B/darkGray" />
+      <node concept="3Xmtl4" id="4hHWxo7Ya5Q" role="3F10Kt">
+        <node concept="1wgc9g" id="4hHWxo7Ya5S" role="3XvnJa">
+          <ref role="1wgcnl" node="4hHWxo7Y0wz" resolve="disabled" />
+        </node>
       </node>
     </node>
   </node>
@@ -803,6 +819,12 @@
         <ref role="1NtTu8" to="3k3a:7CQR1P0E19j" resolve="aggregator" />
         <ref role="1k5W1q" node="7CQR1P0F2xN" resolve="keyword" />
       </node>
+      <node concept="3F0ifn" id="4hHWxo7ZAnS" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
+      </node>
+      <node concept="3F1sOY" id="4hHWxo7Ysky" role="3EZMnx">
+        <ref role="1NtTu8" to="3k3a:4hHWxo7Yskr" resolve="echo" />
+      </node>
       <node concept="l2Vlx" id="7CQR1P0E1ii" role="2iSdaV" />
     </node>
   </node>
@@ -1144,6 +1166,45 @@
       </node>
     </node>
     <node concept="22hDWj" id="6EdjbK8r7If" role="22hAXT" />
+  </node>
+  <node concept="24kQdi" id="4hHWxo7WCmG">
+    <property role="3GE5qa" value="query" />
+    <ref role="1XX52x" to="3k3a:4hHWxo7WCmf" resolve="EchoArgument" />
+    <node concept="3F0A7n" id="4hHWxo7WCmI" role="2wV5jI">
+      <ref role="1NtTu8" to="3k3a:4hHWxo7WCmg" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4hHWxo7WCnd">
+    <property role="3GE5qa" value="query" />
+    <ref role="1XX52x" to="3k3a:4hHWxo7WCmc" resolve="EchoDeclaration" />
+    <node concept="3EZMnI" id="4hHWxo7Xsi5" role="2wV5jI">
+      <node concept="l2Vlx" id="4hHWxo7Xsi6" role="2iSdaV" />
+      <node concept="2yq9I_" id="4hHWxo7WCnf" role="3EZMnx">
+        <ref role="225u1j" to="3k3a:4hHWxo7WCmd" resolve="shouldEcho" />
+        <node concept="jv8YD" id="4hHWxo7XshP" role="1563LE" />
+        <node concept="3F0ifn" id="4hHWxo7WCnm" role="2fqkNU">
+          <property role="3F0ifm" value="echo" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4hHWxo7Z1QU" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F2HdR" id="4hHWxo7Xsiu" role="3EZMnx">
+        <property role="2czwfO" value=", " />
+        <ref role="1NtTu8" to="3k3a:4hHWxo7WCmL" resolve="arguments" />
+        <node concept="l2Vlx" id="4hHWxo7Xsiw" role="2czzBx" />
+        <node concept="lj46D" id="4hHWxo7XsiC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="4hHWxo7Y0ky" role="2czzBI">
+          <property role="3F0ifm" value="&lt;no arguments&gt;" />
+          <ref role="1k5W1q" node="4hHWxo7Y0wz" resolve="disabled" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4hHWxo7Z1Re" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+    </node>
   </node>
 </model>
 
