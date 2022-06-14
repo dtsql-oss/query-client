@@ -240,6 +240,12 @@
     <property role="3GE5qa" value="query.result" />
     <property role="TrG5h" value="ResultDeclaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2KOJK2eN42b" role="1TKVEi">
+      <property role="IQ2ns" value="3185380845574439051" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sample" />
+      <ref role="20lvS9" node="AbtmyXvdLe" resolve="SampleReference" />
+    </node>
     <node concept="1TJgyi" id="5OLkeRmqnvI" role="1TKVEl">
       <property role="IQ2nx" value="6715237501820827630" />
       <property role="TrG5h" value="format" />
@@ -269,6 +275,11 @@
       <property role="3tVfz5" value="6715237501820827589" />
       <property role="TrG5h" value="dataPoints" />
       <property role="1L1pqM" value="data points" />
+    </node>
+    <node concept="25R33" id="2KOJK2eN1Ap" role="25R1y">
+      <property role="3tVfz5" value="3185380845574429081" />
+      <property role="TrG5h" value="sample" />
+      <property role="1L1pqM" value="sample" />
     </node>
   </node>
   <node concept="1TIwiD" id="5OLkeRmrfOz">

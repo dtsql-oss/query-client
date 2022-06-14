@@ -10,6 +10,7 @@
     <language id="46aa8ee8-407e-4248-9dfb-28e58581faab" name="org.tsdl.mps">
       <concept id="6715237501820821860" name="org.tsdl.mps.structure.ResultDeclaration" flags="ng" index="2bm369">
         <property id="6715237501820827630" name="format" index="2bm2s3" />
+        <child id="3185380845574439051" name="sample" index="2yYfYb" />
       </concept>
       <concept id="6715237501821096470" name="org.tsdl.mps.structure.Event" flags="ng" index="2bncbV">
         <child id="7959011757784751718" name="filter" index="7BG_w" />
@@ -447,6 +448,9 @@
     </node>
     <node concept="2bm369" id="7K3Px443cFs" role="2bm2wW">
       <property role="2bm2s3" value="5OLkeRmqnv5/dataPoints" />
+      <node concept="2OXU$A" id="2KOJK2eOAdz" role="2yYfYb">
+        <ref role="2OXU$n" node="7K3Px443cFA" resolve="myAverage" />
+      </node>
     </node>
   </node>
 </model>
