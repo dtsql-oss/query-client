@@ -26,7 +26,6 @@
       </concept>
       <concept id="3289320894642931274" name="org.tsdl.mps.structure.TsdlClient" flags="ng" index="SO4mB">
         <property id="8721459316144776736" name="endpoint" index="1kR7WE" />
-        <property id="7677877310210490774" name="showStorageSpecification" index="1yFoOE" />
         <child id="7677877310210130310" name="storage" index="1y_wOU" />
         <child id="7677877310210130311" name="query" index="1y_wOV" />
       </concept>
@@ -260,7 +259,6 @@
     <property role="TrG5h" value="TestClient" />
     <property role="3GE5qa" value="client" />
     <property role="1kR7WE" value="http://localhost:8080/query" />
-    <property role="1yFoOE" value="true" />
     <node concept="SO54j" id="6EdjbK8883X" role="1y_wOU">
       <property role="SO53I" value="csv" />
       <node concept="39UX5S" id="6EdjbK8883Y" role="SO53t" />
@@ -326,6 +324,12 @@
                 </node>
               </node>
             </node>
+            <node concept="UzlxG" id="2KOJK2eOMYD" role="UzkwL">
+              <property role="Uy_wT" value="7CQR1P0ITfc/gt" />
+              <node concept="Uzlz6" id="2KOJK2eOMZ0" role="UWLRV">
+                <property role="Uzl$t" value="22323" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="2bncbV" id="6EdjbK88851" role="2bn53N">
@@ -355,7 +359,10 @@
         </node>
       </node>
       <node concept="2bm369" id="6EdjbK88846" role="2bm2wW">
-        <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
+        <property role="2bm2s3" value="2KOJK2eN1Ap/sample" />
+        <node concept="2OXU$A" id="2KOJK2eON1j" role="2yYfYb">
+          <ref role="2OXU$n" node="6EdjbK88849" resolve="myAvg" />
+        </node>
       </node>
     </node>
   </node>
@@ -447,10 +454,7 @@
       </node>
     </node>
     <node concept="2bm369" id="7K3Px443cFs" role="2bm2wW">
-      <property role="2bm2s3" value="5OLkeRmqnv5/dataPoints" />
-      <node concept="2OXU$A" id="2KOJK2eOAdz" role="2yYfYb">
-        <ref role="2OXU$n" node="7K3Px443cFA" resolve="myAverage" />
-      </node>
+      <property role="2bm2s3" value="5OLkeRmqnu_/shortestPeriod" />
     </node>
   </node>
 </model>
