@@ -242,12 +242,6 @@
         <child id="1340057216891284122" name="ui" index="1563LE" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
-        <property id="2034914114981261751" name="severity" index="RRSoG" />
-        <child id="2034914114981261753" name="message" index="RRSoy" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="4705942098322609812" name="jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation" flags="ng" index="21noJN">
         <child id="4705942098322609813" name="member" index="21noJM" />
@@ -1086,19 +1080,13 @@
   </node>
   <node concept="1h_SRR" id="6EdjbK8eABw">
     <property role="3GE5qa" value="client" />
-    <property role="TrG5h" value="ToggleSettings" />
+    <property role="TrG5h" value="ToggleSettings_Action" />
     <ref role="1h_SK9" to="3k3a:2QA0YOlt$pa" resolve="TsdlClient" />
     <node concept="1hA7zw" id="6EdjbK8eABx" role="1h_SK8">
       <property role="1hAc7j" value="1FSxSwWqMNJ/click_action_id" />
       <property role="1hHO97" value="Show/Hide Settings" />
       <node concept="1hAIg9" id="6EdjbK8eABy" role="1hA7z_">
         <node concept="3clFbS" id="6EdjbK8eABz" role="2VODD2">
-          <node concept="RRSsy" id="6EdjbK8fmLP" role="3cqZAp">
-            <property role="RRSoG" value="gZ5fksE/warn" />
-            <node concept="Xl_RD" id="6EdjbK8fmLR" role="RRSoy">
-              <property role="Xl_RC" value="heast" />
-            </node>
-          </node>
           <node concept="3clFbF" id="6EdjbK8eABK" role="3cqZAp">
             <node concept="37vLTI" id="6EdjbK8eBF4" role="3clFbG">
               <node concept="3fqX7Q" id="6EdjbK8eBJj" role="37vLTx">
