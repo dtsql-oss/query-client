@@ -7,9 +7,6 @@
     <modelRoot contentPath="D:/Universitaet/Diplomarbeit/repos/mps/libs" type="java_classes">
       <sourceRoot location="." />
       <sourceRoot location="client-0.1-SNAPSHOT.jar" />
-      <sourceRoot location="jackson-annotations-2.11.0.jar" />
-      <sourceRoot location="jackson-core-2.11.0.jar" />
-      <sourceRoot location="jackson-databind-2.11.0.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -19,9 +16,6 @@
   </facets>
   <stubModelEntries>
     <stubModelEntry path="D:/Universitaet/Diplomarbeit/repos/mps/libs/client-0.1-SNAPSHOT.jar" />
-    <stubModelEntry path="D:/Universitaet/Diplomarbeit/repos/mps/libs/jackson-annotations-2.11.0.jar" />
-    <stubModelEntry path="D:/Universitaet/Diplomarbeit/repos/mps/libs/jackson-core-2.11.0.jar" />
-    <stubModelEntry path="D:/Universitaet/Diplomarbeit/repos/mps/libs/jackson-databind-2.11.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
