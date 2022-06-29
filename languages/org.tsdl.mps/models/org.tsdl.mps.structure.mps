@@ -8,6 +8,7 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" />
+    <import index="8t3c" ref="6c7fca95-8dd3-46cb-81a8-e44bb79e732b/java:org.tsdl.client(org.tsdl.mps.runtime/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -586,7 +587,7 @@
     <property role="EcuMT" value="687772460820257870" />
     <property role="3GE5qa" value="query.sample" />
     <property role="TrG5h" value="SampleReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="AbtmyXvdLZ" role="1TKVEi">
       <property role="IQ2ns" value="687772460820257919" />
       <property role="20kJfa" value="sample" />
@@ -604,7 +605,7 @@
     <property role="EcuMT" value="4930863343477097868" />
     <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="EchoDeclaration" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4hHWxo7WCmL" role="1TKVEi">
       <property role="IQ2ns" value="4930863343477097905" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -622,7 +623,7 @@
     <property role="EcuMT" value="4930863343477097871" />
     <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="EchoArgument" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4hHWxo7WCmg" role="1TKVEl">
       <property role="IQ2nx" value="4930863343477097872" />
       <property role="TrG5h" value="value" />

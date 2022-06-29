@@ -360,10 +360,10 @@
         <node concept="UwojJ" id="6EdjbK8884V" role="Uwo3r">
           <property role="Uwokm" value="5OLkeRmrfRm/precedes" />
           <node concept="3jUUdb" id="6EdjbK8884W" role="3jUUa6">
-            <ref role="3jUUcG" node="6EdjbK8884z" resolve="superEvent1" />
+            <ref role="3jUUcG" node="6EdjbK8884z" resolve="low" />
           </node>
           <node concept="3jUUdb" id="6EdjbK8884X" role="3jUU9A">
-            <ref role="3jUUcG" node="6EdjbK88851" resolve="ev2" />
+            <ref role="3jUUcG" node="6EdjbK88851" resolve="high" />
           </node>
         </node>
       </node>

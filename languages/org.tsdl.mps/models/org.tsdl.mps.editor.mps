@@ -524,7 +524,7 @@
           <node concept="1u4HXA" id="6EdjbK8ihvq" role="3EZMnx">
             <property role="1ubRXE" value="${module}/icons/hide-settings-gear-24x24.png" />
             <property role="1$Qi42" value="0" />
-            <ref role="1ERwB7" node="6EdjbK8eABw" resolve="ToggleSettings" />
+            <ref role="1ERwB7" node="6EdjbK8eABw" resolve="ToggleSettings_Action" />
           </node>
           <node concept="3F0ifn" id="6EdjbK8ihvw" role="3EZMnx">
             <property role="3F0ifm" value=" hide settings" />
@@ -548,7 +548,7 @@
           <node concept="1u4HXA" id="6EdjbK8ihA8" role="3EZMnx">
             <property role="1ubRXE" value="${module}/icons/settings-gear-24x24.png" />
             <property role="1$Qi42" value="0" />
-            <ref role="1ERwB7" node="6EdjbK8eABw" resolve="ToggleSettings" />
+            <ref role="1ERwB7" node="6EdjbK8eABw" resolve="ToggleSettings_Action" />
           </node>
           <node concept="3F0ifn" id="6EdjbK8ihAe" role="3EZMnx">
             <property role="3F0ifm" value=" show settings" />
