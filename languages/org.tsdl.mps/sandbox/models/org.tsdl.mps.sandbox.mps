@@ -4,6 +4,7 @@
   <languages>
     <use id="46aa8ee8-407e-4248-9dfb-28e58581faab" name="org.tsdl.mps" version="0" />
     <use id="b0f068cb-6560-4849-b0f3-0b78a60641de" name="org.tsdl.mps.json" version="0" />
+    <use id="83560e48-c372-4544-a597-16182a7f78a2" name="org.tsdl.mps.scripting" version="0" />
   </languages>
   <imports />
   <registry>
@@ -26,6 +27,7 @@
       </concept>
       <concept id="3289320894642931274" name="org.tsdl.mps.structure.TsdlClient" flags="ng" index="SO4mB">
         <property id="8721459316144776736" name="endpoint" index="1kR7WE" />
+        <property id="7677877310210490774" name="showStorageSpecification" index="1yFoOE" />
         <child id="7677877310210130310" name="storage" index="1y_wOU" />
         <child id="7677877310210130311" name="query" index="1y_wOV" />
       </concept>
@@ -111,6 +113,12 @@
       </concept>
       <concept id="4445988724943966591" name="org.tsdl.mps.json.structure.JsonPair" flags="ng" index="2W7w9f">
         <child id="4445988724943966594" name="value" index="2W7waM" />
+      </concept>
+    </language>
+    <language id="83560e48-c372-4544-a597-16182a7f78a2" name="org.tsdl.mps.scripting">
+      <concept id="8940555439270929395" name="org.tsdl.mps.scripting.structure.TsdlScript" flags="ng" index="3KvhwY">
+        <property id="8940555439270929512" name="endpoint" index="3KvhY_" />
+        <child id="8940555439270929579" name="storage" index="3KvhXA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -259,6 +267,7 @@
     <property role="TrG5h" value="TestClient" />
     <property role="3GE5qa" value="client" />
     <property role="1kR7WE" value="http://localhost:8080/query" />
+    <property role="1yFoOE" value="true" />
     <node concept="SO54j" id="6EdjbK8883X" role="1y_wOU">
       <property role="SO53I" value="csv" />
       <node concept="39UX5S" id="6EdjbK8883Y" role="SO53t" />
@@ -351,10 +360,10 @@
         <node concept="UwojJ" id="6EdjbK8884V" role="Uwo3r">
           <property role="Uwokm" value="5OLkeRmrfRm/precedes" />
           <node concept="3jUUdb" id="6EdjbK8884W" role="3jUUa6">
-            <ref role="3jUUcG" node="6EdjbK8884z" resolve="superEvent1" />
+            <ref role="3jUUcG" node="6EdjbK8884z" resolve="low" />
           </node>
           <node concept="3jUUdb" id="6EdjbK8884X" role="3jUU9A">
-            <ref role="3jUUcG" node="6EdjbK88851" resolve="ev2" />
+            <ref role="3jUUcG" node="6EdjbK88851" resolve="high" />
           </node>
         </node>
       </node>
@@ -455,6 +464,15 @@
     </node>
     <node concept="2bm369" id="7K3Px443cFs" role="2bm2wW">
       <property role="2bm2s3" value="5OLkeRmqnu_/shortestPeriod" />
+    </node>
+  </node>
+  <node concept="3KvhwY" id="7KjeWQcsGem">
+    <property role="3GE5qa" value="scripting" />
+    <property role="3KvhY_" value="pllp" />
+    <node concept="SO54j" id="7KjeWQcsGen" role="3KvhXA">
+      <node concept="39UX5S" id="7KjeWQcsGeo" role="SO53t" />
+      <node concept="39UX5S" id="7KjeWQcsGep" role="SO53v" />
+      <node concept="39UX5S" id="7KjeWQcsGeq" role="SO53o" />
     </node>
   </node>
 </model>

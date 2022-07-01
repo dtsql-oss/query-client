@@ -252,7 +252,7 @@
     <node concept="3aamgX" id="5o9QwbMDrFf" role="3acgRq">
       <ref role="30HIoZ" to="3k3a:2QA0YOlt$pa" resolve="TsdlClient" />
       <node concept="j$656" id="5o9QwbMDt68" role="1lVwrX">
-        <ref role="v9R2y" node="5o9QwbMDt66" resolve="reduce_PayloadSpecification" />
+        <ref role="v9R2y" node="5o9QwbMDt66" resolve="reduce_TsdlClient" />
       </node>
     </node>
     <node concept="3aamgX" id="5o9QwbMDvlq" role="3acgRq">
