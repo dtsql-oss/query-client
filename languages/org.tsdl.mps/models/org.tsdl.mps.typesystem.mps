@@ -11,6 +11,8 @@
     <import index="rl4a" ref="r:9d1f690b-bd3e-4cf9-bbea-769a003de8c2(org.tsdl.mps.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
+    <import index="6t7w" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.format(JDK/)" />
     <import index="3k3a" ref="r:5bd7f921-9d96-43f0-811e-1ca03308f407(org.tsdl.mps.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" implicit="true" />
@@ -554,6 +556,101 @@
       </node>
       <node concept="3Tm1VV" id="AbtmyXsJd$" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="SM$yDCYADJ" role="jymVt" />
+    <node concept="2YIFZL" id="SM$yDCYALM" role="jymVt">
+      <property role="TrG5h" value="checkDate" />
+      <node concept="3clFbS" id="SM$yDCYALP" role="3clF47">
+        <node concept="3clFbJ" id="SM$yDCYCdF" role="3cqZAp">
+          <node concept="22lmx$" id="SM$yDCYCUh" role="3clFbw">
+            <node concept="2OqwBi" id="SM$yDCYEuv" role="3uHU7w">
+              <node concept="2OqwBi" id="SM$yDCYDl3" role="2Oq$k0">
+                <node concept="37vLTw" id="SM$yDCYCY8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="SM$yDCYAOE" resolve="date" />
+                </node>
+                <node concept="17S1cR" id="SM$yDCYE0Y" role="2OqNvi" />
+              </node>
+              <node concept="liA8E" id="SM$yDCYE$C" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.isBlank()" resolve="isBlank" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="SM$yDCYCAB" role="3uHU7B">
+              <node concept="37vLTw" id="SM$yDCYCfA" role="3uHU7B">
+                <ref role="3cqZAo" node="SM$yDCYAOE" resolve="date" />
+              </node>
+              <node concept="10Nm6u" id="SM$yDCYCTo" role="3uHU7w" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="SM$yDCYCdH" role="3clFbx">
+            <node concept="YS8fn" id="SM$yDCYEBZ" role="3cqZAp">
+              <node concept="2ShNRf" id="SM$yDCYEE1" role="YScLw">
+                <node concept="1pGfFk" id="SM$yDCYG2u" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                  <node concept="Xl_RD" id="SM$yDCYGbu" role="37wK5m">
+                    <property role="Xl_RC" value="date must not be null or blank" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="SM$yDCYGGv" role="3cqZAp" />
+        <node concept="3J1_TO" id="SM$yDCYGLC" role="3cqZAp">
+          <node concept="3uVAMA" id="SM$yDCYHff" role="1zxBo5">
+            <node concept="XOnhg" id="SM$yDCYHfg" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="SM$yDCYHfh" role="1tU5fm">
+                <node concept="3uibUv" id="SM$yDCYIpV" role="nSUat">
+                  <ref role="3uigEE" to="6t7w:~DateTimeParseException" resolve="DateTimeParseException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="SM$yDCYHfi" role="1zc67A">
+              <node concept="YS8fn" id="SM$yDCYIAk" role="3cqZAp">
+                <node concept="2ShNRf" id="SM$yDCYIH$" role="YScLw">
+                  <node concept="1pGfFk" id="SM$yDCYLU1" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
+                    <node concept="2YIFZM" id="SM$yDD1Yc7" role="37wK5m">
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+                      <node concept="Xl_RD" id="SM$yDD1Yw7" role="37wK5m">
+                        <property role="Xl_RC" value="Text '%s' is not a valid date." />
+                      </node>
+                      <node concept="2OqwBi" id="SM$yDD1ZzI" role="37wK5m">
+                        <node concept="37vLTw" id="SM$yDD1Z1f" role="2Oq$k0">
+                          <ref role="3cqZAo" node="SM$yDCYHfg" resolve="e" />
+                        </node>
+                        <node concept="liA8E" id="SM$yDD20jW" role="2OqNvi">
+                          <ref role="37wK5l" to="6t7w:~DateTimeParseException.getParsedString()" resolve="getParsedString" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="SM$yDCYGLE" role="1zxBo7">
+            <node concept="3clFbF" id="SM$yDCYGOs" role="3cqZAp">
+              <node concept="2YIFZM" id="SM$yDCYH2J" role="3clFbG">
+                <ref role="37wK5l" to="28m1:~Instant.parse(java.lang.CharSequence)" resolve="parse" />
+                <ref role="1Pybhc" to="28m1:~Instant" resolve="Instant" />
+                <node concept="37vLTw" id="SM$yDCYH4Z" role="37wK5m">
+                  <ref role="3cqZAo" node="SM$yDCYAOE" resolve="date" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="SM$yDCYAIQ" role="1B3o_S" />
+      <node concept="3cqZAl" id="SM$yDCYALw" role="3clF45" />
+      <node concept="37vLTG" id="SM$yDCYAOE" role="3clF46">
+        <property role="TrG5h" value="date" />
+        <node concept="17QB3L" id="SM$yDCYAOD" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="AbtmyXsErg" role="1B3o_S" />
   </node>
   <node concept="18kY7G" id="AbtmyXsJ2X">
@@ -607,59 +704,6 @@
     <node concept="1YaCAy" id="AbtmyXsJ30" role="1YuTPh">
       <property role="TrG5h" value="event" />
       <ref role="1YaFvo" to="3k3a:5OLkeRmrp8m" resolve="Event" />
-    </node>
-  </node>
-  <node concept="18kY7G" id="AbtmyXsPs0">
-    <property role="TrG5h" value="check_Sample" />
-    <property role="3GE5qa" value="query.sample" />
-    <node concept="3clFbS" id="AbtmyXsPs1" role="18ibNy">
-      <node concept="3J1_TO" id="AbtmyXsPsf" role="3cqZAp">
-        <node concept="3uVAMA" id="AbtmyXsPsg" role="1zxBo5">
-          <node concept="XOnhg" id="AbtmyXsPsh" role="1zc67B">
-            <property role="TrG5h" value="e" />
-            <node concept="nSUau" id="AbtmyXsPsi" role="1tU5fm">
-              <node concept="3uibUv" id="AbtmyXsPsj" role="nSUat">
-                <ref role="3uigEE" to="wyt6:~IllegalStateException" resolve="IllegalStateException" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="AbtmyXsPsk" role="1zc67A">
-            <node concept="2MkqsV" id="AbtmyXsPsl" role="3cqZAp">
-              <node concept="2OqwBi" id="AbtmyXsPsm" role="2MkJ7o">
-                <node concept="37vLTw" id="AbtmyXsPsn" role="2Oq$k0">
-                  <ref role="3cqZAo" node="AbtmyXsPsh" resolve="e" />
-                </node>
-                <node concept="liA8E" id="AbtmyXsPso" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                </node>
-              </node>
-              <node concept="1YBJjd" id="AbtmyXsPsp" role="1urrMF">
-                <ref role="1YBMHb" node="AbtmyXsPs3" resolve="sample" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbS" id="AbtmyXsPsq" role="1zxBo7">
-          <node concept="3clFbF" id="AbtmyXsPsr" role="3cqZAp">
-            <node concept="2YIFZM" id="AbtmyXsPss" role="3clFbG">
-              <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
-              <ref role="37wK5l" node="AbtmyXsJcX" resolve="checkIdentifier" />
-              <node concept="2OqwBi" id="AbtmyXsPst" role="37wK5m">
-                <node concept="1YBJjd" id="AbtmyXsPsu" role="2Oq$k0">
-                  <ref role="1YBMHb" node="AbtmyXsPs3" resolve="sample" />
-                </node>
-                <node concept="3TrcHB" id="AbtmyXsPsv" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="AbtmyXsPs3" role="1YuTPh">
-      <property role="TrG5h" value="sample" />
-      <ref role="1YaFvo" to="3k3a:2y6cZTVKoid" resolve="Sample" />
     </node>
   </node>
   <node concept="18kY7G" id="AbtmyXsPIu">
@@ -1122,6 +1166,200 @@
     <node concept="1YaCAy" id="2KOJK2eNsw_" role="1YuTPh">
       <property role="TrG5h" value="resultDeclaration" />
       <ref role="1YaFvo" to="3k3a:5OLkeRmqm5$" resolve="ResultDeclaration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="SM$yDCYyuF">
+    <property role="TrG5h" value="check_GlobalSample" />
+    <property role="3GE5qa" value="query.sample" />
+    <node concept="3clFbS" id="SM$yDCYyuG" role="18ibNy">
+      <node concept="3J1_TO" id="SM$yDCYyv6" role="3cqZAp">
+        <node concept="3uVAMA" id="SM$yDCYyv7" role="1zxBo5">
+          <node concept="XOnhg" id="SM$yDCYyv8" role="1zc67B">
+            <property role="TrG5h" value="e" />
+            <node concept="nSUau" id="SM$yDCYyv9" role="1tU5fm">
+              <node concept="3uibUv" id="SM$yDCYyva" role="nSUat">
+                <ref role="3uigEE" to="wyt6:~IllegalStateException" resolve="IllegalStateException" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="SM$yDCYyvb" role="1zc67A">
+            <node concept="2MkqsV" id="SM$yDCYyvc" role="3cqZAp">
+              <node concept="2OqwBi" id="SM$yDCYyvd" role="2MkJ7o">
+                <node concept="37vLTw" id="SM$yDCYyve" role="2Oq$k0">
+                  <ref role="3cqZAo" node="SM$yDCYyv8" resolve="e" />
+                </node>
+                <node concept="liA8E" id="SM$yDCYyvf" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                </node>
+              </node>
+              <node concept="1YBJjd" id="SM$yDCYyvg" role="1urrMF">
+                <ref role="1YBMHb" node="SM$yDCYyuI" resolve="globalSample" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="SM$yDCYyvh" role="1zxBo7">
+          <node concept="3clFbF" id="SM$yDCYyvi" role="3cqZAp">
+            <node concept="2YIFZM" id="SM$yDCYyvj" role="3clFbG">
+              <ref role="37wK5l" node="AbtmyXsJcX" resolve="checkIdentifier" />
+              <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
+              <node concept="2OqwBi" id="SM$yDCYyvk" role="37wK5m">
+                <node concept="1YBJjd" id="SM$yDCYyvl" role="2Oq$k0">
+                  <ref role="1YBMHb" node="SM$yDCYyuI" resolve="globalSample" />
+                </node>
+                <node concept="3TrcHB" id="SM$yDCYyvm" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="SM$yDCYyuI" role="1YuTPh">
+      <property role="TrG5h" value="globalSample" />
+      <ref role="1YaFvo" to="3k3a:SM$yDCYtQy" resolve="GlobalSample" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="SM$yDCYzwN">
+    <property role="TrG5h" value="check_LocalSample" />
+    <property role="3GE5qa" value="query.sample" />
+    <node concept="3clFbS" id="SM$yDCYzwO" role="18ibNy">
+      <node concept="3J1_TO" id="SM$yDCYzKr" role="3cqZAp">
+        <node concept="3uVAMA" id="SM$yDCYzKs" role="1zxBo5">
+          <node concept="XOnhg" id="SM$yDCYzKt" role="1zc67B">
+            <property role="TrG5h" value="e" />
+            <node concept="nSUau" id="SM$yDCYzKu" role="1tU5fm">
+              <node concept="3uibUv" id="SM$yDCYzKv" role="nSUat">
+                <ref role="3uigEE" to="wyt6:~IllegalStateException" resolve="IllegalStateException" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="SM$yDCYzKw" role="1zc67A">
+            <node concept="2MkqsV" id="SM$yDCYzKx" role="3cqZAp">
+              <node concept="2OqwBi" id="SM$yDCYzKy" role="2MkJ7o">
+                <node concept="37vLTw" id="SM$yDCYzKz" role="2Oq$k0">
+                  <ref role="3cqZAo" node="SM$yDCYzKt" resolve="e" />
+                </node>
+                <node concept="liA8E" id="SM$yDCYzK$" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                </node>
+              </node>
+              <node concept="1YBJjd" id="SM$yDCYzK_" role="1urrMF">
+                <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="SM$yDCYzKA" role="1zxBo7">
+          <node concept="3clFbF" id="SM$yDCYzKB" role="3cqZAp">
+            <node concept="2YIFZM" id="SM$yDCYzKC" role="3clFbG">
+              <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
+              <ref role="37wK5l" node="AbtmyXsJcX" resolve="checkIdentifier" />
+              <node concept="2OqwBi" id="SM$yDCYzKD" role="37wK5m">
+                <node concept="1YBJjd" id="SM$yDCYzKE" role="2Oq$k0">
+                  <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
+                </node>
+                <node concept="3TrcHB" id="SM$yDCYzKF" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="SM$yDCYAcn" role="3cqZAp" />
+      <node concept="3J1_TO" id="SM$yDCYOau" role="3cqZAp">
+        <node concept="3uVAMA" id="SM$yDCYORv" role="1zxBo5">
+          <node concept="XOnhg" id="SM$yDCYORw" role="1zc67B">
+            <property role="TrG5h" value="e" />
+            <node concept="nSUau" id="SM$yDCYORx" role="1tU5fm">
+              <node concept="3uibUv" id="SM$yDCYOXu" role="nSUat">
+                <ref role="3uigEE" to="wyt6:~IllegalStateException" resolve="IllegalStateException" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="SM$yDCYORy" role="1zc67A">
+            <node concept="2MkqsV" id="SM$yDCYOYd" role="3cqZAp">
+              <node concept="2OqwBi" id="SM$yDCYPfq" role="2MkJ7o">
+                <node concept="37vLTw" id="SM$yDCYOYt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="SM$yDCYORw" resolve="e" />
+                </node>
+                <node concept="liA8E" id="SM$yDCYPJu" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                </node>
+              </node>
+              <node concept="1YBJjd" id="SM$yDCYPLt" role="1urrMF">
+                <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="SM$yDCYOaw" role="1zxBo7">
+          <node concept="3clFbF" id="SM$yDCYOcB" role="3cqZAp">
+            <node concept="2YIFZM" id="SM$yDCYOfD" role="3clFbG">
+              <ref role="37wK5l" node="SM$yDCYALM" resolve="checkDate" />
+              <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
+              <node concept="2OqwBi" id="SM$yDCYOp3" role="37wK5m">
+                <node concept="1YBJjd" id="SM$yDCYOgg" role="2Oq$k0">
+                  <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
+                </node>
+                <node concept="3TrcHB" id="SM$yDCYOOv" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:SM$yDCYtRT" resolve="lowerBound" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="SM$yDCYQoK" role="3cqZAp" />
+      <node concept="3J1_TO" id="SM$yDCYQtC" role="3cqZAp">
+        <node concept="3uVAMA" id="SM$yDCYQtD" role="1zxBo5">
+          <node concept="XOnhg" id="SM$yDCYQtE" role="1zc67B">
+            <property role="TrG5h" value="e" />
+            <node concept="nSUau" id="SM$yDCYQtF" role="1tU5fm">
+              <node concept="3uibUv" id="SM$yDCYQtG" role="nSUat">
+                <ref role="3uigEE" to="wyt6:~IllegalStateException" resolve="IllegalStateException" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="SM$yDCYQtH" role="1zc67A">
+            <node concept="2MkqsV" id="SM$yDCYQtI" role="3cqZAp">
+              <node concept="2OqwBi" id="SM$yDCYQtJ" role="2MkJ7o">
+                <node concept="37vLTw" id="SM$yDCYQtK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="SM$yDCYQtE" resolve="e" />
+                </node>
+                <node concept="liA8E" id="SM$yDCYQtL" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                </node>
+              </node>
+              <node concept="1YBJjd" id="SM$yDCYQtM" role="1urrMF">
+                <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="SM$yDCYQtN" role="1zxBo7">
+          <node concept="3clFbF" id="SM$yDCYQtO" role="3cqZAp">
+            <node concept="2YIFZM" id="SM$yDCYQtP" role="3clFbG">
+              <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
+              <ref role="37wK5l" node="SM$yDCYALM" resolve="checkDate" />
+              <node concept="2OqwBi" id="SM$yDCYQtQ" role="37wK5m">
+                <node concept="1YBJjd" id="SM$yDCYQtR" role="2Oq$k0">
+                  <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
+                </node>
+                <node concept="3TrcHB" id="SM$yDCYQRp" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:SM$yDCYtSf" resolve="upperBound" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="SM$yDCYzwQ" role="1YuTPh">
+      <property role="TrG5h" value="localSample" />
+      <ref role="1YaFvo" to="3k3a:SM$yDCYtR6" resolve="LocalSample" />
     </node>
   </node>
 </model>

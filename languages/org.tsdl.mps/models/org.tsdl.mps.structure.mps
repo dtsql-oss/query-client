@@ -28,6 +28,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -379,6 +380,7 @@
     <property role="3GE5qa" value="query.sample" />
     <property role="TrG5h" value="Sample" />
     <property role="34LRSv" value="sample" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4hHWxo7Yskr" role="1TKVEi">
       <property role="IQ2ns" value="4930863343477572891" />
@@ -627,6 +629,28 @@
     <node concept="1TJgyi" id="4hHWxo7WCmg" role="1TKVEl">
       <property role="IQ2nx" value="4930863343477097872" />
       <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="SM$yDCYtQy">
+    <property role="EcuMT" value="1023040776214011298" />
+    <property role="3GE5qa" value="query.sample" />
+    <property role="TrG5h" value="GlobalSample" />
+    <ref role="1TJDcQ" node="2y6cZTVKoid" resolve="Sample" />
+  </node>
+  <node concept="1TIwiD" id="SM$yDCYtR6">
+    <property role="EcuMT" value="1023040776214011334" />
+    <property role="3GE5qa" value="query.sample" />
+    <property role="TrG5h" value="LocalSample" />
+    <ref role="1TJDcQ" node="2y6cZTVKoid" resolve="Sample" />
+    <node concept="1TJgyi" id="SM$yDCYtRT" role="1TKVEl">
+      <property role="IQ2nx" value="1023040776214011385" />
+      <property role="TrG5h" value="lowerBound" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="SM$yDCYtSf" role="1TKVEl">
+      <property role="IQ2nx" value="1023040776214011407" />
+      <property role="TrG5h" value="upperBound" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
