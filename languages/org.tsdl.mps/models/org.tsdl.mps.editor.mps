@@ -580,6 +580,14 @@
             <ref role="1k5W1q" node="6EdjbK8otuD" resolve="settingsItem" />
           </node>
         </node>
+        <node concept="2yq9I_" id="5HNNZ2cMbvN" role="3EZMnx">
+          <ref role="225u1j" to="3k3a:5HNNZ2cMbaD" resolve="topmost" />
+          <node concept="jv8YD" id="5HNNZ2cMbwS" role="1563LE" />
+          <node concept="3F0ifn" id="5HNNZ2cMbyO" role="2fqkNU">
+            <property role="3F0ifm" value=" stay on top" />
+            <ref role="1k5W1q" node="6EdjbK8otuD" resolve="settingsItem" />
+          </node>
+        </node>
         <node concept="pVoyu" id="6EdjbK8h99u" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>

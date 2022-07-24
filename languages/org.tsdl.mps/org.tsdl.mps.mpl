@@ -28,6 +28,7 @@
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
         <dependency reexport="false">b0f068cb-6560-4849-b0f3-0b78a60641de(org.tsdl.mps.json)</dependency>
+        <dependency reexport="false">6c7fca95-8dd3-46cb-81a8-e44bb79e732b(org.tsdl.mps.runtime)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -158,6 +159,9 @@
     <module reference="b0f068cb-6560-4849-b0f3-0b78a60641de(org.tsdl.mps.json)" version="0" />
     <module reference="6c7fca95-8dd3-46cb-81a8-e44bb79e732b(org.tsdl.mps.runtime)" version="0" />
   </dependencyVersions>
+  <runtime>
+    <dependency reexport="false">6c7fca95-8dd3-46cb-81a8-e44bb79e732b(org.tsdl.mps.runtime)</dependency>
+  </runtime>
   <extendedLanguages>
     <extendedLanguage>4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)</extendedLanguage>
   </extendedLanguages>

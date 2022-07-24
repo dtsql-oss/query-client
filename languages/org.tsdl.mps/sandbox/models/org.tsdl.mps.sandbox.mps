@@ -27,8 +27,8 @@
       </concept>
       <concept id="3289320894642931274" name="org.tsdl.mps.structure.TsdlClient" flags="ng" index="SO4mB">
         <property id="8721459316144776736" name="endpoint" index="1kR7WE" />
+        <property id="6589839311834231465" name="topmost" index="3nIRPp" />
         <property id="7677877310210490774" name="showStorageSpecification" index="1yFoOE" />
-        <property id="7677877310212172226" name="showSettings" index="1yHMlY" />
         <child id="7677877310210130310" name="storage" index="1y_wOU" />
         <child id="7677877310210130311" name="query" index="1y_wOV" />
       </concept>
@@ -271,8 +271,8 @@
     <property role="TrG5h" value="TestClient" />
     <property role="3GE5qa" value="client" />
     <property role="1kR7WE" value="http://localhost:8080/query" />
-    <property role="1yHMlY" value="true" />
     <property role="1yFoOE" value="true" />
+    <property role="3nIRPp" value="true" />
     <node concept="SO54j" id="6EdjbK8883X" role="1y_wOU">
       <property role="SO53I" value="csv" />
       <node concept="39UX5S" id="6EdjbK8883Y" role="SO53t" />
