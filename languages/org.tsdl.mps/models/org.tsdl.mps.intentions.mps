@@ -51,26 +51,51 @@
       </concept>
     </language>
   </registry>
-  <node concept="2S6QgY" id="6EdjbK8qs6b">
-    <property role="3GE5qa" value="query.filter" />
-    <property role="TrG5h" value="FilterOperator_negate" />
-    <ref role="2ZfgGC" to="3k3a:7CQR1P0IShL" resolve="FilterOperator" />
-    <node concept="2S6ZIM" id="6EdjbK8qs6c" role="2ZfVej">
-      <node concept="3clFbS" id="6EdjbK8qs6d" role="2VODD2">
-        <node concept="3clFbF" id="6EdjbK8qsc7" role="3cqZAp">
-          <node concept="Xl_RD" id="6EdjbK8qsc6" role="3clFbG">
+  <node concept="2S6QgY" id="5HNNZ2dbJpf">
+    <property role="3GE5qa" value="query.filter.threshold" />
+    <property role="TrG5h" value="ThresholdFilterOperator_negate" />
+    <ref role="2ZfgGC" to="3k3a:5HNNZ2dbDHu" resolve="ThresholdFilter" />
+    <node concept="2S6ZIM" id="5HNNZ2dbJpg" role="2ZfVej">
+      <node concept="3clFbS" id="5HNNZ2dbJph" role="2VODD2">
+        <node concept="3clFbF" id="5HNNZ2dbJsk" role="3cqZAp">
+          <node concept="Xl_RD" id="5HNNZ2dbJsj" role="3clFbG">
             <property role="Xl_RC" value="Negate Filter Argument" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2Sbjvc" id="6EdjbK8qs6e" role="2ZfgGD">
-      <node concept="3clFbS" id="6EdjbK8qs6f" role="2VODD2">
-        <node concept="3clFbF" id="6EdjbK8AIEz" role="3cqZAp">
-          <node concept="2YIFZM" id="6EdjbK8AII1" role="3clFbG">
+    <node concept="2Sbjvc" id="5HNNZ2dbJpi" role="2ZfgGD">
+      <node concept="3clFbS" id="5HNNZ2dbJpj" role="2VODD2">
+        <node concept="3clFbF" id="5HNNZ2dbJBu" role="3cqZAp">
+          <node concept="2YIFZM" id="5HNNZ2dbJD1" role="3clFbG">
             <ref role="37wK5l" to="rl4a:6EdjbK8AGqa" resolve="negateFilterOperator" />
             <ref role="1Pybhc" to="rl4a:6EdjbK8AG5J" resolve="ActionImplementations" />
-            <node concept="2Sf5sV" id="6EdjbK8AIIt" role="37wK5m" />
+            <node concept="2Sf5sV" id="5HNNZ2dbJE4" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3lnCt0EKY9z">
+    <property role="3GE5qa" value="query.filter.temporal" />
+    <property role="TrG5h" value="TemporalFilterOperator_negate" />
+    <ref role="2ZfgGC" to="3k3a:3lnCt0EKDk8" resolve="TemporalFilter" />
+    <node concept="2S6ZIM" id="3lnCt0EKY9$" role="2ZfVej">
+      <node concept="3clFbS" id="3lnCt0EKY9_" role="2VODD2">
+        <node concept="3clFbF" id="3lnCt0EKYhS" role="3cqZAp">
+          <node concept="Xl_RD" id="3lnCt0EKYhR" role="3clFbG">
+            <property role="Xl_RC" value="Negate Filter Argument" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3lnCt0EKY9A" role="2ZfgGD">
+      <node concept="3clFbS" id="3lnCt0EKY9B" role="2VODD2">
+        <node concept="3clFbF" id="3lnCt0EKYyI" role="3cqZAp">
+          <node concept="2YIFZM" id="3lnCt0EKY$Y" role="3clFbG">
+            <ref role="37wK5l" to="rl4a:6EdjbK8AGqa" resolve="negateFilterOperator" />
+            <ref role="1Pybhc" to="rl4a:6EdjbK8AG5J" resolve="ActionImplementations" />
+            <node concept="2Sf5sV" id="3lnCt0EKYAR" role="37wK5m" />
           </node>
         </node>
       </node>

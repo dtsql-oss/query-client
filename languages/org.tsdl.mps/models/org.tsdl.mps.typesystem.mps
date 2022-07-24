@@ -615,7 +615,7 @@
                       <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                       <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                       <node concept="Xl_RD" id="SM$yDD1Yw7" role="37wK5m">
-                        <property role="Xl_RC" value="Text '%s' is not a valid date." />
+                        <property role="Xl_RC" value="Text '%s' is not a valid date (yyyy-MM-dd'T'HH:mm:ss[.SSS]'Z')." />
                       </node>
                       <node concept="2OqwBi" id="SM$yDD1ZzI" role="37wK5m">
                         <node concept="37vLTw" id="SM$yDD1Z1f" role="2Oq$k0">
@@ -708,7 +708,7 @@
   </node>
   <node concept="18kY7G" id="AbtmyXsPIu">
     <property role="TrG5h" value="check_SampleFilterArgument" />
-    <property role="3GE5qa" value="query.filter.argument" />
+    <property role="3GE5qa" value="query.filter.threshold.argument" />
     <node concept="3clFbS" id="AbtmyXsPIv" role="18ibNy">
       <node concept="3J1_TO" id="AbtmyXsPIH" role="3cqZAp">
         <node concept="3uVAMA" id="AbtmyXsPII" role="1zxBo5">
@@ -1360,6 +1360,59 @@
     <node concept="1YaCAy" id="SM$yDCYzwQ" role="1YuTPh">
       <property role="TrG5h" value="localSample" />
       <ref role="1YaFvo" to="3k3a:SM$yDCYtR6" resolve="LocalSample" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3lnCt0EMkrG">
+    <property role="TrG5h" value="check_TemporalFilter" />
+    <property role="3GE5qa" value="query.filter.temporal" />
+    <node concept="3clFbS" id="3lnCt0EMkrH" role="18ibNy">
+      <node concept="3J1_TO" id="3lnCt0EMkTZ" role="3cqZAp">
+        <node concept="3uVAMA" id="3lnCt0EMloc" role="1zxBo5">
+          <node concept="XOnhg" id="3lnCt0EMlod" role="1zc67B">
+            <property role="TrG5h" value="e" />
+            <node concept="nSUau" id="3lnCt0EMloe" role="1tU5fm">
+              <node concept="3uibUv" id="3lnCt0EMlpi" role="nSUat">
+                <ref role="3uigEE" to="wyt6:~IllegalStateException" resolve="IllegalStateException" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="3lnCt0EMlof" role="1zc67A">
+            <node concept="2MkqsV" id="3lnCt0EMlsN" role="3cqZAp">
+              <node concept="2OqwBi" id="3lnCt0EMlIa" role="2MkJ7o">
+                <node concept="37vLTw" id="3lnCt0EMltd" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3lnCt0EMlod" resolve="e" />
+                </node>
+                <node concept="liA8E" id="3lnCt0EMm4X" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                </node>
+              </node>
+              <node concept="1YBJjd" id="3lnCt0EMmaC" role="1urrMF">
+                <ref role="1YBMHb" node="3lnCt0EMkrJ" resolve="temporalFilter" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="3lnCt0EMkU0" role="1zxBo7">
+          <node concept="3clFbF" id="3lnCt0EMkUO" role="3cqZAp">
+            <node concept="2YIFZM" id="3lnCt0EMkX3" role="3clFbG">
+              <ref role="37wK5l" node="SM$yDCYALM" resolve="checkDate" />
+              <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
+              <node concept="2OqwBi" id="3lnCt0EMlaO" role="37wK5m">
+                <node concept="1YBJjd" id="3lnCt0EMkYF" role="2Oq$k0">
+                  <ref role="1YBMHb" node="3lnCt0EMkrJ" resolve="temporalFilter" />
+                </node>
+                <node concept="3TrcHB" id="3lnCt0EMlle" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:3lnCt0EKIcz" resolve="argument" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3lnCt0EMkrJ" role="1YuTPh">
+      <property role="TrG5h" value="temporalFilter" />
+      <ref role="1YaFvo" to="3k3a:3lnCt0EKDk8" resolve="TemporalFilter" />
     </node>
   </node>
 </model>

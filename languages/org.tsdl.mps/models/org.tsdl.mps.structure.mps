@@ -494,32 +494,21 @@
     <property role="EcuMT" value="8806468139567776881" />
     <property role="TrG5h" value="FilterOperator" />
     <property role="3GE5qa" value="query.filter" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7CQR1P0IThi" role="1TKVEl">
       <property role="IQ2nx" value="8806468139567780946" />
       <property role="TrG5h" value="negated" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="7CQR1P0J8g$" role="1TKVEl">
-      <property role="IQ2nx" value="8806468139567842340" />
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="7CQR1P0ITfb" resolve="FilterType" />
-    </node>
-    <node concept="1TJgyj" id="7CQR1P0Ls7A" role="1TKVEi">
-      <property role="IQ2ns" value="8806468139568447974" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="argument" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7CQR1P0Ls5z" resolve="FilterArgument" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7CQR1P0ISig">
     <property role="EcuMT" value="8806468139567776912" />
     <property role="TrG5h" value="SampleFilterArgument" />
-    <property role="3GE5qa" value="query.filter.argument" />
+    <property role="3GE5qa" value="query.filter.threshold.argument" />
     <property role="34LRSv" value="sample" />
     <node concept="PrWs8" id="7CQR1P0Ls6U" role="PzmwI">
-      <ref role="PrY4T" node="7CQR1P0Ls5z" resolve="FilterArgument" />
+      <ref role="PrY4T" node="7CQR1P0Ls5z" resolve="ThresholdFilterArgument" />
     </node>
     <node concept="1TJgyj" id="AbtmyXvdWk" role="1TKVEi">
       <property role="IQ2ns" value="687772460820258580" />
@@ -532,7 +521,7 @@
   <node concept="1TIwiD" id="7CQR1P0ISjr">
     <property role="EcuMT" value="8806468139567776987" />
     <property role="TrG5h" value="LiteralFilterArgument" />
-    <property role="3GE5qa" value="query.filter.argument" />
+    <property role="3GE5qa" value="query.filter.threshold.argument" />
     <property role="34LRSv" value="literal value" />
     <node concept="1TJgyi" id="7CQR1P0ISk0" role="1TKVEl">
       <property role="IQ2nx" value="8806468139567777024" />
@@ -540,13 +529,13 @@
       <ref role="AX2Wp" node="AbtmyXxjdm" resolve="Number" />
     </node>
     <node concept="PrWs8" id="7CQR1P0Ls6$" role="PzmwI">
-      <ref role="PrY4T" node="7CQR1P0Ls5z" resolve="FilterArgument" />
+      <ref role="PrY4T" node="7CQR1P0Ls5z" resolve="ThresholdFilterArgument" />
     </node>
   </node>
   <node concept="25R3W" id="7CQR1P0ITfb">
     <property role="3F6X1D" value="8806468139567780811" />
-    <property role="3GE5qa" value="query.filter" />
-    <property role="TrG5h" value="FilterType" />
+    <property role="3GE5qa" value="query.filter.threshold" />
+    <property role="TrG5h" value="ThresholdFilterType" />
     <node concept="25R33" id="7CQR1P0ITfc" role="25R1y">
       <property role="3tVfz5" value="8806468139567780812" />
       <property role="TrG5h" value="gt" />
@@ -575,8 +564,8 @@
   </node>
   <node concept="PlHQZ" id="7CQR1P0Ls5z">
     <property role="EcuMT" value="8806468139568447843" />
-    <property role="3GE5qa" value="query.filter.argument" />
-    <property role="TrG5h" value="FilterArgument" />
+    <property role="3GE5qa" value="query.filter.threshold.argument" />
+    <property role="TrG5h" value="ThresholdFilterArgument" />
   </node>
   <node concept="1TIwiD" id="2z3DZjVa0iZ">
     <property role="EcuMT" value="2937376052603258047" />
@@ -657,6 +646,55 @@
       <property role="IQ2nx" value="1023040776214011407" />
       <property role="TrG5h" value="upperBound" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5HNNZ2dbDHu">
+    <property role="EcuMT" value="6589839311840910174" />
+    <property role="3GE5qa" value="query.filter.threshold" />
+    <property role="TrG5h" value="ThresholdFilter" />
+    <ref role="1TJDcQ" node="7CQR1P0IShL" resolve="FilterOperator" />
+    <node concept="1TJgyj" id="5HNNZ2dbDWx" role="1TKVEi">
+      <property role="IQ2ns" value="6589839311840911137" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7CQR1P0Ls5z" resolve="ThresholdFilterArgument" />
+    </node>
+    <node concept="1TJgyi" id="5HNNZ2dbDNX" role="1TKVEl">
+      <property role="IQ2nx" value="6589839311840910589" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="7CQR1P0ITfb" resolve="ThresholdFilterType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3lnCt0EKDk8">
+    <property role="EcuMT" value="3843718722426672392" />
+    <property role="3GE5qa" value="query.filter.temporal" />
+    <property role="TrG5h" value="TemporalFilter" />
+    <ref role="1TJDcQ" node="7CQR1P0IShL" resolve="FilterOperator" />
+    <node concept="1TJgyi" id="3lnCt0EKDQV" role="1TKVEl">
+      <property role="IQ2nx" value="3843718722426674619" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="3lnCt0EKDpg" resolve="TemporalFilterType" />
+    </node>
+    <node concept="1TJgyi" id="3lnCt0EKIcz" role="1TKVEl">
+      <property role="IQ2nx" value="3843718722426692387" />
+      <property role="TrG5h" value="argument" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="25R3W" id="3lnCt0EKDpg">
+    <property role="3F6X1D" value="3843718722426672720" />
+    <property role="3GE5qa" value="query.filter.temporal" />
+    <property role="TrG5h" value="TemporalFilterType" />
+    <node concept="25R33" id="3lnCt0EKDph" role="25R1y">
+      <property role="3tVfz5" value="3843718722426672721" />
+      <property role="TrG5h" value="after" />
+      <property role="1L1pqM" value="after" />
+    </node>
+    <node concept="25R33" id="3lnCt0EKDpi" role="25R1y">
+      <property role="3tVfz5" value="3843718722426672722" />
+      <property role="TrG5h" value="before" />
+      <property role="1L1pqM" value="before" />
     </node>
   </node>
 </model>

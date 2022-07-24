@@ -7,7 +7,6 @@ import org.tsdl.mps.client.infrastructure.dto.QueryResultDto;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BiFunction;
 
@@ -50,12 +49,23 @@ public class TsdlClientApplicationFrame extends JFrame {
     }
 
     private JComponent getHeaderPanel() {
+        JPanel pnlHeader = new JPanel();
+        pnlHeader.setBackground(Color.WHITE);
         JLabel lblHeader = new JLabel("TSDL Request: " + clientName, SwingConstants.CENTER);
         lblHeader.setFont(LABEL_FONT.deriveFont(LABEL_FONT.getStyle() | Font.BOLD).deriveFont(16.0f));
+        lblHeader.setBorder(BorderFactory.createEmptyBorder(0, 0, 2, 0));
+        pnlHeader.add(lblHeader);
 
-        JPanel headerPanel = new JPanel(new GridLayout(1, 1));
+        JPanel headerPanel = new JPanel();
+        headerPanel.setLayout(new BoxLayout(headerPanel, BoxLayout.Y_AXIS));
         headerPanel.setBackground(Color.WHITE);
-        headerPanel.add(lblHeader);
+        headerPanel.add(pnlHeader);
+
+        var serviceLabel = new JLabel(String.format("<html><b>Service:</b> %s", endpoint));
+        serviceLabel.setFont(LABEL_FONT.deriveFont(LABEL_FONT.getStyle() & ~Font.BOLD).deriveFont(13.0f));
+        serviceLabel.setBorder(BorderFactory.createEmptyBorder(0, 0, 3, 0));
+        headerPanel.add(serviceLabel);
+
         headerPanel.setBorder(BorderFactory.createEmptyBorder(10, 5, 10, 5));
 
         return headerPanel;
@@ -171,8 +181,8 @@ public class TsdlClientApplicationFrame extends JFrame {
                 System.out.println("Received Response:\n" + responseString);
 
                 resultForm.setWaiting(false, responseObject);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            } catch (Exception e) {
+                resultForm.setError(e.getMessage());
             }
         }).start();
 

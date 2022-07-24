@@ -63,6 +63,16 @@ class TsdlClientResultFrame extends JFrame {
         }
     }
 
+    public void setError(String errorMessage) {
+        progressBar.setIndeterminate(false);
+        waitingPanel.setVisible(false);
+
+        getContentPane().remove(waitingPanel);
+        getContentPane().add(new TsdlClientErrorPanel(errorMessage));
+        revalidate();
+        repaint();
+    }
+
     private JSplitPane paintResult() {
         System.out.println("Received result of type " + result.getType());
 

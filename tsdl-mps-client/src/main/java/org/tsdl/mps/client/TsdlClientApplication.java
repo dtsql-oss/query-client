@@ -18,8 +18,10 @@ import javax.swing.*;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.time.ZoneOffset;
+import java.util.Map;
 import java.util.Objects;
 import java.util.TimeZone;
+import java.util.TreeMap;
 
 public class TsdlClientApplication extends JFrame {
     private static final OkHttpClient client = new OkHttpClient();
@@ -95,15 +97,35 @@ public class TsdlClientApplication extends JFrame {
           .build();
 
         try (Response response = client.newCall(request).execute()) {
-            if (!response.isSuccessful()) {
-                System.err.printf("TSDL Query failed: %s%n", response.body() != null ? Objects.requireNonNull(response.body()).string() : "unknown reason");
+            if (response.isSuccessful()) {
+                ResponseBody responseBody = Objects.requireNonNull(response.body());
+                return Objects.requireNonNull(responseBody.string());
+            }
+
+            var actualResponse = Objects.requireNonNull(response.body()).string();
+            var responseTree = OBJECT_MAPPER.readTree(actualResponse);
+            System.err.printf("TSDL Query failed: %s%n", response.body() != null ? actualResponse : "unknown reason");
+
+            var traces = responseTree.get("errorTrace");
+            if (traces == null || traces.size() <= 0) {
                 throw new IOException(
                   String.format("Unexpected HTTP Status Code at '%s': %s", response.request().url(), response.code())
                 );
             }
 
-            ResponseBody responseBody = Objects.requireNonNull(response.body());
-            return Objects.requireNonNull(responseBody.string());
+            StringBuilder errorTrace = new StringBuilder();
+            TreeMap<Integer, String> errorLogs = new TreeMap<>();
+            traces.fields().forEachRemaining(kvp -> errorLogs.put(Integer.parseInt(kvp.getKey()), kvp.getValue().textValue()));
+            for (Map.Entry<Integer, String> trace : errorLogs.entrySet()) {
+                errorTrace
+                  .append("[")
+                  .append(trace.getKey())
+                  .append("] ")
+                  .append(trace.getValue())
+                  .append("\n");
+            }
+            String errorTraceString = errorTrace.toString().trim();
+            throw new TsdlException(errorTraceString);
         }
     }
 }
