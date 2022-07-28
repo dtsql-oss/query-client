@@ -246,6 +246,7 @@
     <property role="EcuMT" value="6715237501820821860" />
     <property role="3GE5qa" value="query.result" />
     <property role="TrG5h" value="ResultDeclaration" />
+    <property role="34LRSv" value="output format" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2KOJK2eN42b" role="1TKVEi">
       <property role="IQ2ns" value="3185380845574439051" />
@@ -356,6 +357,41 @@
     <property role="TrG5h" value="Event" />
     <property role="34LRSv" value="event" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="hRgQBEacAj" role="1TKVEl">
+      <property role="IQ2nx" value="321800020559448467" />
+      <property role="TrG5h" value="addMinDurationConstraint" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEcs0L" role="1TKVEl">
+      <property role="IQ2nx" value="321800020560035889" />
+      <property role="TrG5h" value="addMaxDurationConstraint" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEcs34" role="1TKVEl">
+      <property role="IQ2nx" value="321800020560036036" />
+      <property role="TrG5h" value="minDuration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEqrv5" role="1TKVEl">
+      <property role="IQ2nx" value="321800020563703749" />
+      <property role="TrG5h" value="minInclusive" />
+      <ref role="AX2Wp" node="hRgQBEqrop" resolve="GreaterSymbol" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEcsc1" role="1TKVEl">
+      <property role="IQ2nx" value="321800020560036609" />
+      <property role="TrG5h" value="maxDuration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEqrwG" role="1TKVEl">
+      <property role="IQ2nx" value="321800020563703852" />
+      <property role="TrG5h" value="maxInclusive" />
+      <ref role="AX2Wp" node="hRgQBEqrs2" resolve="LessThanSymbol" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEcscE" role="1TKVEl">
+      <property role="IQ2nx" value="321800020560036650" />
+      <property role="TrG5h" value="durationUnit" />
+      <ref role="AX2Wp" node="hRgQBEcs3w" resolve="EventDurationUnit" />
+    </node>
     <node concept="1TJgyj" id="6TO5KpDUHTA" role="1TKVEi">
       <property role="IQ2ns" value="7959011757784751718" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -630,12 +666,14 @@
     <property role="EcuMT" value="1023040776214011298" />
     <property role="3GE5qa" value="query.sample" />
     <property role="TrG5h" value="GlobalSample" />
+    <property role="34LRSv" value="global sample" />
     <ref role="1TJDcQ" node="2y6cZTVKoid" resolve="Sample" />
   </node>
   <node concept="1TIwiD" id="SM$yDCYtR6">
     <property role="EcuMT" value="1023040776214011334" />
     <property role="3GE5qa" value="query.sample" />
     <property role="TrG5h" value="LocalSample" />
+    <property role="34LRSv" value="local sample" />
     <ref role="1TJDcQ" node="2y6cZTVKoid" resolve="Sample" />
     <node concept="1TJgyi" id="SM$yDCYtRT" role="1TKVEl">
       <property role="IQ2nx" value="1023040776214011385" />
@@ -652,6 +690,7 @@
     <property role="EcuMT" value="6589839311840910174" />
     <property role="3GE5qa" value="query.filter.threshold" />
     <property role="TrG5h" value="ThresholdFilter" />
+    <property role="34LRSv" value="threshold filter" />
     <ref role="1TJDcQ" node="7CQR1P0IShL" resolve="FilterOperator" />
     <node concept="1TJgyj" id="5HNNZ2dbDWx" role="1TKVEi">
       <property role="IQ2ns" value="6589839311840911137" />
@@ -670,6 +709,7 @@
     <property role="EcuMT" value="3843718722426672392" />
     <property role="3GE5qa" value="query.filter.temporal" />
     <property role="TrG5h" value="TemporalFilter" />
+    <property role="34LRSv" value="temporal filter" />
     <ref role="1TJDcQ" node="7CQR1P0IShL" resolve="FilterOperator" />
     <node concept="1TJgyi" id="3lnCt0EKDQV" role="1TKVEl">
       <property role="IQ2nx" value="3843718722426674619" />
@@ -695,6 +735,71 @@
       <property role="3tVfz5" value="3843718722426672722" />
       <property role="TrG5h" value="before" />
       <property role="1L1pqM" value="before" />
+    </node>
+  </node>
+  <node concept="25R3W" id="hRgQBEcs3w">
+    <property role="3F6X1D" value="321800020560036064" />
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="EventDurationUnit" />
+    <node concept="25R33" id="hRgQBEcs3x" role="25R1y">
+      <property role="3tVfz5" value="321800020560036065" />
+      <property role="TrG5h" value="milliseconds" />
+      <property role="1L1pqM" value="millis" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs5q" role="25R1y">
+      <property role="3tVfz5" value="321800020560036186" />
+      <property role="TrG5h" value="seconds" />
+      <property role="1L1pqM" value="seconds" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs5P" role="25R1y">
+      <property role="3tVfz5" value="321800020560036213" />
+      <property role="TrG5h" value="minutes" />
+      <property role="1L1pqM" value="minutes" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs6h" role="25R1y">
+      <property role="3tVfz5" value="321800020560036241" />
+      <property role="TrG5h" value="hours" />
+      <property role="1L1pqM" value="hours" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs6I" role="25R1y">
+      <property role="3tVfz5" value="321800020560036270" />
+      <property role="TrG5h" value="days" />
+      <property role="1L1pqM" value="days" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs7c" role="25R1y">
+      <property role="3tVfz5" value="321800020560036300" />
+      <property role="TrG5h" value="weeks" />
+      <property role="1L1pqM" value="weeks" />
+    </node>
+  </node>
+  <node concept="25R3W" id="hRgQBEqrop">
+    <property role="3F6X1D" value="321800020563703321" />
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="GreaterSymbol" />
+    <node concept="25R33" id="hRgQBEqroq" role="25R1y">
+      <property role="3tVfz5" value="321800020563703322" />
+      <property role="TrG5h" value="inclusive" />
+      <property role="1L1pqM" value="≥" />
+    </node>
+    <node concept="25R33" id="hRgQBEqrpV" role="25R1y">
+      <property role="3tVfz5" value="321800020563703419" />
+      <property role="TrG5h" value="exclusive" />
+      <property role="1L1pqM" value="&gt;" />
+    </node>
+  </node>
+  <node concept="25R3W" id="hRgQBEqrs2">
+    <property role="3F6X1D" value="321800020563703554" />
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="LessThanSymbol" />
+    <node concept="25R33" id="hRgQBEqrs3" role="25R1y">
+      <property role="3tVfz5" value="321800020563703555" />
+      <property role="TrG5h" value="inclusive" />
+      <property role="1L1pqM" value="≤" />
+    </node>
+    <node concept="25R33" id="hRgQBEqrs4" role="25R1y">
+      <property role="3tVfz5" value="321800020563703556" />
+      <property role="TrG5h" value="exclusive" />
+      <property role="1L1pqM" value="&lt;" />
     </node>
   </node>
 </model>

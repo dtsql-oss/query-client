@@ -87,12 +87,20 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -700,6 +708,298 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="hRgQBEdjzH" role="3cqZAp" />
+      <node concept="3clFbJ" id="hRgQBEdkab" role="3cqZAp">
+        <node concept="3clFbS" id="hRgQBEdkad" role="3clFbx">
+          <node concept="3clFbJ" id="hRgQBEe7My" role="3cqZAp">
+            <node concept="3clFbS" id="hRgQBEe7M$" role="3clFbx">
+              <node concept="2MkqsV" id="hRgQBEe9xP" role="3cqZAp">
+                <node concept="Xl_RD" id="hRgQBEe9yr" role="2MkJ7o">
+                  <property role="Xl_RC" value="event durations must be non-negative" />
+                </node>
+                <node concept="1YBJjd" id="hRgQBEe9$2" role="1urrMF">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOVzh" id="hRgQBEgl9s" role="3clFbw">
+              <node concept="2OqwBi" id="hRgQBEenp$" role="3uHU7B">
+                <node concept="1YBJjd" id="hRgQBEenfB" role="2Oq$k0">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+                <node concept="3TrcHB" id="hRgQBEenEi" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:hRgQBEcsc1" resolve="maxDuration" />
+                </node>
+              </node>
+              <node concept="3cmrfG" id="hRgQBEeoF4" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="hRgQBEsz2I" role="3cqZAp">
+            <node concept="3clFbS" id="hRgQBEsz2K" role="3clFbx">
+              <node concept="2MkqsV" id="hRgQBEs$yF" role="3cqZAp">
+                <node concept="Xl_RD" id="hRgQBEs$yW" role="2MkJ7o">
+                  <property role="Xl_RC" value="if a duration maximum is given, its inclusiveness is mandatory" />
+                </node>
+                <node concept="1YBJjd" id="hRgQBEs$Az" role="1urrMF">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="hRgQBEs$8l" role="3clFbw">
+              <node concept="10Nm6u" id="hRgQBEs$hI" role="3uHU7w" />
+              <node concept="2OqwBi" id="hRgQBEszdm" role="3uHU7B">
+                <node concept="1YBJjd" id="hRgQBEsz3x" role="2Oq$k0">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+                <node concept="3TrcHB" id="hRgQBEszLh" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:hRgQBEqrwG" resolve="maxInclusive" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="hRgQBEdkmK" role="3clFbw">
+          <node concept="1YBJjd" id="hRgQBEdkce" role="2Oq$k0">
+            <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+          </node>
+          <node concept="3TrcHB" id="hRgQBEdkAP" role="2OqNvi">
+            <ref role="3TsBF5" to="3k3a:hRgQBEcs0L" resolve="addMaxDurationConstraint" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="hRgQBEglug" role="3cqZAp" />
+      <node concept="3clFbJ" id="hRgQBEglvz" role="3cqZAp">
+        <node concept="3clFbS" id="hRgQBEglv$" role="3clFbx">
+          <node concept="3clFbJ" id="hRgQBEglv_" role="3cqZAp">
+            <node concept="3clFbS" id="hRgQBEglvA" role="3clFbx">
+              <node concept="2MkqsV" id="hRgQBEglvB" role="3cqZAp">
+                <node concept="Xl_RD" id="hRgQBEglvC" role="2MkJ7o">
+                  <property role="Xl_RC" value="event durations must be non-negative" />
+                </node>
+                <node concept="1YBJjd" id="hRgQBEglvD" role="1urrMF">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOVzh" id="hRgQBEglvE" role="3clFbw">
+              <node concept="2OqwBi" id="hRgQBEglvF" role="3uHU7B">
+                <node concept="1YBJjd" id="hRgQBEglvG" role="2Oq$k0">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+                <node concept="3TrcHB" id="hRgQBEglvH" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:hRgQBEcs34" resolve="minDuration" />
+                </node>
+              </node>
+              <node concept="3cmrfG" id="hRgQBEglvI" role="3uHU7w">
+                <property role="3cmrfH" value="0" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="hRgQBEsxsD" role="3cqZAp">
+            <node concept="3clFbS" id="hRgQBEsxsF" role="3clFbx">
+              <node concept="2MkqsV" id="hRgQBEsyV4" role="3cqZAp">
+                <node concept="Xl_RD" id="hRgQBEsyVl" role="2MkJ7o">
+                  <property role="Xl_RC" value="if a duration minimum is given, its inclusiveness is mandatory" />
+                </node>
+                <node concept="1YBJjd" id="hRgQBEsz0F" role="1urrMF">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="hRgQBEsyFS" role="3clFbw">
+              <node concept="10Nm6u" id="hRgQBEsyQd" role="3uHU7w" />
+              <node concept="2OqwBi" id="hRgQBEsxBj" role="3uHU7B">
+                <node concept="1YBJjd" id="hRgQBEsxts" role="2Oq$k0">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+                <node concept="3TrcHB" id="hRgQBEsya6" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:hRgQBEqrv5" resolve="minInclusive" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="hRgQBEglvJ" role="3clFbw">
+          <node concept="1YBJjd" id="hRgQBEglvK" role="2Oq$k0">
+            <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+          </node>
+          <node concept="3TrcHB" id="hRgQBEgm67" role="2OqNvi">
+            <ref role="3TsBF5" to="3k3a:hRgQBEacAj" resolve="addMinDurationConstraint" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="hRgQBEgZ7z" role="3cqZAp" />
+      <node concept="3clFbJ" id="hRgQBEgZed" role="3cqZAp">
+        <node concept="3clFbS" id="hRgQBEgZef" role="3clFbx">
+          <node concept="3clFbJ" id="hRgQBEh0MW" role="3cqZAp">
+            <node concept="3clFbS" id="hRgQBEh0MY" role="3clFbx">
+              <node concept="2MkqsV" id="hRgQBEh3ub" role="3cqZAp">
+                <node concept="Xl_RD" id="hRgQBEh3v7" role="2MkJ7o">
+                  <property role="Xl_RC" value="an event's minimum duration must not be greater than its maximum duration" />
+                </node>
+                <node concept="1YBJjd" id="hRgQBEh3_n" role="1urrMF">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="hRgQBEh2MG" role="3clFbw">
+              <node concept="2OqwBi" id="hRgQBEh3lW" role="3uHU7w">
+                <node concept="1YBJjd" id="hRgQBEh2PS" role="2Oq$k0">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+                <node concept="3TrcHB" id="hRgQBEh3qx" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:hRgQBEcsc1" resolve="maxDuration" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="hRgQBEh0Yh" role="3uHU7B">
+                <node concept="1YBJjd" id="hRgQBEh0Og" role="2Oq$k0">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+                <node concept="3TrcHB" id="hRgQBEh1st" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:hRgQBEcs34" resolve="minDuration" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="hRgQBEvuLM" role="3cqZAp">
+            <node concept="3clFbS" id="hRgQBEvuLO" role="3clFbx">
+              <node concept="3clFbJ" id="hRgQBEvyyn" role="3cqZAp">
+                <node concept="3clFbS" id="hRgQBEvyyp" role="3clFbx">
+                  <node concept="2MkqsV" id="hRgQBEvGgZ" role="3cqZAp">
+                    <node concept="Xl_RD" id="hRgQBEvGhs" role="2MkJ7o">
+                      <property role="Xl_RC" value="if duration minimum and maximum are the same, both must be inclusive" />
+                    </node>
+                    <node concept="1YBJjd" id="hRgQBEvGni" role="1urrMF">
+                      <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="hRgQBEvyz0" role="3clFbw">
+                  <node concept="1eOMI4" id="hRgQBEv_n_" role="3fr31v">
+                    <node concept="1Wc70l" id="hRgQBEvDVh" role="1eOMHV">
+                      <node concept="2OqwBi" id="hRgQBEvFFr" role="3uHU7w">
+                        <node concept="2OqwBi" id="hRgQBEvEkX" role="2Oq$k0">
+                          <node concept="1YBJjd" id="hRgQBEvE5l" role="2Oq$k0">
+                            <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                          </node>
+                          <node concept="3TrcHB" id="hRgQBEvEH9" role="2OqNvi">
+                            <ref role="3TsBF5" to="3k3a:hRgQBEqrwG" resolve="maxInclusive" />
+                          </node>
+                        </node>
+                        <node concept="21noJN" id="hRgQBEvG3R" role="2OqNvi">
+                          <node concept="21nZrQ" id="hRgQBEvG3T" role="21noJM">
+                            <ref role="21nZrZ" to="3k3a:hRgQBEqrs3" resolve="inclusive" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="hRgQBEvCwH" role="3uHU7B">
+                        <node concept="2OqwBi" id="hRgQBEvArv" role="2Oq$k0">
+                          <node concept="1YBJjd" id="hRgQBEvA3M" role="2Oq$k0">
+                            <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                          </node>
+                          <node concept="3TrcHB" id="hRgQBEvAOb" role="2OqNvi">
+                            <ref role="3TsBF5" to="3k3a:hRgQBEqrv5" resolve="minInclusive" />
+                          </node>
+                        </node>
+                        <node concept="21noJN" id="hRgQBEvCPH" role="2OqNvi">
+                          <node concept="21nZrQ" id="hRgQBEvCPJ" role="21noJM">
+                            <ref role="21nZrZ" to="3k3a:hRgQBEqroq" resolve="inclusive" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="hRgQBEvw$b" role="3clFbw">
+              <node concept="2OqwBi" id="hRgQBEvxsZ" role="3uHU7w">
+                <node concept="1YBJjd" id="hRgQBEvxdu" role="2Oq$k0">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+                <node concept="3TrcHB" id="hRgQBEvxPX" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:hRgQBEcsc1" resolve="maxDuration" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="hRgQBEvuWE" role="3uHU7B">
+                <node concept="1YBJjd" id="hRgQBEvuMB" role="2Oq$k0">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+                <node concept="3TrcHB" id="hRgQBEvvvs" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:hRgQBEcs34" resolve="minDuration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="hRgQBEh0ii" role="3clFbw">
+          <node concept="2OqwBi" id="hRgQBEh0C1" role="3uHU7w">
+            <node concept="1YBJjd" id="hRgQBEh0oZ" role="2Oq$k0">
+              <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+            </node>
+            <node concept="3TrcHB" id="hRgQBEh0I0" role="2OqNvi">
+              <ref role="3TsBF5" to="3k3a:hRgQBEacAj" resolve="addMinDurationConstraint" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="hRgQBEgZs4" role="3uHU7B">
+            <node concept="1YBJjd" id="hRgQBEgZi1" role="2Oq$k0">
+              <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+            </node>
+            <node concept="3TrcHB" id="hRgQBEgZWQ" role="2OqNvi">
+              <ref role="3TsBF5" to="3k3a:hRgQBEcs0L" resolve="addMaxDurationConstraint" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="hRgQBEmnMs" role="3cqZAp" />
+      <node concept="3clFbJ" id="hRgQBEmnVd" role="3cqZAp">
+        <node concept="3clFbS" id="hRgQBEmnVf" role="3clFbx">
+          <node concept="3clFbJ" id="hRgQBEmqnG" role="3cqZAp">
+            <node concept="3clFbS" id="hRgQBEmqnI" role="3clFbx">
+              <node concept="2MkqsV" id="hRgQBEmrmr" role="3cqZAp">
+                <node concept="Xl_RD" id="hRgQBEmrmG" role="2MkJ7o">
+                  <property role="Xl_RC" value="if a min or max duration is specified, the unit is mandatory" />
+                </node>
+                <node concept="1YBJjd" id="hRgQBEmrub" role="1urrMF">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="hRgQBEmqYq" role="3clFbw">
+              <node concept="10Nm6u" id="hRgQBEmri1" role="3uHU7w" />
+              <node concept="2OqwBi" id="hRgQBEmqxT" role="3uHU7B">
+                <node concept="1YBJjd" id="hRgQBEmqol" role="2Oq$k0">
+                  <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+                </node>
+                <node concept="3TrcHB" id="hRgQBEmqAO" role="2OqNvi">
+                  <ref role="3TsBF5" to="3k3a:hRgQBEcscE" resolve="durationUnit" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="22lmx$" id="hRgQBEmpjp" role="3clFbw">
+          <node concept="2OqwBi" id="hRgQBEmpKX" role="3uHU7w">
+            <node concept="1YBJjd" id="hRgQBEmpr8" role="2Oq$k0">
+              <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+            </node>
+            <node concept="3TrcHB" id="hRgQBEmpUb" role="2OqNvi">
+              <ref role="3TsBF5" to="3k3a:hRgQBEcs0L" resolve="addMaxDurationConstraint" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="hRgQBEmoas" role="3uHU7B">
+            <node concept="1YBJjd" id="hRgQBEmo0p" role="2Oq$k0">
+              <ref role="1YBMHb" node="AbtmyXsJ30" resolve="event" />
+            </node>
+            <node concept="3TrcHB" id="hRgQBEmoCS" role="2OqNvi">
+              <ref role="3TsBF5" to="3k3a:hRgQBEacAj" resolve="addMinDurationConstraint" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="hRgQBEgluN" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="AbtmyXsJ30" role="1YuTPh">
       <property role="TrG5h" value="event" />
