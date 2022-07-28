@@ -288,7 +288,7 @@
     <property role="3GE5qa" value="client" />
     <property role="1kR7WE" value="http://localhost:8080/query" />
     <property role="1yFoOE" value="true" />
-    <property role="3nIRPp" value="true" />
+    <property role="1yHMlY" value="true" />
     <node concept="SO54j" id="6EdjbK8883X" role="1y_wOU">
       <property role="SO53I" value="csv" />
       <node concept="39UX5S" id="6EdjbK8883Y" role="SO53t" />
@@ -361,11 +361,6 @@
                   <ref role="2OXU$n" node="SM$yDD9hac" resolve="myAvg" />
                 </node>
               </node>
-            </node>
-            <node concept="v_jjo" id="hRgQBEacDA" role="UzkwL">
-              <property role="v_jLF" value="3lnCt0EKDph/after" />
-              <property role="v_kbN" value="2022-12-04T12:24:44Z" />
-              <property role="Uzkxf" value="true" />
             </node>
           </node>
         </node>

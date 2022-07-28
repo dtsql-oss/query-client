@@ -1762,7 +1762,7 @@
             </node>
           </node>
           <node concept="la8eA" id="SM$yDCYzhK" role="lcghm">
-            <property role="lacIc" value="(_input) AS " />
+            <property role="lacIc" value="() AS " />
           </node>
           <node concept="l9hG8" id="SM$yDCYzhL" role="lcghm">
             <node concept="2OqwBi" id="SM$yDCYzhM" role="lb14g">
