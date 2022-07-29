@@ -28,6 +28,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -137,6 +138,11 @@
       <property role="TrG5h" value="showSettings" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="5HNNZ2cMbaD" role="1TKVEl">
+      <property role="IQ2nx" value="6589839311834231465" />
+      <property role="TrG5h" value="topmost" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6EdjbK86O66" role="1TKVEi">
       <property role="IQ2ns" value="7677877310210130310" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -240,6 +246,7 @@
     <property role="EcuMT" value="6715237501820821860" />
     <property role="3GE5qa" value="query.result" />
     <property role="TrG5h" value="ResultDeclaration" />
+    <property role="34LRSv" value="output format" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2KOJK2eN42b" role="1TKVEi">
       <property role="IQ2ns" value="3185380845574439051" />
@@ -350,6 +357,41 @@
     <property role="TrG5h" value="Event" />
     <property role="34LRSv" value="event" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="hRgQBEacAj" role="1TKVEl">
+      <property role="IQ2nx" value="321800020559448467" />
+      <property role="TrG5h" value="addMinDurationConstraint" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEcs0L" role="1TKVEl">
+      <property role="IQ2nx" value="321800020560035889" />
+      <property role="TrG5h" value="addMaxDurationConstraint" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEcs34" role="1TKVEl">
+      <property role="IQ2nx" value="321800020560036036" />
+      <property role="TrG5h" value="minDuration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEqrv5" role="1TKVEl">
+      <property role="IQ2nx" value="321800020563703749" />
+      <property role="TrG5h" value="minInclusive" />
+      <ref role="AX2Wp" node="hRgQBEqrop" resolve="GreaterSymbol" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEcsc1" role="1TKVEl">
+      <property role="IQ2nx" value="321800020560036609" />
+      <property role="TrG5h" value="maxDuration" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEqrwG" role="1TKVEl">
+      <property role="IQ2nx" value="321800020563703852" />
+      <property role="TrG5h" value="maxInclusive" />
+      <ref role="AX2Wp" node="hRgQBEqrs2" resolve="LessThanSymbol" />
+    </node>
+    <node concept="1TJgyi" id="hRgQBEcscE" role="1TKVEl">
+      <property role="IQ2nx" value="321800020560036650" />
+      <property role="TrG5h" value="durationUnit" />
+      <ref role="AX2Wp" node="hRgQBEcs3w" resolve="EventDurationUnit" />
+    </node>
     <node concept="1TJgyj" id="6TO5KpDUHTA" role="1TKVEi">
       <property role="IQ2ns" value="7959011757784751718" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -379,6 +421,7 @@
     <property role="3GE5qa" value="query.sample" />
     <property role="TrG5h" value="Sample" />
     <property role="34LRSv" value="sample" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4hHWxo7Yskr" role="1TKVEi">
       <property role="IQ2ns" value="4930863343477572891" />
@@ -487,32 +530,21 @@
     <property role="EcuMT" value="8806468139567776881" />
     <property role="TrG5h" value="FilterOperator" />
     <property role="3GE5qa" value="query.filter" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7CQR1P0IThi" role="1TKVEl">
       <property role="IQ2nx" value="8806468139567780946" />
       <property role="TrG5h" value="negated" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="7CQR1P0J8g$" role="1TKVEl">
-      <property role="IQ2nx" value="8806468139567842340" />
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="7CQR1P0ITfb" resolve="FilterType" />
-    </node>
-    <node concept="1TJgyj" id="7CQR1P0Ls7A" role="1TKVEi">
-      <property role="IQ2ns" value="8806468139568447974" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="argument" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="7CQR1P0Ls5z" resolve="FilterArgument" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7CQR1P0ISig">
     <property role="EcuMT" value="8806468139567776912" />
     <property role="TrG5h" value="SampleFilterArgument" />
-    <property role="3GE5qa" value="query.filter.argument" />
+    <property role="3GE5qa" value="query.filter.threshold.argument" />
     <property role="34LRSv" value="sample" />
     <node concept="PrWs8" id="7CQR1P0Ls6U" role="PzmwI">
-      <ref role="PrY4T" node="7CQR1P0Ls5z" resolve="FilterArgument" />
+      <ref role="PrY4T" node="7CQR1P0Ls5z" resolve="ThresholdFilterArgument" />
     </node>
     <node concept="1TJgyj" id="AbtmyXvdWk" role="1TKVEi">
       <property role="IQ2ns" value="687772460820258580" />
@@ -525,7 +557,7 @@
   <node concept="1TIwiD" id="7CQR1P0ISjr">
     <property role="EcuMT" value="8806468139567776987" />
     <property role="TrG5h" value="LiteralFilterArgument" />
-    <property role="3GE5qa" value="query.filter.argument" />
+    <property role="3GE5qa" value="query.filter.threshold.argument" />
     <property role="34LRSv" value="literal value" />
     <node concept="1TJgyi" id="7CQR1P0ISk0" role="1TKVEl">
       <property role="IQ2nx" value="8806468139567777024" />
@@ -533,13 +565,13 @@
       <ref role="AX2Wp" node="AbtmyXxjdm" resolve="Number" />
     </node>
     <node concept="PrWs8" id="7CQR1P0Ls6$" role="PzmwI">
-      <ref role="PrY4T" node="7CQR1P0Ls5z" resolve="FilterArgument" />
+      <ref role="PrY4T" node="7CQR1P0Ls5z" resolve="ThresholdFilterArgument" />
     </node>
   </node>
   <node concept="25R3W" id="7CQR1P0ITfb">
     <property role="3F6X1D" value="8806468139567780811" />
-    <property role="3GE5qa" value="query.filter" />
-    <property role="TrG5h" value="FilterType" />
+    <property role="3GE5qa" value="query.filter.threshold" />
+    <property role="TrG5h" value="ThresholdFilterType" />
     <node concept="25R33" id="7CQR1P0ITfc" role="25R1y">
       <property role="3tVfz5" value="8806468139567780812" />
       <property role="TrG5h" value="gt" />
@@ -568,8 +600,8 @@
   </node>
   <node concept="PlHQZ" id="7CQR1P0Ls5z">
     <property role="EcuMT" value="8806468139568447843" />
-    <property role="3GE5qa" value="query.filter.argument" />
-    <property role="TrG5h" value="FilterArgument" />
+    <property role="3GE5qa" value="query.filter.threshold.argument" />
+    <property role="TrG5h" value="ThresholdFilterArgument" />
   </node>
   <node concept="1TIwiD" id="2z3DZjVa0iZ">
     <property role="EcuMT" value="2937376052603258047" />
@@ -628,6 +660,146 @@
       <property role="IQ2nx" value="4930863343477097872" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="SM$yDCYtQy">
+    <property role="EcuMT" value="1023040776214011298" />
+    <property role="3GE5qa" value="query.sample" />
+    <property role="TrG5h" value="GlobalSample" />
+    <property role="34LRSv" value="global sample" />
+    <ref role="1TJDcQ" node="2y6cZTVKoid" resolve="Sample" />
+  </node>
+  <node concept="1TIwiD" id="SM$yDCYtR6">
+    <property role="EcuMT" value="1023040776214011334" />
+    <property role="3GE5qa" value="query.sample" />
+    <property role="TrG5h" value="LocalSample" />
+    <property role="34LRSv" value="local sample" />
+    <ref role="1TJDcQ" node="2y6cZTVKoid" resolve="Sample" />
+    <node concept="1TJgyi" id="SM$yDCYtRT" role="1TKVEl">
+      <property role="IQ2nx" value="1023040776214011385" />
+      <property role="TrG5h" value="lowerBound" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="SM$yDCYtSf" role="1TKVEl">
+      <property role="IQ2nx" value="1023040776214011407" />
+      <property role="TrG5h" value="upperBound" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5HNNZ2dbDHu">
+    <property role="EcuMT" value="6589839311840910174" />
+    <property role="3GE5qa" value="query.filter.threshold" />
+    <property role="TrG5h" value="ThresholdFilter" />
+    <property role="34LRSv" value="threshold filter" />
+    <ref role="1TJDcQ" node="7CQR1P0IShL" resolve="FilterOperator" />
+    <node concept="1TJgyj" id="5HNNZ2dbDWx" role="1TKVEi">
+      <property role="IQ2ns" value="6589839311840911137" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="argument" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7CQR1P0Ls5z" resolve="ThresholdFilterArgument" />
+    </node>
+    <node concept="1TJgyi" id="5HNNZ2dbDNX" role="1TKVEl">
+      <property role="IQ2nx" value="6589839311840910589" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="7CQR1P0ITfb" resolve="ThresholdFilterType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3lnCt0EKDk8">
+    <property role="EcuMT" value="3843718722426672392" />
+    <property role="3GE5qa" value="query.filter.temporal" />
+    <property role="TrG5h" value="TemporalFilter" />
+    <property role="34LRSv" value="temporal filter" />
+    <ref role="1TJDcQ" node="7CQR1P0IShL" resolve="FilterOperator" />
+    <node concept="1TJgyi" id="3lnCt0EKDQV" role="1TKVEl">
+      <property role="IQ2nx" value="3843718722426674619" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="3lnCt0EKDpg" resolve="TemporalFilterType" />
+    </node>
+    <node concept="1TJgyi" id="3lnCt0EKIcz" role="1TKVEl">
+      <property role="IQ2nx" value="3843718722426692387" />
+      <property role="TrG5h" value="argument" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="25R3W" id="3lnCt0EKDpg">
+    <property role="3F6X1D" value="3843718722426672720" />
+    <property role="3GE5qa" value="query.filter.temporal" />
+    <property role="TrG5h" value="TemporalFilterType" />
+    <node concept="25R33" id="3lnCt0EKDph" role="25R1y">
+      <property role="3tVfz5" value="3843718722426672721" />
+      <property role="TrG5h" value="after" />
+      <property role="1L1pqM" value="after" />
+    </node>
+    <node concept="25R33" id="3lnCt0EKDpi" role="25R1y">
+      <property role="3tVfz5" value="3843718722426672722" />
+      <property role="TrG5h" value="before" />
+      <property role="1L1pqM" value="before" />
+    </node>
+  </node>
+  <node concept="25R3W" id="hRgQBEcs3w">
+    <property role="3F6X1D" value="321800020560036064" />
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="EventDurationUnit" />
+    <node concept="25R33" id="hRgQBEcs3x" role="25R1y">
+      <property role="3tVfz5" value="321800020560036065" />
+      <property role="TrG5h" value="milliseconds" />
+      <property role="1L1pqM" value="millis" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs5q" role="25R1y">
+      <property role="3tVfz5" value="321800020560036186" />
+      <property role="TrG5h" value="seconds" />
+      <property role="1L1pqM" value="seconds" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs5P" role="25R1y">
+      <property role="3tVfz5" value="321800020560036213" />
+      <property role="TrG5h" value="minutes" />
+      <property role="1L1pqM" value="minutes" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs6h" role="25R1y">
+      <property role="3tVfz5" value="321800020560036241" />
+      <property role="TrG5h" value="hours" />
+      <property role="1L1pqM" value="hours" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs6I" role="25R1y">
+      <property role="3tVfz5" value="321800020560036270" />
+      <property role="TrG5h" value="days" />
+      <property role="1L1pqM" value="days" />
+    </node>
+    <node concept="25R33" id="hRgQBEcs7c" role="25R1y">
+      <property role="3tVfz5" value="321800020560036300" />
+      <property role="TrG5h" value="weeks" />
+      <property role="1L1pqM" value="weeks" />
+    </node>
+  </node>
+  <node concept="25R3W" id="hRgQBEqrop">
+    <property role="3F6X1D" value="321800020563703321" />
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="GreaterSymbol" />
+    <node concept="25R33" id="hRgQBEqroq" role="25R1y">
+      <property role="3tVfz5" value="321800020563703322" />
+      <property role="TrG5h" value="inclusive" />
+      <property role="1L1pqM" value="≥" />
+    </node>
+    <node concept="25R33" id="hRgQBEqrpV" role="25R1y">
+      <property role="3tVfz5" value="321800020563703419" />
+      <property role="TrG5h" value="exclusive" />
+      <property role="1L1pqM" value="&gt;" />
+    </node>
+  </node>
+  <node concept="25R3W" id="hRgQBEqrs2">
+    <property role="3F6X1D" value="321800020563703554" />
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="LessThanSymbol" />
+    <node concept="25R33" id="hRgQBEqrs3" role="25R1y">
+      <property role="3tVfz5" value="321800020563703555" />
+      <property role="TrG5h" value="inclusive" />
+      <property role="1L1pqM" value="≤" />
+    </node>
+    <node concept="25R33" id="hRgQBEqrs4" role="25R1y">
+      <property role="3tVfz5" value="321800020563703556" />
+      <property role="TrG5h" value="exclusive" />
+      <property role="1L1pqM" value="&lt;" />
     </node>
   </node>
 </model>
