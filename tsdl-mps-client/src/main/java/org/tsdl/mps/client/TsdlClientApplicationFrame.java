@@ -124,7 +124,13 @@ public class TsdlClientApplicationFrame extends JFrame {
     }
 
     private String node(String key, Object value) {
-        return String.format("<html><b>%s</b>%s</html>", key, value != null ? ": " + value : "");
+        return String.format(
+          "<html><b>%s</b>%s</html>",
+          key,
+          value != null
+            ? ": " + (value instanceof String ? "\"" + value + "\"" : value)
+            : ""
+        );
     }
 
     private JComponent getQueryText() {
@@ -182,6 +188,7 @@ public class TsdlClientApplicationFrame extends JFrame {
 
                 resultForm.setWaiting(false, responseObject);
             } catch (Exception e) {
+                System.err.println(e.getMessage());
                 resultForm.setError(e.getMessage());
             }
         }).start();

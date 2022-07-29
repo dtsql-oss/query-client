@@ -108,9 +108,9 @@ public class TsdlClientApplication extends JFrame {
 
             var traces = responseTree.get("errorTrace");
             if (traces == null || traces.size() <= 0) {
-                throw new IOException(
-                  String.format("Unexpected HTTP Status Code at '%s': %s", response.request().url(), response.code())
-                );
+                var error = String.format("Unexpected HTTP Status Code at '%s': %s", response.request().url(), response.code());
+                System.err.println(error);
+                throw new IOException(error);
             }
 
             StringBuilder errorTrace = new StringBuilder();
