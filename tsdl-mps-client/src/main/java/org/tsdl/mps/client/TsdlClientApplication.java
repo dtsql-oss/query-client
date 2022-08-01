@@ -42,29 +42,25 @@ public class TsdlClientApplication extends JFrame {
 
 
     public static void main(String[] args) {
+        if (args.length != 6) {
+            System.err.println("Invalid invocation. Program excepts 6 arguments:\n" +
+              "  [1]: TSDL client name\n" +
+              "  [2]: TSDL HTTP query endpoint\n" +
+              "  [3]: JSON payload\n" +
+              "  [4]: TSDL query in plaintext\n" +
+              "  [5]: windows stay on top? (true|false)\n" +
+              "  [6]: visualize input data? (true|false)");
+            System.err.println("Aborting.");
+            System.exit(1);
+        }
+
         SwingUtilities.invokeLater(() -> buildApp(
-          "Example",
-          "http://localhost:8080/query",
-          "{\n" +
-            "  \"storage\" : {\n" +
-            "    \"name\" : \"csv\",\n" +
-            "    \"serviceConfiguration\" : { },\n" +
-            "    \"lookupConfiguration\" : {\n" +
-            "      \"filePath\" : \"D:\\\\Universitaet\\\\Diplomarbeit\\\\repos\\\\java\\\\implementation\\\\src\\\\test\\\\resources\\\\data\\\\query\\\\series2.csv\",\n" +
-            "      \"fieldSeparator\" : \";\"\n" +
-            "    },\n" +
-            "    \"transformationConfiguration\" : {\n" +
-            "      \"valueColumn\" : 1,\n" +
-            "      \"skipHeaders\" : 0,\n" +
-            "      \"timeColumn\" : 0,\n" +
-            "      \"timeFormat\" : \"yyyy-MM-dd HH:mm:ss.SSS\"\n" +
-            "    }\n" +
-            "  },\n" +
-            "  \"tsdlQuery\" : \"WITH SAMPLES: avg() AS myAvg, avg(\\\"2022-07-05T23:55:00Z\\\", \\\"2022-11-12T23:59:00Z\\\") AS myLocalAvg -> echo(5)    USING EVENTS: AND(lt(myAvg)) AS low, AND(gt(myAvg)) AS high    CHOOSE: low precedes high     YIELD: data points\"\n" +
-            "}",
-          "WITH SAMPLES: avg() AS myAvg, avg(\\\"2022-07-05T23:55:00Z\\\", \\\"2022-11-12T23:59:00Z\\\") AS myLocalAvg -> echo(5)    USING EVENTS: AND(lt(myAvg)) AS low, AND(gt(myAvg)) AS high    CHOOSE: low precedes high     YIELD: data points",
-          true,
-          true)
+          args[0],
+          args[1],
+          args[2],
+          args[3],
+          Boolean.parseBoolean(args[4]),
+          Boolean.parseBoolean(args[5]))
         );
     }
 

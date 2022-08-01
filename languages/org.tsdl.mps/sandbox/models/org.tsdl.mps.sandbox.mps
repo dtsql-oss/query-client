@@ -274,17 +274,6 @@
       </node>
     </node>
   </node>
-  <node concept="SPjgm" id="AbtmyXtQ8O">
-    <property role="3GE5qa" value="query" />
-    <property role="TrG5h" value="TestQuery" />
-    <node concept="1jhBKc" id="AbtmyXtQ8P" role="UBkGr" />
-    <node concept="UzlwC" id="AbtmyXtQ8Q" role="1P9pRR" />
-    <node concept="2bnqQu" id="AbtmyXtQ8R" role="2bn54T" />
-    <node concept="2bnqRe" id="AbtmyXtQ8S" role="2bnqQD" />
-    <node concept="2bm369" id="AbtmyXtQ8T" role="2bm2wW">
-      <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
-    </node>
-  </node>
   <node concept="SO4mB" id="6EdjbK8883W">
     <property role="TrG5h" value="TestClient" />
     <property role="3GE5qa" value="client" />
@@ -458,6 +447,7 @@
     <property role="3nIRPp" value="true" />
     <property role="1yHMlY" value="true" />
     <property role="1yFoOE" value="true" />
+    <property role="ylZ1Y" value="true" />
     <node concept="SO54j" id="3ytyJtMKNuG" role="1y_wOU">
       <property role="SO53I" value="csv" />
       <node concept="39UX5S" id="3ytyJtMKNuH" role="SO53t" />
@@ -579,35 +569,9 @@
       </node>
     </node>
   </node>
-  <node concept="SPjgm" id="hRgQBEgjRn">
-    <property role="3GE5qa" value="query" />
-    <node concept="1jhBKc" id="hRgQBEgjRo" role="UBkGr" />
-    <node concept="UzlwC" id="hRgQBEgjRp" role="1P9pRR" />
-    <node concept="2bnqQu" id="hRgQBEgjRq" role="2bn54T">
-      <node concept="2bncbV" id="hRgQBEgjRP" role="2bn53N">
-        <property role="TrG5h" value="e2" />
-        <property role="3IhC1C" value="5" />
-        <property role="3IhC13" value="hRgQBEcs3x/milliseconds" />
-        <property role="3I7JiG" value="hRgQBEqrpV/exclusive" />
-        <property role="3I7JH5" value="hRgQBEqrs3/inclusive" />
-        <property role="3IhCdo" value="true" />
-        <property role="3InSFU" value="true" />
-        <node concept="Uzlxn" id="hRgQBEgjRQ" role="7BG_w">
-          <property role="Uzkwh" value="7CQR1P0IUYT/and" />
-          <node concept="v_jjo" id="hRgQBEgjV7" role="UzkwL">
-            <property role="v_jLF" value="3lnCt0EKDph/after" />
-            <property role="v_kbN" value="2022-12-03T08:04:23Z" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2bnqRe" id="hRgQBEgjRr" role="2bnqQD" />
-    <node concept="2bm369" id="hRgQBEgjRs" role="2bm2wW">
-      <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
-    </node>
-  </node>
   <node concept="SPjgm" id="hRgQBEvq2z">
     <property role="3GE5qa" value="query" />
+    <property role="TrG5h" value="TestQuery" />
     <node concept="1jhBKc" id="hRgQBEvq2$" role="UBkGr">
       <node concept="1AMOY8" id="hRgQBEvq6J" role="1jhVtw">
         <property role="TrG5h" value="e3" />
