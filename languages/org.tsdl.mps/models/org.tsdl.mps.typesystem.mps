@@ -123,6 +123,7 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -595,7 +596,7 @@
                   <property role="373rjd" value="true" />
                   <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
                   <node concept="Xl_RD" id="SM$yDCYGbu" role="37wK5m">
-                    <property role="Xl_RC" value="date must not be null or blank" />
+                    <property role="Xl_RC" value="date must not be blank" />
                   </node>
                 </node>
               </node>
@@ -1596,15 +1597,30 @@
           </node>
         </node>
         <node concept="3clFbS" id="SM$yDCYOaw" role="1zxBo7">
-          <node concept="3clFbF" id="SM$yDCYOcB" role="3cqZAp">
-            <node concept="2YIFZM" id="SM$yDCYOfD" role="3clFbG">
-              <ref role="37wK5l" node="SM$yDCYALM" resolve="checkDate" />
-              <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
-              <node concept="2OqwBi" id="SM$yDCYOp3" role="37wK5m">
-                <node concept="1YBJjd" id="SM$yDCYOgg" role="2Oq$k0">
+          <node concept="3clFbJ" id="1rjGWoOwd7Z" role="3cqZAp">
+            <node concept="3clFbS" id="1rjGWoOwd81" role="3clFbx">
+              <node concept="3clFbF" id="1rjGWoOweF8" role="3cqZAp">
+                <node concept="2YIFZM" id="SM$yDCYOfD" role="3clFbG">
+                  <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
+                  <ref role="37wK5l" node="SM$yDCYALM" resolve="checkDate" />
+                  <node concept="2OqwBi" id="SM$yDCYOp3" role="37wK5m">
+                    <node concept="1YBJjd" id="SM$yDCYOgg" role="2Oq$k0">
+                      <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
+                    </node>
+                    <node concept="3TrcHB" id="SM$yDCYOOv" role="2OqNvi">
+                      <ref role="3TsBF5" to="3k3a:SM$yDCYtRT" resolve="lowerBound" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="1rjGWoOwedJ" role="3clFbw">
+              <node concept="10Nm6u" id="1rjGWoOwexJ" role="3uHU7w" />
+              <node concept="2OqwBi" id="1rjGWoOwdkn" role="3uHU7B">
+                <node concept="1YBJjd" id="1rjGWoOwd8V" role="2Oq$k0">
                   <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
                 </node>
-                <node concept="3TrcHB" id="SM$yDCYOOv" role="2OqNvi">
+                <node concept="3TrcHB" id="1rjGWoOwdAa" role="2OqNvi">
                   <ref role="3TsBF5" to="3k3a:SM$yDCYtRT" resolve="lowerBound" />
                 </node>
               </node>
@@ -1640,15 +1656,30 @@
           </node>
         </node>
         <node concept="3clFbS" id="SM$yDCYQtN" role="1zxBo7">
-          <node concept="3clFbF" id="SM$yDCYQtO" role="3cqZAp">
-            <node concept="2YIFZM" id="SM$yDCYQtP" role="3clFbG">
-              <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
-              <ref role="37wK5l" node="SM$yDCYALM" resolve="checkDate" />
-              <node concept="2OqwBi" id="SM$yDCYQtQ" role="37wK5m">
-                <node concept="1YBJjd" id="SM$yDCYQtR" role="2Oq$k0">
+          <node concept="3clFbJ" id="1rjGWoOweJ3" role="3cqZAp">
+            <node concept="3clFbS" id="1rjGWoOweJ5" role="3clFbx">
+              <node concept="3clFbF" id="SM$yDCYQtO" role="3cqZAp">
+                <node concept="2YIFZM" id="SM$yDCYQtP" role="3clFbG">
+                  <ref role="1Pybhc" node="AbtmyXsErf" resolve="CheckingRuleHelper" />
+                  <ref role="37wK5l" node="SM$yDCYALM" resolve="checkDate" />
+                  <node concept="2OqwBi" id="SM$yDCYQtQ" role="37wK5m">
+                    <node concept="1YBJjd" id="SM$yDCYQtR" role="2Oq$k0">
+                      <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
+                    </node>
+                    <node concept="3TrcHB" id="SM$yDCYQRp" role="2OqNvi">
+                      <ref role="3TsBF5" to="3k3a:SM$yDCYtSf" resolve="upperBound" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="1rjGWoOwfMW" role="3clFbw">
+              <node concept="10Nm6u" id="1rjGWoOwg7i" role="3uHU7w" />
+              <node concept="2OqwBi" id="1rjGWoOweVJ" role="3uHU7B">
+                <node concept="1YBJjd" id="1rjGWoOweKf" role="2Oq$k0">
                   <ref role="1YBMHb" node="SM$yDCYzwQ" resolve="localSample" />
                 </node>
-                <node concept="3TrcHB" id="SM$yDCYQRp" role="2OqNvi">
+                <node concept="3TrcHB" id="1rjGWoOwfnl" role="2OqNvi">
                   <ref role="3TsBF5" to="3k3a:SM$yDCYtSf" resolve="upperBound" />
                 </node>
               </node>

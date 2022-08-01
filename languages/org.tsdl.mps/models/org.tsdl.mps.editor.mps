@@ -597,6 +597,14 @@
             <ref role="1k5W1q" node="6EdjbK8otuD" resolve="settingsItem" />
           </node>
         </node>
+        <node concept="2yq9I_" id="1rjGWoOx5BM" role="3EZMnx">
+          <ref role="225u1j" to="3k3a:1rjGWoOx4eS" resolve="visualizeData" />
+          <node concept="jv8YD" id="1rjGWoOxVdw" role="1563LE" />
+          <node concept="3F0ifn" id="1rjGWoOx5Er" role="2fqkNU">
+            <property role="3F0ifm" value=" visualize extracted data" />
+            <ref role="1k5W1q" node="6EdjbK8otuD" resolve="settingsItem" />
+          </node>
+        </node>
         <node concept="pVoyu" id="6EdjbK8h99u" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1380,6 +1388,7 @@
         <ref role="1k5W1q" node="SM$yDD2YeR" resolve="argument" />
       </node>
       <node concept="3F0A7n" id="SM$yDCYztx" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="3k3a:SM$yDCYtRT" resolve="lowerBound" />
       </node>
       <node concept="3F0ifn" id="SM$yDD37Qk" role="3EZMnx">
@@ -1390,6 +1399,7 @@
         <ref role="1k5W1q" node="SM$yDD2YeR" resolve="argument" />
       </node>
       <node concept="3F0A7n" id="SM$yDCYzvk" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="3k3a:SM$yDCYtSf" resolve="upperBound" />
       </node>
       <node concept="3F0ifn" id="SM$yDCYzsr" role="3EZMnx">

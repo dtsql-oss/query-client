@@ -7,6 +7,7 @@
     <modelRoot contentPath="D:/Universitaet/Diplomarbeit/repos/mps/libs" type="java_classes">
       <sourceRoot location="." />
       <sourceRoot location="client-0.1-SNAPSHOT.jar" />
+      <sourceRoot location="jfreechart-1.5.3.jar" />
       <sourceRoot location="tsdl-mps-client-1.0-SNAPSHOT.jar" />
     </modelRoot>
   </models>
@@ -18,6 +19,7 @@
   <stubModelEntries>
     <stubModelEntry path="D:/Universitaet/Diplomarbeit/repos/mps/libs/client-0.1-SNAPSHOT.jar" />
     <stubModelEntry path="D:/Universitaet/Diplomarbeit/repos/mps/libs/tsdl-mps-client-1.0-SNAPSHOT.jar" />
+    <stubModelEntry path="D:/Universitaet/Diplomarbeit/repos/mps/libs/jfreechart-1.5.3.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

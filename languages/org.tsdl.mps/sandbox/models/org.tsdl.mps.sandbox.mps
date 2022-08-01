@@ -11,6 +11,7 @@
     <language id="46aa8ee8-407e-4248-9dfb-28e58581faab" name="org.tsdl.mps">
       <concept id="6715237501820821860" name="org.tsdl.mps.structure.ResultDeclaration" flags="ng" index="2bm369">
         <property id="6715237501820827630" name="format" index="2bm2s3" />
+        <child id="3185380845574894361" name="samples" index="2yTSKp" />
       </concept>
       <concept id="6715237501821096470" name="org.tsdl.mps.structure.Event" flags="ng" index="2bncbV">
         <property id="321800020563703749" name="minInclusive" index="3I7JiG" />
@@ -36,6 +37,7 @@
         <reference id="687772460820257919" name="sample" index="2OXU$n" />
       </concept>
       <concept id="3289320894642931274" name="org.tsdl.mps.structure.TsdlClient" flags="ng" index="SO4mB">
+        <property id="1644855952786342840" name="visualizeData" index="ylZ1Y" />
         <property id="8721459316144776736" name="endpoint" index="1kR7WE" />
         <property id="6589839311834231465" name="topmost" index="3nIRPp" />
         <property id="7677877310210490774" name="showStorageSpecification" index="1yFoOE" />
@@ -289,6 +291,7 @@
     <property role="1kR7WE" value="http://localhost:8080/query" />
     <property role="1yFoOE" value="true" />
     <property role="1yHMlY" value="true" />
+    <property role="ylZ1Y" value="true" />
     <node concept="SO54j" id="6EdjbK8883X" role="1y_wOU">
       <property role="SO53I" value="csv" />
       <node concept="39UX5S" id="6EdjbK8883Y" role="SO53t" />
@@ -393,7 +396,13 @@
         </node>
       </node>
       <node concept="2bm369" id="6EdjbK88846" role="2bm2wW">
-        <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
+        <property role="2bm2s3" value="2KOJK2eON5w/sampleSet" />
+        <node concept="2OXU$A" id="1rjGWoOwHU1" role="2yTSKp">
+          <ref role="2OXU$n" node="1rjGWoOwH2k" resolve="superIntegral" />
+        </node>
+        <node concept="2OXU$A" id="1rjGWoOwHUr" role="2yTSKp">
+          <ref role="2OXU$n" node="1rjGWoOwH6i" resolve="superIntegral2" />
+        </node>
       </node>
       <node concept="1jhBKc" id="SM$yDD9h9R" role="UBkGr">
         <node concept="1AMOY8" id="SM$yDD9hac" role="1jhVtw">
@@ -417,6 +426,18 @@
               <property role="13BRu6" value="4" />
             </node>
           </node>
+        </node>
+        <node concept="1AMOY8" id="1rjGWoOwH2k" role="1jhVtw">
+          <property role="TrG5h" value="superIntegral" />
+          <property role="UBGTe" value="1rjGWoOv4ER/integral" />
+          <node concept="13BRuq" id="1rjGWoOwH2n" role="13_3sd" />
+        </node>
+        <node concept="1AMOZG" id="1rjGWoOwH6i" role="1jhVtw">
+          <property role="TrG5h" value="superIntegral2" />
+          <property role="UBGTe" value="1rjGWoOv4ER/integral" />
+          <property role="1AMOZj" value="1999-01-01T00:00:00Z" />
+          <property role="1AMOK_" value="2100-01-01T00:00:00Z" />
+          <node concept="13BRuq" id="1rjGWoOwH6l" role="13_3sd" />
         </node>
       </node>
     </node>
@@ -590,8 +611,13 @@
     <node concept="1jhBKc" id="hRgQBEvq2$" role="UBkGr">
       <node concept="1AMOY8" id="hRgQBEvq6J" role="1jhVtw">
         <property role="TrG5h" value="e3" />
-        <property role="UBGTe" value="2y6cZTVKomo/avg" />
+        <property role="UBGTe" value="1rjGWoOv4ER/integral" />
         <node concept="13BRuq" id="hRgQBEvq6M" role="13_3sd" />
+      </node>
+      <node concept="1AMOZG" id="1rjGWoOvnk6" role="1jhVtw">
+        <property role="TrG5h" value="e5" />
+        <property role="UBGTe" value="1rjGWoOv4ER/integral" />
+        <node concept="13BRuq" id="1rjGWoOvnk9" role="13_3sd" />
       </node>
     </node>
     <node concept="UzlwC" id="hRgQBEvq2_" role="1P9pRR" />

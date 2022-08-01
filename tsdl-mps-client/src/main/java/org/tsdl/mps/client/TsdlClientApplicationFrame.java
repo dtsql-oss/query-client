@@ -1,12 +1,15 @@
 package org.tsdl.mps.client;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.jetbrains.annotations.NotNull;
 import org.tsdl.mps.client.infrastructure.dto.QueryResultDto;
+import org.tsdl.mps.client.infrastructure.model.DataPoint;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BiFunction;
 
@@ -14,6 +17,7 @@ public class TsdlClientApplicationFrame extends JFrame {
     private static final Font LABEL_FONT = UIManager.getFont("Label.font");
 
     private final BiFunction<String, String, String> queryExecutor;
+    private final BiFunction<String, String, String> dataFetcher;
     private final ObjectMapper objectMapper;
 
     private final String endpoint;
@@ -21,19 +25,31 @@ public class TsdlClientApplicationFrame extends JFrame {
     private final String query;
     private final String payload;
     private final boolean topmost;
+    private final boolean visualizeData;
 
     private JSplitPane splitPane;
 
-    TsdlClientApplicationFrame(BiFunction<String, String, String> queryExecutor, ObjectMapper objectMapper, String endpoint, String payload, JsonNode payloadNode, String clientName, String query, boolean topmost) {
+    TsdlClientApplicationFrame(BiFunction<String, String, String> queryExecutor,
+                               BiFunction<String, String, String> dataFetcher,
+                               ObjectMapper objectMapper,
+                               String endpoint,
+                               String payload,
+                               JsonNode payloadNode,
+                               String clientName,
+                               String query,
+                               boolean topmost,
+                               boolean visualizeData) {
         super("TSDL Query Client");
 
         this.queryExecutor = queryExecutor;
+        this.dataFetcher = dataFetcher;
         this.objectMapper = objectMapper;
         this.endpoint = endpoint;
         this.clientName = clientName;
         this.query = query;
         this.payload = payload;
         this.topmost = topmost;
+        this.visualizeData = visualizeData;
 
         getContentPane().add(getHeaderPanel(), BorderLayout.NORTH);
         getContentPane().add(getContentPanel(payloadNode), BorderLayout.CENTER);
@@ -165,8 +181,24 @@ public class TsdlClientApplicationFrame extends JFrame {
         JButton btnCancel = new JButton("Close");
 
         btnSendRequest.addActionListener(e1 -> SwingUtilities.invokeLater(() -> {
-            TsdlClientResultFrame resultForm = new TsdlClientResultFrame(clientName, topmost);
-            runQueryInBackground(resultForm);
+            TsdlClientResultDialog resultDialog = new TsdlClientResultDialog(clientName, topmost);
+            runQueryInBackground(resultDialog);
+
+            if (visualizeData) {
+                TsdlClientDataDialog dataDialog = new TsdlClientDataDialog(clientName, topmost);
+                fetchDataInBackground(dataDialog);
+
+                Dimension screenDimension = Toolkit.getDefaultToolkit().getScreenSize();
+                dataDialog.setLocation(
+                  (int) screenDimension.getWidth() / 2 - dataDialog.getWidth(),
+                  (int) (screenDimension.getHeight() - dataDialog.getHeight()) / 2
+                );
+
+                resultDialog.setLocation(
+                  (int) (screenDimension.getWidth()) / 2,
+                  (int) (screenDimension.getHeight() - resultDialog.getHeight()) / 2
+                );
+            }
         }));
         btnCancel.addActionListener(e2 -> this.dispose());
 
@@ -177,7 +209,7 @@ public class TsdlClientApplicationFrame extends JFrame {
         return bottomPanel;
     }
 
-    private void runQueryInBackground(TsdlClientResultFrame resultForm) {
+    private void runQueryInBackground(TsdlClientResultDialog resultDialog) {
         new Thread(() -> {
             try {
                 System.out.println("Sending Request:\n" + payload + "\n");
@@ -186,12 +218,30 @@ public class TsdlClientApplicationFrame extends JFrame {
                 QueryResultDto responseObject = objectMapper.readValue(responseString, QueryResultDto.class);
                 System.out.println("Received Response:\n" + responseString);
 
-                resultForm.setWaiting(false, responseObject);
+                resultDialog.setWaiting(false, responseObject);
             } catch (Exception e) {
                 System.err.println(e.getMessage());
-                resultForm.setError(e.getMessage());
+                resultDialog.setError(e.getMessage());
             }
         }).start();
 
+    }
+
+    private void fetchDataInBackground(TsdlClientDataDialog dataDialog) {
+        new Thread(() -> {
+            try {
+                System.out.println("Sending Request:\n" + payload + "\n");
+
+                String responseString = dataFetcher.apply(endpoint, payload);
+                List<DataPoint> dataPoints = objectMapper.readValue(responseString, new TypeReference<>() {
+                });
+                System.out.println("Received Response:\n" + responseString);
+
+                dataDialog.setWaiting(false, dataPoints);
+            } catch (Exception e) {
+                System.err.println(e.getMessage());
+                dataDialog.setError(e.getMessage());
+            }
+        }).start();
     }
 }
