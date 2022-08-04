@@ -203,35 +203,12 @@
     <node concept="PrWs8" id="2QA0YOlt_c6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyi" id="2QA0YOlt_cF" role="1TKVEl">
-      <property role="IQ2nx" value="3289320894642934571" />
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="2QA0YOlt_d4" role="1TKVEl">
-      <property role="IQ2nx" value="3289320894642934596" />
-      <property role="TrG5h" value="type" />
-      <ref role="AX2Wp" node="2QA0YOlt_cV" resolve="StoragePropertyType" />
-    </node>
-  </node>
-  <node concept="25R3W" id="2QA0YOlt_cV">
-    <property role="3F6X1D" value="3289320894642934587" />
-    <property role="3GE5qa" value="client" />
-    <property role="TrG5h" value="StoragePropertyType" />
-    <node concept="25R33" id="2QA0YOlt_cW" role="25R1y">
-      <property role="3tVfz5" value="3289320894642934588" />
-      <property role="TrG5h" value="num" />
-      <property role="1L1pqM" value="number" />
-    </node>
-    <node concept="25R33" id="2QA0YOlt_cX" role="25R1y">
-      <property role="3tVfz5" value="3289320894642934589" />
-      <property role="TrG5h" value="str" />
-      <property role="1L1pqM" value="text" />
-    </node>
-    <node concept="25R33" id="2QA0YOlt_d0" role="25R1y">
-      <property role="3tVfz5" value="3289320894642934592" />
-      <property role="TrG5h" value="bool" />
-      <property role="1L1pqM" value="boolean" />
+    <node concept="1TJgyj" id="1rjGWoOP43y" role="1TKVEi">
+      <property role="IQ2ns" value="1644855952791584994" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1rjGWoOP1La" resolve="StoragePropertyValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="JcVvn29NMd">
@@ -810,6 +787,49 @@
       <property role="3tVfz5" value="321800020563703556" />
       <property role="TrG5h" value="exclusive" />
       <property role="1L1pqM" value="&lt;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1rjGWoOP1La">
+    <property role="EcuMT" value="1644855952791575626" />
+    <property role="3GE5qa" value="client" />
+    <property role="TrG5h" value="StoragePropertyValue" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="1TIwiD" id="1rjGWoOP1MH">
+    <property role="EcuMT" value="1644855952791575725" />
+    <property role="3GE5qa" value="client" />
+    <property role="TrG5h" value="StoragePropertyString" />
+    <property role="34LRSv" value="string" />
+    <ref role="1TJDcQ" node="1rjGWoOP1La" resolve="StoragePropertyValue" />
+    <node concept="1TJgyi" id="1rjGWoOP1XM" role="1TKVEl">
+      <property role="IQ2nx" value="1644855952791576434" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1rjGWoOP1QX">
+    <property role="EcuMT" value="1644855952791575997" />
+    <property role="3GE5qa" value="client" />
+    <property role="TrG5h" value="StoragePropertyNumber" />
+    <property role="34LRSv" value="number" />
+    <ref role="1TJDcQ" node="1rjGWoOP1La" resolve="StoragePropertyValue" />
+    <node concept="1TJgyi" id="1rjGWoOP1UW" role="1TKVEl">
+      <property role="IQ2nx" value="1644855952791576252" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="AbtmyXxjdm" resolve="Number" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1rjGWoOP3VR">
+    <property role="EcuMT" value="1644855952791584503" />
+    <property role="3GE5qa" value="client" />
+    <property role="TrG5h" value="StoragePropertyBoolean" />
+    <property role="34LRSv" value="boolean" />
+    <ref role="1TJDcQ" node="1rjGWoOP1La" resolve="StoragePropertyValue" />
+    <node concept="1TJgyi" id="1rjGWoOP3XW" role="1TKVEl">
+      <property role="IQ2nx" value="1644855952791584636" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

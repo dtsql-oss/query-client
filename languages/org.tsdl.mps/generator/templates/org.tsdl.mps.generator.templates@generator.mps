@@ -793,7 +793,7 @@
     <property role="TrG5h" value="reduce_JsonObject" />
     <ref role="3gUMe" to="gk59:3QNkN21Fl48" resolve="JsonObject" />
     <node concept="Xl_RD" id="5o9QwbMDvKN" role="13RCb5">
-      <property role="Xl_RC" value="resulting query" />
+      <property role="Xl_RC" value="resulting payload" />
       <node concept="raruj" id="5o9QwbMDvLa" role="lGtFl" />
       <node concept="17Uvod" id="5o9QwbMDvLv" role="lGtFl">
         <property role="2qtEX9" value="value" />
