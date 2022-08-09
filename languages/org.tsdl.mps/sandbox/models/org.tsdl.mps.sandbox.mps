@@ -11,7 +11,6 @@
     <language id="46aa8ee8-407e-4248-9dfb-28e58581faab" name="org.tsdl.mps">
       <concept id="6715237501820821860" name="org.tsdl.mps.structure.ResultDeclaration" flags="ng" index="2bm369">
         <property id="6715237501820827630" name="format" index="2bm2s3" />
-        <child id="3185380845574894361" name="samples" index="2yTSKp" />
       </concept>
       <concept id="6715237501821096470" name="org.tsdl.mps.structure.Event" flags="ng" index="2bncbV">
         <property id="321800020563703749" name="minInclusive" index="3I7JiG" />
@@ -351,9 +350,13 @@
       <node concept="2bnqQu" id="6EdjbK88844" role="2bn54T">
         <node concept="2bncbV" id="6EdjbK8884z" role="2bn53N">
           <property role="TrG5h" value="low" />
-          <property role="3IhC13" value="hRgQBEcs6I/days" />
+          <property role="3IhC13" value="hRgQBEcs5P/minutes" />
           <property role="3I7JiG" value="hRgQBEqrpV/exclusive" />
           <property role="3I7JH5" value="hRgQBEqrs3/inclusive" />
+          <property role="3InSFU" value="true" />
+          <property role="3IhCdo" value="true" />
+          <property role="3IhC1C" value="360" />
+          <property role="3IhCeH" value="5" />
           <node concept="Uzlxn" id="6EdjbK8884$" role="7BG_w">
             <property role="Uzkwh" value="7CQR1P0IUYT/and" />
             <node concept="3mnliI" id="3lnCt0EMiXh" role="UzkwL">
@@ -395,13 +398,7 @@
         </node>
       </node>
       <node concept="2bm369" id="6EdjbK88846" role="2bm2wW">
-        <property role="2bm2s3" value="2KOJK2eON5w/sampleSet" />
-        <node concept="2OXU$A" id="1rjGWoOwHU1" role="2yTSKp">
-          <ref role="2OXU$n" node="1rjGWoOwH2k" resolve="superIntegral" />
-        </node>
-        <node concept="2OXU$A" id="1rjGWoOwHUr" role="2yTSKp">
-          <ref role="2OXU$n" node="1rjGWoOwH6i" resolve="superIntegral2" />
-        </node>
+        <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
       </node>
       <node concept="1jhBKc" id="SM$yDD9h9R" role="UBkGr">
         <node concept="1AMOY8" id="SM$yDD9hac" role="1jhVtw">
@@ -415,7 +412,7 @@
           </node>
         </node>
         <node concept="1AMOZG" id="SM$yDD9hcs" role="1jhVtw">
-          <property role="TrG5h" value="myLocalAvg" />
+          <property role="TrG5h" value="localIntegral" />
           <property role="UBGTe" value="2y6cZTVKomo/avg" />
           <property role="1AMOZj" value="2022-12-15T03:21:00Z" />
           <property role="1AMOK_" value="2022-12-15T07:59:00Z" />
@@ -425,18 +422,6 @@
               <property role="13BRu6" value="4" />
             </node>
           </node>
-        </node>
-        <node concept="1AMOY8" id="1rjGWoOwH2k" role="1jhVtw">
-          <property role="TrG5h" value="superIntegral" />
-          <property role="UBGTe" value="1rjGWoOv4ER/integral" />
-          <node concept="13BRuq" id="1rjGWoOwH2n" role="13_3sd" />
-        </node>
-        <node concept="1AMOZG" id="1rjGWoOwH6i" role="1jhVtw">
-          <property role="TrG5h" value="superIntegral2" />
-          <property role="UBGTe" value="1rjGWoOv4ER/integral" />
-          <property role="1AMOZj" value="1999-01-01T00:00:00Z" />
-          <property role="1AMOK_" value="2100-01-01T00:00:00Z" />
-          <node concept="13BRuq" id="1rjGWoOwH6l" role="13_3sd" />
         </node>
       </node>
     </node>
