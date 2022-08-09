@@ -66,6 +66,14 @@
         <child id="8731840535000000323" name="filter" index="1P9pRR" />
       </concept>
       <concept id="8806468139567503602" name="org.tsdl.mps.structure.TemporalChoice" flags="ng" index="UwojJ">
+        <property id="6358779356566105207" name="timeTolerance" index="D2O1l" />
+        <property id="6358779356564412447" name="minTolerance" index="D9jgX" />
+        <property id="6358779356564412524" name="minInclusive" index="D9jhe" />
+        <property id="6358779356564412626" name="maxTolerance" index="D9jjK" />
+        <property id="6358779356564412705" name="maxInclusive" index="D9jk3" />
+        <property id="6358779356564412809" name="toleranceUnit" index="D9jmF" />
+        <property id="6358779356564412008" name="addMinTolerance" index="D9jDa" />
+        <property id="6358779356564412323" name="addMaxTolerance" index="D9jI1" />
         <property id="8806468139567503627" name="operator" index="Uwokm" />
         <child id="2937376052603258258" name="event2" index="3jUU9A" />
         <child id="2937376052603258226" name="event1" index="3jUUa6" />
@@ -389,6 +397,13 @@
       <node concept="2bnqRe" id="6EdjbK88845" role="2bnqQD">
         <node concept="UwojJ" id="6EdjbK8884V" role="Uwo3r">
           <property role="Uwokm" value="5OLkeRmrfRm/precedes" />
+          <property role="D9jhe" value="hRgQBEqroq/inclusive" />
+          <property role="D9jgX" value="5" />
+          <property role="D9jk3" value="hRgQBEqrs4/exclusive" />
+          <property role="D9jjK" value="15" />
+          <property role="D9jmF" value="hRgQBEcs6h/hours" />
+          <property role="D2O1l" value="5wYV29LhkA_/with" />
+          <property role="D9jI1" value="true" />
           <node concept="3jUUdb" id="6EdjbK8884W" role="3jUUa6">
             <ref role="3jUUcG" node="6EdjbK8884z" resolve="low" />
           </node>
@@ -454,13 +469,13 @@
     <node concept="2bnqQu" id="hRgQBEvq2A" role="2bn54T">
       <node concept="2bncbV" id="hRgQBEvq3d" role="2bn53N">
         <property role="TrG5h" value="eo3" />
-        <property role="3InSFU" value="true" />
         <property role="3I7JiG" value="hRgQBEqroq/inclusive" />
         <property role="3IhC13" value="hRgQBEcs6h/hours" />
-        <property role="3IhCdo" value="true" />
         <property role="3I7JH5" value="hRgQBEqrs3/inclusive" />
         <property role="3IhC1C" value="24" />
         <property role="3IhCeH" value="24" />
+        <property role="3InSFU" value="true" />
+        <property role="3IhCdo" value="true" />
         <node concept="Uzlxn" id="hRgQBEvq3e" role="7BG_w">
           <property role="Uzkwh" value="7CQR1P0IUYT/and" />
           <node concept="3mnliI" id="hRgQBEvq4v" role="UzkwL">
@@ -472,7 +487,25 @@
         </node>
       </node>
     </node>
-    <node concept="2bnqRe" id="hRgQBEvq2B" role="2bnqQD" />
+    <node concept="2bnqRe" id="hRgQBEvq2B" role="2bnqQD">
+      <node concept="UwojJ" id="5wYV29LgATc" role="Uwo3r">
+        <property role="Uwokm" value="5OLkeRmrfRN/follows" />
+        <property role="D9jhe" value="hRgQBEqroq/inclusive" />
+        <property role="D9jk3" value="hRgQBEqrs3/inclusive" />
+        <property role="D9jmF" value="hRgQBEcs6I/days" />
+        <property role="D9jgX" value="7" />
+        <property role="D2O1l" value="5wYV29Lhk$S/none" />
+        <property role="D9jDa" value="true" />
+        <property role="D9jI1" value="true" />
+        <property role="D9jjK" value="7" />
+        <node concept="3jUUdb" id="5wYV29LgATd" role="3jUUa6">
+          <ref role="3jUUcG" node="hRgQBEvq3d" resolve="eo3" />
+        </node>
+        <node concept="3jUUdb" id="5wYV29LgATe" role="3jUU9A">
+          <ref role="3jUUcG" node="hRgQBEvq3d" resolve="eo3" />
+        </node>
+      </node>
+    </node>
     <node concept="2bm369" id="hRgQBEvq2C" role="2bm2wW">
       <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
     </node>

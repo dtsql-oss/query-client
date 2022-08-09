@@ -369,7 +369,7 @@
     <node concept="1TJgyi" id="hRgQBEcscE" role="1TKVEl">
       <property role="IQ2nx" value="321800020560036650" />
       <property role="TrG5h" value="durationUnit" />
-      <ref role="AX2Wp" node="hRgQBEcs3w" resolve="EventDurationUnit" />
+      <ref role="AX2Wp" node="hRgQBEcs3w" resolve="DurationUnit" />
     </node>
     <node concept="1TJgyj" id="6TO5KpDUHTA" role="1TKVEi">
       <property role="IQ2ns" value="7959011757784751718" />
@@ -463,6 +463,46 @@
       <property role="IQ2nx" value="8806468139567503627" />
       <property role="TrG5h" value="operator" />
       <ref role="AX2Wp" node="5OLkeRmrfRl" resolve="TemporalOperator" />
+    </node>
+    <node concept="1TJgyi" id="5wYV29LdqLR" role="1TKVEl">
+      <property role="IQ2nx" value="6358779356566105207" />
+      <property role="TrG5h" value="timeTolerance" />
+      <ref role="AX2Wp" node="5wYV29Lhk$R" resolve="TimeTolerance" />
+    </node>
+    <node concept="1TJgyi" id="5wYV29L6XpC" role="1TKVEl">
+      <property role="IQ2nx" value="6358779356564412008" />
+      <property role="TrG5h" value="addMinTolerance" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="5wYV29L6Xuz" role="1TKVEl">
+      <property role="IQ2nx" value="6358779356564412323" />
+      <property role="TrG5h" value="addMaxTolerance" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="5wYV29L6Xwv" role="1TKVEl">
+      <property role="IQ2nx" value="6358779356564412447" />
+      <property role="TrG5h" value="minTolerance" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5wYV29L6XxG" role="1TKVEl">
+      <property role="IQ2nx" value="6358779356564412524" />
+      <property role="TrG5h" value="minInclusive" />
+      <ref role="AX2Wp" node="hRgQBEqrop" resolve="GreaterSymbol" />
+    </node>
+    <node concept="1TJgyi" id="5wYV29L6Xzi" role="1TKVEl">
+      <property role="IQ2nx" value="6358779356564412626" />
+      <property role="TrG5h" value="maxTolerance" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="5wYV29L6X$x" role="1TKVEl">
+      <property role="IQ2nx" value="6358779356564412705" />
+      <property role="TrG5h" value="maxInclusive" />
+      <ref role="AX2Wp" node="hRgQBEqrs2" resolve="LessThanSymbol" />
+    </node>
+    <node concept="1TJgyi" id="5wYV29L6XA9" role="1TKVEl">
+      <property role="IQ2nx" value="6358779356564412809" />
+      <property role="TrG5h" value="toleranceUnit" />
+      <ref role="AX2Wp" node="hRgQBEcs3w" resolve="DurationUnit" />
     </node>
     <node concept="1TJgyj" id="2z3DZjVa0lM" role="1TKVEi">
       <property role="IQ2ns" value="2937376052603258226" />
@@ -723,8 +763,8 @@
   </node>
   <node concept="25R3W" id="hRgQBEcs3w">
     <property role="3F6X1D" value="321800020560036064" />
-    <property role="3GE5qa" value="query.event" />
-    <property role="TrG5h" value="EventDurationUnit" />
+    <property role="3GE5qa" value="query" />
+    <property role="TrG5h" value="DurationUnit" />
     <node concept="25R33" id="hRgQBEcs3x" role="25R1y">
       <property role="3tVfz5" value="321800020560036065" />
       <property role="TrG5h" value="milliseconds" />
@@ -827,6 +867,21 @@
       <property role="IQ2nx" value="1644855952791584636" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="25R3W" id="5wYV29Lhk$R">
+    <property role="3F6X1D" value="6358779356567128375" />
+    <property role="3GE5qa" value="query.choice" />
+    <property role="TrG5h" value="TimeTolerance" />
+    <node concept="25R33" id="5wYV29Lhk$S" role="25R1y">
+      <property role="3tVfz5" value="6358779356567128376" />
+      <property role="TrG5h" value="none" />
+      <property role="1L1pqM" value="immediately" />
+    </node>
+    <node concept="25R33" id="5wYV29LhkA_" role="25R1y">
+      <property role="3tVfz5" value="6358779356567128485" />
+      <property role="TrG5h" value="with" />
+      <property role="1L1pqM" value="with time gap" />
     </node>
   </node>
 </model>
