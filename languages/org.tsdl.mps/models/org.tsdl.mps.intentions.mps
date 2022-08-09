@@ -101,5 +101,30 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="2ybtvkS5JoS">
+    <property role="3GE5qa" value="query.filter.around" />
+    <property role="TrG5h" value="AroundFilterOperator_negate" />
+    <ref role="2ZfgGC" to="3k3a:5wYV29Lw$8k" resolve="AroundFilter" />
+    <node concept="2S6ZIM" id="2ybtvkS5JoT" role="2ZfVej">
+      <node concept="3clFbS" id="2ybtvkS5JoU" role="2VODD2">
+        <node concept="3clFbF" id="2ybtvkS5Jsi" role="3cqZAp">
+          <node concept="Xl_RD" id="2ybtvkS5Jsh" role="3clFbG">
+            <property role="Xl_RC" value="Negate Filter Argument" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2ybtvkS5JoV" role="2ZfgGD">
+      <node concept="3clFbS" id="2ybtvkS5JoW" role="2VODD2">
+        <node concept="3clFbF" id="2ybtvkS5JBV" role="3cqZAp">
+          <node concept="2YIFZM" id="2ybtvkS5JCU" role="3clFbG">
+            <ref role="37wK5l" to="rl4a:6EdjbK8AGqa" resolve="negateFilterOperator" />
+            <ref role="1Pybhc" to="rl4a:6EdjbK8AG5J" resolve="ActionImplementations" />
+            <node concept="2Sf5sV" id="2ybtvkS5JDL" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
