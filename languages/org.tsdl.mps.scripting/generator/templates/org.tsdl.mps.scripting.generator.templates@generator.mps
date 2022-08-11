@@ -205,7 +205,7 @@
             <node concept="liA8E" id="31dA5ym4GKe" role="2OqNvi">
               <ref role="37wK5l" to="8t3c:~CsvSerializingQueryClientSpecification.targetFile(java.lang.String)" resolve="targetFile" />
               <node concept="Xl_RD" id="31dA5ym4GNX" role="37wK5m">
-                <property role="Xl_RC" value="C:\\Users\\raffa\\Desktop\\hey.csv" />
+                <property role="Xl_RC" value="&lt;pathToCsvCacheFile&gt;.csv" />
               </node>
             </node>
           </node>
@@ -259,7 +259,7 @@
               </node>
             </node>
             <node concept="Xl_RD" id="31dA5ym4K8d" role="37vLTx">
-              <property role="Xl_RC" value="D:\\Universitaet\\Diplomarbeit\\repos\\java\\implementation\\src\\test\\resources\\data\\query\\series2.csv" />
+              <property role="Xl_RC" value="&lt;pathToInputCsvFile&gt;.csv" />
             </node>
           </node>
         </node>

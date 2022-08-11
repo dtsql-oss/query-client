@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import okhttp3.*;
 import org.tsdl.mps.client.infrastructure.DataPointDeserializer;
@@ -41,32 +42,29 @@ public class TsdlClientApplication extends JFrame {
 
 
     public static void main(String[] args) {
+        if (args.length != 6) {
+            System.err.println("Invalid invocation. Program excepts 6 arguments:\n" +
+              "  [1]: TSDL client name\n" +
+              "  [2]: TSDL HTTP query endpoint\n" +
+              "  [3]: JSON payload\n" +
+              "  [4]: TSDL query in plaintext\n" +
+              "  [5]: windows stay on top? (true|false)\n" +
+              "  [6]: visualize input data? (true|false)");
+            System.err.println("Aborting.");
+            System.exit(1);
+        }
+
         SwingUtilities.invokeLater(() -> buildApp(
-          "Example",
-          "http://localhost:8080/query",
-          "{\n" +
-            "  \"storage\" : {\n" +
-            "    \"name\" : \"csv\",\n" +
-            "    \"serviceConfiguration\" : { },\n" +
-            "    \"lookupConfiguration\" : {\n" +
-            "      \"filePath\" : \"D:\\\\Universitaet\\\\Diplomarbeit\\\\repos\\\\java\\\\implementation\\\\src\\\\test\\\\resources\\\\data\\\\query\\\\series2.csv\",\n" +
-            "      \"fieldSeparator\" : \";\"\n" +
-            "    },\n" +
-            "    \"transformationConfiguration\" : {\n" +
-            "      \"valueColumn\" : 1,\n" +
-            "      \"skipHeaders\" : 0,\n" +
-            "      \"timeColumn\" : 0,\n" +
-            "      \"timeFormat\" : \"yyyy-MM-dd HH:mm:ss.SSS\"\n" +
-            "    }\n" +
-            "  },\n" +
-            "  \"tsdlQuery\" : \"WITH SAMPLES: avg(_input) AS myAvg, avg(\\\"2022-07-05T23:55:00Z\\\", \\\"2022-11-12T23:59:00Z\\\") AS myLocalAvg -> echo(5)    USING EVENTS: AND(lt(myAvg)) AS low, AND(gt(myAvg)) AS high    CHOOSE: low precedes high     YIELD: data points\"\n" +
-            "}",
-          "WITH SAMPLES: avg(_input) AS myAvg, avg(\\\"2022-07-05T23:55:00Z\\\", \\\"2022-11-12T23:59:00Z\\\") AS myLocalAvg -> echo(5)    USING EVENTS: AND(lt(myAvg)) AS low, AND(gt(myAvg)) AS high    CHOOSE: low precedes high     YIELD: data points",
-          true)
+          args[0],
+          args[1],
+          args[2],
+          args[3],
+          Boolean.parseBoolean(args[4]),
+          Boolean.parseBoolean(args[5]))
         );
     }
 
-    public static void buildApp(String clientName, String endpoint, String jsonPayload, String query, boolean topmost) {
+    public static void buildApp(String clientName, String endpoint, String jsonPayload, String query, boolean topmost, boolean visualizeData) {
         try {
             JsonNode payloadJsonNode = OBJECT_MAPPER.readTree(jsonPayload);
             new TsdlClientApplicationFrame(
@@ -77,13 +75,22 @@ public class TsdlClientApplication extends JFrame {
                       throw new UncheckedIOException(e);
                   }
               },
+              (serverUrl, jsonBody) -> {
+                  try {
+                      return fetchData(serverUrl, jsonBody);
+                  } catch (IOException e) {
+                      throw new UncheckedIOException(e);
+                  }
+              },
               OBJECT_MAPPER,
               endpoint,
               jsonPayload,
               payloadJsonNode,
               clientName,
               query,
-              topmost);
+              topmost,
+              visualizeData
+            );
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
@@ -96,21 +103,42 @@ public class TsdlClientApplication extends JFrame {
           .post(body)
           .build();
 
+        return executeRequest(request, "TSDL Query failed");
+    }
+
+    private static String fetchData(String serverUrl, String jsonBody) throws IOException {
+        JsonNode bodyTree = OBJECT_MAPPER.readTree(jsonBody);
+        String requestUrl = serverUrl.replaceAll("/query$", String.format("/storage/%s/read", bodyTree.get("storage").get("name").asText()));
+        ObjectNode payload = OBJECT_MAPPER.createObjectNode();
+        payload.set("serviceConfiguration", bodyTree.get("storage").get("serviceConfiguration"));
+        payload.set("lookupConfiguration", bodyTree.get("storage").get("lookupConfiguration"));
+        payload.set("transformationConfiguration", bodyTree.get("storage").get("transformationConfiguration"));
+
+        RequestBody body = RequestBody.create(OBJECT_MAPPER.writeValueAsString(payload), JSON);
+        Request request = new Request.Builder()
+          .url(requestUrl)
+          .post(body)
+          .build();
+
+        return executeRequest(request, "Fetching TSDL data failed");
+    }
+
+    private static String executeRequest(Request request, String errorMessage) throws IOException {
         try (Response response = client.newCall(request).execute()) {
             if (response.isSuccessful()) {
                 ResponseBody responseBody = Objects.requireNonNull(response.body());
                 return Objects.requireNonNull(responseBody.string());
             }
 
-            var actualResponse = Objects.requireNonNull(response.body()).string();
-            var responseTree = OBJECT_MAPPER.readTree(actualResponse);
-            System.err.printf("TSDL Query failed: %s%n", response.body() != null ? actualResponse : "unknown reason");
+            String actualResponse = Objects.requireNonNull(response.body()).string();
+            JsonNode responseTree = OBJECT_MAPPER.readTree(actualResponse);
+            System.err.printf("%s: %s%n", errorMessage, response.body() != null ? actualResponse : "unknown reason");
 
-            var traces = responseTree.get("errorTrace");
+            JsonNode traces = responseTree.get("errorTrace");
             if (traces == null || traces.size() <= 0) {
-                throw new IOException(
-                  String.format("Unexpected HTTP Status Code at '%s': %s", response.request().url(), response.code())
-                );
+                String error = String.format("Unexpected HTTP Status Code at '%s': %s", response.request().url(), response.code());
+                System.err.println(error);
+                throw new IOException(error);
             }
 
             StringBuilder errorTrace = new StringBuilder();

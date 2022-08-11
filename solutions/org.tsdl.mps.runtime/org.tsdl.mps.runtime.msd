@@ -4,10 +4,8 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="D:/Universitaet/Diplomarbeit/repos/mps/libs" type="java_classes">
+    <modelRoot contentPath="${module}/libs" type="java_classes">
       <sourceRoot location="." />
-      <sourceRoot location="client-0.1-SNAPSHOT.jar" />
-      <sourceRoot location="tsdl-mps-client-1.0-SNAPSHOT.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -16,8 +14,10 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="D:/Universitaet/Diplomarbeit/repos/mps/libs/client-0.1-SNAPSHOT.jar" />
-    <stubModelEntry path="D:/Universitaet/Diplomarbeit/repos/mps/libs/tsdl-mps-client-1.0-SNAPSHOT.jar" />
+    <stubModelEntry path="${module}/libs/mapstruct-1.5.2.Final.jar" />
+    <stubModelEntry path="${module}/libs/tsdl-mps-client-1.0-SNAPSHOT.jar" />
+    <stubModelEntry path="${module}/libs/client-0.1-SNAPSHOT.jar" />
+    <stubModelEntry path="${module}/libs/jfreechart-1.5.3.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

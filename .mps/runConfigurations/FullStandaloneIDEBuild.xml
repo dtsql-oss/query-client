@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FullStandaloneIDEBuild" type="Build Script" factoryName="Build Script">
+    <myNodePointer>
+      <MyState>
+        <option name="myNodePointer" value="r:d3e3e08d-9b8f-44d0-8e62-0feeae0b5771(org.tsdl.mps.build)/1090893739955315572" />
+        <option name="myNodeText" value="org.tsdl.mps.build.mpsDistribution" />
+      </MyState>
+    </myNodePointer>
+    <mySettings>
+      <MyState>
+        <option name="myUseOtherAntLocation" value="false" />
+        <option name="myOtherAntLocation" value="" />
+        <option name="myAntOptions" value="" />
+      </MyState>
+    </mySettings>
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="TsdlGeneratorBuildOnly" run_configuration_type="Build Script" />
+      <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

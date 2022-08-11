@@ -528,6 +528,31 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="1rjGWoOEdaE" role="3cqZAp">
+          <node concept="3cpWsn" id="1rjGWoOEdaC" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="visualizeData" />
+            <node concept="10P_77" id="1rjGWoOEdoy" role="1tU5fm" />
+            <node concept="3clFbT" id="1rjGWoOEeq3" role="33vP2m">
+              <node concept="17Uvod" id="1rjGWoOEeKy" role="lGtFl">
+                <property role="2qtEX9" value="value" />
+                <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123137/1068580123138" />
+                <node concept="3zFVjK" id="1rjGWoOEeKz" role="3zH0cK">
+                  <node concept="3clFbS" id="1rjGWoOEeK$" role="2VODD2">
+                    <node concept="3clFbF" id="1rjGWoOEffR" role="3cqZAp">
+                      <node concept="2OqwBi" id="1rjGWoOEfEE" role="3clFbG">
+                        <node concept="30H73N" id="1rjGWoOEffQ" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="1rjGWoOEfVH" role="2OqNvi">
+                          <ref role="3TsBF5" to="3k3a:1rjGWoOx4eS" resolve="visualizeData" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="3lnCt0EOGJj" role="3cqZAp" />
         <node concept="3clFbF" id="KaqJHNxZjV" role="3cqZAp">
           <node concept="2YIFZM" id="KaqJHNy751" role="3clFbG">
@@ -548,8 +573,8 @@
                     <node concept="3clFbS" id="KaqJHNyaMt" role="3clF47">
                       <node concept="3clFbF" id="5HNNZ2daijV" role="3cqZAp">
                         <node concept="2YIFZM" id="5HNNZ2dajM7" role="3clFbG">
-                          <ref role="37wK5l" to="eddy:~TsdlClientApplication.buildApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)" resolve="buildApp" />
                           <ref role="1Pybhc" to="eddy:~TsdlClientApplication" resolve="TsdlClientApplication" />
+                          <ref role="37wK5l" to="eddy:~TsdlClientApplication.buildApp(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,boolean)" resolve="buildApp" />
                           <node concept="37vLTw" id="5HNNZ2damet" role="37wK5m">
                             <ref role="3cqZAo" node="5HNNZ2cEy7o" resolve="clientName" />
                           </node>
@@ -564,6 +589,9 @@
                           </node>
                           <node concept="37vLTw" id="5HNNZ2dawFz" role="37wK5m">
                             <ref role="3cqZAo" node="5HNNZ2cPEKc" resolve="topmost" />
+                          </node>
+                          <node concept="37vLTw" id="1rjGWoOEhA$" role="37wK5m">
+                            <ref role="3cqZAo" node="1rjGWoOEdaC" resolve="visualizeData" />
                           </node>
                         </node>
                       </node>
@@ -765,7 +793,7 @@
     <property role="TrG5h" value="reduce_JsonObject" />
     <ref role="3gUMe" to="gk59:3QNkN21Fl48" resolve="JsonObject" />
     <node concept="Xl_RD" id="5o9QwbMDvKN" role="13RCb5">
-      <property role="Xl_RC" value="resulting query" />
+      <property role="Xl_RC" value="resulting payload" />
       <node concept="raruj" id="5o9QwbMDvLa" role="lGtFl" />
       <node concept="17Uvod" id="5o9QwbMDvLv" role="lGtFl">
         <property role="2qtEX9" value="value" />

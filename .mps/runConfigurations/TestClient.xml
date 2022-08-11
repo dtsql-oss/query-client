@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="TestClient" type="Java Application" factoryName="Java">
+    <myNode>
+      <MyState>
+        <option name="myNodePointer" value="r:27b8ef25-6e11-47e8-90ef-443b9e32b03d(org.tsdl.mps.sandbox)/7677877310210474236" />
+        <option name="myNodeText" value="org.tsdl.mps.sandbox.TestClient" />
+      </MyState>
+    </myNode>
+    <myRunParameters>
+      <MyState>
+        <option name="myJavaParameters">
+          <JavaRunParameters>
+            <option name="jrePath" value="" />
+            <option name="programParameters" value="" />
+            <option name="useAlternativeJre" value="false" />
+            <option name="vmOptions" value="" />
+            <option name="workingDirectory" value="$APPLICATION_HOME_DIR$/bin" />
+          </JavaRunParameters>
+        </option>
+      </MyState>
+    </myRunParameters>
+    <method v="2">
+      <option name="jetbrains.mps.execution.configurations.pluginSolution.plugin.MakeNodePointers_BeforeTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

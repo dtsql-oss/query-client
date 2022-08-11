@@ -11,7 +11,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-class TsdlClientResultFrame extends JFrame {
+class TsdlClientResultDialog extends JDialog {
     private static final Font LABEL_FONT = UIManager.getFont("Label.font");
 
     private final JPanel waitingPanel;
@@ -19,8 +19,8 @@ class TsdlClientResultFrame extends JFrame {
 
     private QueryResultDto result;
 
-    TsdlClientResultFrame(String clientName, boolean topmost) {
-        super("TSDL Result: " + clientName);
+    TsdlClientResultDialog(String clientName, boolean topmost) {
+        setTitle("TSDL Result: " + clientName);
 
         waitingPanel = new JPanel(new GridBagLayout());
         waitingPanel.setBackground(Color.WHITE);
@@ -133,7 +133,7 @@ class TsdlClientResultFrame extends JFrame {
                 innerPnl.add(valueLabel("period count", periodSet.totalPeriods()));
                 innerPnl.add(valueLabel("is empty", periodSet.isEmpty()));
                 innerPnl.add(valueLabel("periods:", ""));
-                java.util.List<TsdlPeriod> periods = periodSet.periods();
+                List<TsdlPeriod> periods = periodSet.periods();
                 for (int i = 0; i < periods.size(); i++) {
                     TsdlPeriod period = periods.get(i);
                     innerPnl.add(valueLabel(String.format("&nbsp;&nbsp;[%s]", i), ""));
@@ -200,7 +200,7 @@ class TsdlClientResultFrame extends JFrame {
         return lbl;
     }
 
-    private JComponent getLogsViewer(java.util.List<TsdlLogEvent> logs) {
+    private JComponent getLogsViewer(List<TsdlLogEvent> logs) {
         JPanel pnl = new JPanel();
         pnl.setLayout(new BoxLayout(pnl, BoxLayout.Y_AXIS));
 
@@ -218,7 +218,7 @@ class TsdlClientResultFrame extends JFrame {
         pnlLbl.setMaximumSize(new Dimension(100000, 20));
         pnl.add(pnlLbl);
 
-        java.util.List<TsdlLogEvent> sortedLogs = logs == null ? List.of() : logs.stream()
+        List<TsdlLogEvent> sortedLogs = logs == null ? List.of() : logs.stream()
           .sorted(Comparator.comparing(TsdlLogEvent::dateTime))
           .collect(Collectors.toList());
 
@@ -234,7 +234,6 @@ class TsdlClientResultFrame extends JFrame {
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         autoSizeTableColumns(table);
         JScrollPane jscp = new JScrollPane(table, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-        jscp.setBackground(Color.WHITE);
         jscp.getViewport().setBackground(Color.WHITE);
         pnl.add(jscp);
         pnl.setBackground(Color.WHITE);
@@ -243,7 +242,7 @@ class TsdlClientResultFrame extends JFrame {
         return pnl;
     }
 
-    private void autoSizeTableColumns(JTable table) {
+    static void autoSizeTableColumns(JTable table) {
         final TableColumnModel columnModel = table.getColumnModel();
         final int padding = 10;
         for (int column = 0; column < table.getColumnCount(); column++) {
