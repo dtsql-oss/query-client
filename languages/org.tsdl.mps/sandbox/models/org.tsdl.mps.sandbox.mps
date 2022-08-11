@@ -61,8 +61,7 @@
       <concept id="3289320894642931274" name="org.tsdl.mps.structure.TsdlClient" flags="ng" index="SO4mB">
         <property id="1644855952786342840" name="visualizeData" index="ylZ1Y" />
         <property id="8721459316144776736" name="endpoint" index="1kR7WE" />
-        <property id="7677877310210490774" name="showStorageSpecification" index="1yFoOE" />
-        <property id="7677877310212172226" name="showSettings" index="1yHMlY" />
+        <property id="6589839311834231465" name="topmost" index="3nIRPp" />
         <child id="7677877310210130310" name="storage" index="1y_wOU" />
         <child id="7677877310210130311" name="query" index="1y_wOV" />
       </concept>
@@ -305,9 +304,8 @@
     <property role="TrG5h" value="TestClient" />
     <property role="3GE5qa" value="client" />
     <property role="1kR7WE" value="http://localhost:8080/query" />
-    <property role="1yFoOE" value="true" />
-    <property role="1yHMlY" value="true" />
     <property role="ylZ1Y" value="true" />
+    <property role="3nIRPp" value="true" />
     <node concept="SO54j" id="6EdjbK8883X" role="1y_wOU">
       <property role="SO53I" value="csv" />
       <node concept="39UX5S" id="6EdjbK8883Y" role="SO53t" />
@@ -366,7 +364,7 @@
             </node>
           </node>
           <node concept="DJaSQ" id="2ybtvkS8mtM" role="UzkwL">
-            <property role="gySRt" value="2ybtvkS0fvD/abs" />
+            <property role="gySRt" value="2ybtvkS0fuk/rel" />
             <node concept="Uzlyd" id="2ybtvkS8mux" role="gySMb">
               <node concept="2OXU$A" id="2ybtvkS8muz" role="2OXUDW">
                 <ref role="2OXU$n" node="5wYV29Lqpqm" resolve="myAvg" />
@@ -388,10 +386,10 @@
           <property role="3IhC13" value="hRgQBEcs5P/minutes" />
           <property role="3I7JiG" value="hRgQBEqrpV/exclusive" />
           <property role="3I7JH5" value="hRgQBEqrs3/inclusive" />
-          <property role="3InSFU" value="true" />
-          <property role="3IhCdo" value="true" />
           <property role="3IhC1C" value="360" />
           <property role="3IhCeH" value="5" />
+          <property role="3IhCdo" value="true" />
+          <property role="3InSFU" value="true" />
           <node concept="Uzlxn" id="6EdjbK8884$" role="7BG_w">
             <property role="Uzkwh" value="7CQR1P0IUYT/and" />
             <node concept="3mnliI" id="3lnCt0EMiXh" role="UzkwL">
@@ -443,7 +441,7 @@
         </node>
       </node>
       <node concept="2bm369" id="6EdjbK88846" role="2bm2wW">
-        <property role="2bm2s3" value="5OLkeRmqm6a/allPeriods" />
+        <property role="2bm2s3" value="5OLkeRmqnv5/dataPoints" />
       </node>
       <node concept="1jhBKc" id="SM$yDD9h9R" role="UBkGr">
         <node concept="1AMOY8" id="5wYV29Lqpqm" role="1jhVtw">

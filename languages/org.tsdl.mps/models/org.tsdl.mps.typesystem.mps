@@ -22,7 +22,6 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
-      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
@@ -2411,7 +2410,7 @@
                     <node concept="3clFbS" id="2ybtvkS7WXl" role="3clFbx">
                       <node concept="2MkqsV" id="2ybtvkS87oN" role="3cqZAp">
                         <node concept="Xl_RD" id="2ybtvkS87pe" role="2MkJ7o">
-                          <property role="Xl_RC" value="value of around 'around' filter must not be less than 0" />
+                          <property role="Xl_RC" value="value of 'around' filter must not be less than 0" />
                         </node>
                         <node concept="1YBJjd" id="2ybtvkS87u8" role="1urrMF">
                           <ref role="1YBMHb" node="2ybtvkS7Tg3" resolve="aroundFilter" />
@@ -2520,7 +2519,7 @@
                       <node concept="3clFbS" id="2ybtvkS87wI" role="3clFbx">
                         <node concept="2MkqsV" id="2ybtvkS87wJ" role="3cqZAp">
                           <node concept="Xl_RD" id="2ybtvkS87wK" role="2MkJ7o">
-                            <property role="Xl_RC" value="value of relative 'around' filter must be between 0 and 100 (percentage)" />
+                            <property role="Xl_RC" value="value of 'around' filter must not be less than 0" />
                           </node>
                           <node concept="1YBJjd" id="2ybtvkS87wL" role="1urrMF">
                             <ref role="1YBMHb" node="2ybtvkS7Tg3" resolve="aroundFilter" />
@@ -2529,22 +2528,12 @@
                       </node>
                       <node concept="3fqX7Q" id="2ybtvkS87wM" role="3clFbw">
                         <node concept="1eOMI4" id="2ybtvkS87wN" role="3fr31v">
-                          <node concept="1Wc70l" id="2ybtvkS88QU" role="1eOMHV">
-                            <node concept="2dkUwp" id="2ybtvkS89Up" role="3uHU7w">
-                              <node concept="3cmrfG" id="2ybtvkS89V9" role="3uHU7w">
-                                <property role="3cmrfH" value="100" />
-                              </node>
-                              <node concept="37vLTw" id="2ybtvkS89dZ" role="3uHU7B">
-                                <ref role="3cqZAo" node="2ybtvkS87wz" resolve="literalFilterValue" />
-                              </node>
+                          <node concept="2d3UOw" id="2ybtvkS87wO" role="1eOMHV">
+                            <node concept="37vLTw" id="2ybtvkS87wQ" role="3uHU7B">
+                              <ref role="3cqZAo" node="2ybtvkS87wz" resolve="literalFilterValue" />
                             </node>
-                            <node concept="2d3UOw" id="2ybtvkS87wO" role="3uHU7B">
-                              <node concept="37vLTw" id="2ybtvkS87wQ" role="3uHU7B">
-                                <ref role="3cqZAo" node="2ybtvkS87wz" resolve="literalFilterValue" />
-                              </node>
-                              <node concept="3cmrfG" id="2ybtvkS87wP" role="3uHU7w">
-                                <property role="3cmrfH" value="0" />
-                              </node>
+                            <node concept="3cmrfG" id="2ybtvkS87wP" role="3uHU7w">
+                              <property role="3cmrfH" value="0" />
                             </node>
                           </node>
                         </node>
