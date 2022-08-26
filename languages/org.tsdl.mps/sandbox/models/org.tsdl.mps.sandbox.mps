@@ -62,6 +62,7 @@
         <property id="1644855952786342840" name="visualizeData" index="ylZ1Y" />
         <property id="8721459316144776736" name="endpoint" index="1kR7WE" />
         <property id="6589839311834231465" name="topmost" index="3nIRPp" />
+        <property id="7677877310210490774" name="showStorageSpecification" index="1yFoOE" />
         <child id="7677877310210130310" name="storage" index="1y_wOU" />
         <child id="7677877310210130311" name="query" index="1y_wOV" />
       </concept>
@@ -306,6 +307,7 @@
     <property role="1kR7WE" value="http://localhost:8080/query" />
     <property role="ylZ1Y" value="true" />
     <property role="3nIRPp" value="true" />
+    <property role="1yFoOE" value="true" />
     <node concept="SO54j" id="6EdjbK8883X" role="1y_wOU">
       <property role="SO53I" value="csv" />
       <node concept="39UX5S" id="6EdjbK8883Y" role="SO53t" />
@@ -578,7 +580,7 @@
           </node>
         </node>
         <node concept="DJaSQ" id="2ybtvkS7ReO" role="UzkwL">
-          <property role="gySRt" value="2ybtvkS0fvD/abs" />
+          <property role="gySRt" value="2ybtvkS0fuk/rel" />
           <node concept="Uzlyd" id="2ybtvkS7RU8" role="gySL9">
             <node concept="2OXU$A" id="2ybtvkS7RUa" role="2OXUDW">
               <ref role="2OXU$n" node="5wYV29Lnm21" resolve="a3" />
