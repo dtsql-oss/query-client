@@ -1460,6 +1460,9 @@
     <node concept="11bSqf" id="7CQR1P0HWFE" role="11c4hB">
       <node concept="3clFbS" id="7CQR1P0HWFF" role="2VODD2">
         <node concept="lc7rE" id="7CQR1P0HWQb" role="3cqZAp">
+          <node concept="la8eA" id="6uxW6klEm_C" role="lcghm">
+            <property role="lacIc" value="(" />
+          </node>
           <node concept="l9hG8" id="7CQR1P0HWTT" role="lcghm">
             <node concept="2OqwBi" id="2z3DZjVaJ9H" role="lb14g">
               <node concept="2OqwBi" id="2z3DZjVaITy" role="2Oq$k0">
@@ -1515,13 +1518,15 @@
               </node>
             </node>
           </node>
-          <node concept="la8eA" id="7CQR1P0HYTS" role="lcghm">
-            <property role="lacIc" value=" " />
-          </node>
         </node>
         <node concept="3clFbH" id="5wYV29LbWRZ" role="3cqZAp" />
         <node concept="3clFbJ" id="5wYV29LgnWw" role="3cqZAp">
           <node concept="3clFbS" id="5wYV29LgnWy" role="3clFbx">
+            <node concept="lc7rE" id="6uxW6klEn$y" role="3cqZAp">
+              <node concept="la8eA" id="6uxW6klEnGm" role="lcghm">
+                <property role="lacIc" value=")" />
+              </node>
+            </node>
             <node concept="3cpWs6" id="5wYV29Lgpwb" role="3cqZAp" />
           </node>
           <node concept="2OqwBi" id="5wYV29Lhy1C" role="3clFbw">
@@ -1541,7 +1546,7 @@
         <node concept="3clFbH" id="5wYV29LgpwO" role="3cqZAp" />
         <node concept="lc7rE" id="5wYV29LbYqK" role="3cqZAp">
           <node concept="la8eA" id="5wYV29LbYru" role="lcghm">
-            <property role="lacIc" value="WITHIN " />
+            <property role="lacIc" value=" WITHIN " />
           </node>
         </node>
         <node concept="3clFbH" id="5wYV29LbYsN" role="3cqZAp" />
@@ -1729,6 +1734,9 @@
                 <ref role="37wK5l" to="c17a:~SEnumerationLiteral.getPresentation()" resolve="getPresentation" />
               </node>
             </node>
+          </node>
+          <node concept="la8eA" id="6uxW6klEov6" role="lcghm">
+            <property role="lacIc" value=")" />
           </node>
         </node>
       </node>

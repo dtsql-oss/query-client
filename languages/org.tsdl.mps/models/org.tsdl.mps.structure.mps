@@ -602,7 +602,7 @@
     <node concept="25R33" id="7CQR1P0ITfH" role="25R1y">
       <property role="3tVfz5" value="8806468139567780845" />
       <property role="TrG5h" value="lt" />
-      <property role="1L1pqM" value="lower than" />
+      <property role="1L1pqM" value="less than" />
     </node>
   </node>
   <node concept="25R3W" id="7CQR1P0IUYS">
