@@ -126,5 +126,80 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="2RMv6sD54I_">
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="ConstantEvent_negate" />
+    <ref role="2ZfgGC" to="3k3a:2RMv6sD50Va" resolve="ConstantEvent" />
+    <node concept="2S6ZIM" id="2RMv6sD54IA" role="2ZfVej">
+      <node concept="3clFbS" id="2RMv6sD54IB" role="2VODD2">
+        <node concept="3clFbF" id="2RMv6sD54N9" role="3cqZAp">
+          <node concept="Xl_RD" id="2RMv6sD54N8" role="3clFbG">
+            <property role="Xl_RC" value="Negate Event Argument" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2RMv6sD54IC" role="2ZfgGD">
+      <node concept="3clFbS" id="2RMv6sD54ID" role="2VODD2">
+        <node concept="3clFbF" id="2RMv6sD551X" role="3cqZAp">
+          <node concept="2YIFZM" id="2RMv6sD552K" role="3clFbG">
+            <ref role="37wK5l" to="rl4a:6EdjbK8AGqa" resolve="negateFilterOperator" />
+            <ref role="1Pybhc" to="rl4a:6EdjbK8AG5J" resolve="ActionImplementations" />
+            <node concept="2Sf5sV" id="2RMv6sD553$" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2RMv6sD9v98">
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="IncreaseEvent_negate" />
+    <ref role="2ZfgGC" to="3k3a:2RMv6sD9tY0" resolve="IncreaseEvent" />
+    <node concept="2S6ZIM" id="2RMv6sD9v99" role="2ZfVej">
+      <node concept="3clFbS" id="2RMv6sD9v9a" role="2VODD2">
+        <node concept="3clFbF" id="2RMv6sD9vii" role="3cqZAp">
+          <node concept="Xl_RD" id="2RMv6sD9vih" role="3clFbG">
+            <property role="Xl_RC" value="Negate Event Argument" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2RMv6sD9v9b" role="2ZfgGD">
+      <node concept="3clFbS" id="2RMv6sD9v9c" role="2VODD2">
+        <node concept="3clFbF" id="2RMv6sD9vHD" role="3cqZAp">
+          <node concept="2YIFZM" id="2RMv6sD9vIC" role="3clFbG">
+            <ref role="37wK5l" to="rl4a:6EdjbK8AGqa" resolve="negateFilterOperator" />
+            <ref role="1Pybhc" to="rl4a:6EdjbK8AG5J" resolve="ActionImplementations" />
+            <node concept="2Sf5sV" id="2RMv6sD9vJF" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2RMv6sDaKpG">
+    <property role="3GE5qa" value="query.event" />
+    <property role="TrG5h" value="DecreaseEvent_negate" />
+    <ref role="2ZfgGC" to="3k3a:2RMv6sDaJPZ" resolve="DecreaseEvent" />
+    <node concept="2S6ZIM" id="2RMv6sDaKpH" role="2ZfVej">
+      <node concept="3clFbS" id="2RMv6sDaKpI" role="2VODD2">
+        <node concept="3clFbF" id="2RMv6sDaKtN" role="3cqZAp">
+          <node concept="Xl_RD" id="2RMv6sDaKtM" role="3clFbG">
+            <property role="Xl_RC" value="Negate Event Argument" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2RMv6sDaKpJ" role="2ZfgGD">
+      <node concept="3clFbS" id="2RMv6sDaKpK" role="2VODD2">
+        <node concept="3clFbF" id="2RMv6sDaK_C" role="3cqZAp">
+          <node concept="2YIFZM" id="2RMv6sDaKAE" role="3clFbG">
+            <ref role="37wK5l" to="rl4a:6EdjbK8AGqa" resolve="negateFilterOperator" />
+            <ref role="1Pybhc" to="rl4a:6EdjbK8AG5J" resolve="ActionImplementations" />
+            <node concept="2Sf5sV" id="2RMv6sDaKBP" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
